@@ -181,7 +181,7 @@ def fig6():
 def fig7():
     regimes = [("A\nvertex", "A_vertex_all", {"chainA": "P1", "omni": "P2", "e2": "P3", "proto": "W"}),
                ("B\nsurface", "B_surface", {"chainA": "P1", "omni": "P2", "e2": "P3", "proto": "W"}),
-               ("C\nsubset+axis", "C_subset", {"proto": "W"}),
+               ("C\nnominal axis", "C_subset", {"proto": "W"}),
                ("C2\nself-fit", "C2_selfcontained", {"proto": "W"}),
                ("C3\nasset-only", "C3_asset_only", {"proto": "W"})]
     # (a) measurable %
@@ -203,7 +203,7 @@ def fig7():
                        ha="center", fontsize=6.5)
             xpos += 1
         xt.append(xpos - (len(pls) + 1) / 2 + 0.5); xl.append(label)
-        xpos += 1.6
+        xpos += 2.8          # 组间距：单柱组的两行标签在 1.6 下会相撞（2026-08-29 全面 review 查出）
     a.set_xticks(xt, xl, fontsize=6.5); a.set_ylabel("Measurable cylinders (%)")
     a.set_title("(a) Measurability by regime (n = 1,866)", fontsize=8.5, loc="left")
     a.axhline(100, color=GRAY, lw=0.5, ls=":")

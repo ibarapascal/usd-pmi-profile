@@ -14,6 +14,87 @@
    "spherical diameter": 2,
    "curve length": 7
   },
+  "unit_census": {
+   "nist_ctc_01_asme1_ap242-e1": {
+    "MILLIMETRE": 13
+   },
+   "nist_ctc_02_asme1_ap242-e2": {
+    "MILLIMETRE": 29
+   },
+   "nist_ctc_03_asme1_ap242-e2": {
+    "INCH": 22
+   },
+   "nist_ctc_04_asme1_ap242-e1": {
+    "MILLIMETRE": 16
+   },
+   "nist_ctc_05_asme1_ap242-e1": {
+    "INCH": 16
+   },
+   "nist_ftc_06_asme1_ap242-e2": {
+    "INCH": 52
+   },
+   "nist_ftc_07_asme1_ap242-e2": {
+    "INCH": 44
+   },
+   "nist_ftc_08_asme1_ap242-e2": {
+    "INCH": 43
+   },
+   "nist_ftc_09_asme1_ap242-e1": {
+    "INCH": 22,
+    "MILLIMETRE": 31
+   },
+   "nist_ftc_10_asme1_ap242-e2": {
+    "MILLIMETRE": 66
+   },
+   "nist_ftc_11_asme1_ap242-e2": {
+    "MILLIMETRE": 10
+   },
+   "nist_stc_06_asme1_ap242-e3": {
+    "INCH": 42
+   },
+   "nist_stc_07_asme1_ap242-e3": {
+    "INCH": 61
+   },
+   "nist_stc_08_asme1_ap242-e3": {
+    "INCH": 36,
+    "MILLIMETRE": 1
+   },
+   "nist_stc_09_asme1_ap242-e3": {
+    "INCH": 49
+   },
+   "nist_stc_10_asme1_ap242-e2": {
+    "MILLIMETRE": 64
+   }
+  },
+  "unit_models_mm": 6,
+  "unit_models_inch": 8,
+  "unit_models_mixed": 2,
+  "unit_models_inch_any": 10,
+  "unit_models_total": 16,
+  "unit_models_mm_list": [
+   "nist_ctc_01_asme1_ap242-e1",
+   "nist_ctc_02_asme1_ap242-e2",
+   "nist_ctc_04_asme1_ap242-e1",
+   "nist_ftc_10_asme1_ap242-e2",
+   "nist_ftc_11_asme1_ap242-e2",
+   "nist_stc_10_asme1_ap242-e2"
+  ],
+  "unit_models_inch_list": [
+   "nist_ctc_03_asme1_ap242-e2",
+   "nist_ctc_05_asme1_ap242-e1",
+   "nist_ftc_06_asme1_ap242-e2",
+   "nist_ftc_07_asme1_ap242-e2",
+   "nist_ftc_08_asme1_ap242-e2",
+   "nist_stc_06_asme1_ap242-e3",
+   "nist_stc_07_asme1_ap242-e3",
+   "nist_stc_09_asme1_ap242-e3"
+  ],
+  "unit_models_mixed_list": [
+   "nist_ftc_09_asme1_ap242-e1",
+   "nist_stc_08_asme1_ap242-e3"
+  ],
+  "defect_model_inch_total": 22,
+  "defect_model_inch_other": 21,
   "groups": 128,
   "groups_clean": 119,
   "groups_clean_pct": 92.97,

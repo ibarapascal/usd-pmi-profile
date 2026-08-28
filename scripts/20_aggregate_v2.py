@@ -327,6 +327,14 @@ if os.path.exists(_e11p):
     K["e11.skipped"] = sum(_s["skipped_by_dimName"].values())
     K["e11.band_min"] = _s["band_width_min"]; K["e11.band_max"] = _s["band_width_max"]
     K["e11.tie"] = _s["tie_tolerance_mm"]
+    # 单位分布（S10）与单位缺陷模型的同伴计数——此前是手数，2026-08-29 全面 review 查出 mm/inch
+    # 分类与 ftc_09 的「其余 inch 标注」两处都错，故提成 canonical 键，禁止再在正文里手写
+    K["e11.u_mm"] = _s["unit_models_mm"]; K["e11.u_inch"] = _s["unit_models_inch"]
+    K["e11.u_mixed"] = _s["unit_models_mixed"]
+    K["e11.u_defect_inch"] = _s["defect_model_inch_total"]
+    K["e11.u_defect_other"] = _s["defect_model_inch_other"]
+    K["e11.u_inch_any"] = _s["unit_models_inch_any"]   # 含 inch 标注的模型数（inch-only ＋ mixed）
+    K["e11.u_total"] = _s["unit_models_total"]
 
 json.dump(K, open("out/e1/canonical_numbers.json", "w"), indent=1, ensure_ascii=False)
 

@@ -30,6 +30,7 @@ TESS = 1e-3         # mm，镶嵌级与结构性偏差的分界
 INCH = 25.4
 
 rows, groups = [], []
+unit_census = {}      # 模型 → {sourceUnit: 条数}；S10 的单位分布口径由此产出，不再手数
 funnel = defaultdict(int)
 skipped_dim = defaultdict(int)
 
@@ -41,12 +42,24 @@ def g(prim, n):
 
 for usdc in sorted(glob.glob(os.path.join(proto_dir, "*ap242*.usdc"))):
     base = os.path.basename(usdc)[:-len(".usdc")]
+    stage = Usd.Stage.Open(usdc)
+
+    # ---- 单位普查：按模型统计 pmi:sourceUnit 分布（S10 的 mm-only / inch-only / mixed 分类源）----
+    # ⚠️ 必须在下面的 hole-json 过滤**之前**：普查是对交付 stage 的全量统计，与 E11 的可判定子集无关。
+    #    放在 continue 之后会在某个模型缺 hole 数据时静默少算一个模型，却照样输出「N 个模型」的分类
+    #    ——这正是 2026-08-29 那条 S10 分类错数（7/7/2 实为 6/8/2）的复现路径。
+    _uc = defaultdict(int)
+    for _p in stage.Traverse():
+        _su = g(_p, "pmi:sourceUnit")
+        if _su:
+            _uc[str(_su)] += 1
+    unit_census[base] = dict(_uc)
+
     hj = os.path.join(hole_dir, base + ".proto.json")
     if not os.path.exists(hj):
         continue
     fitted = {r["face_index"]: r.get("fitted_r")
               for r in json.load(open(hj)).get("c3_rows", []) if r.get("fitted_r") is not None}
-    stage = Usd.Stage.Open(usdc)
 
     # ---- 漏斗：标注总数 → DIMENSIONAL_SIZE → 双侧带 → diameter/radius ----
     sizes = []
@@ -127,8 +140,23 @@ for g_ in groups:
     if g_["cause"]:
         cause_grp[g_["cause"]] += 1
 
+_n_stage = len([f for f in sorted(glob.glob(os.path.join(proto_dir, "*ap242*.usdc")))])
+assert len(unit_census) == _n_stage, f"单位普查覆盖 {len(unit_census)}/{_n_stage} 个 stage —— 分类计数会错"
+_u_mm = sorted(k for k, v in unit_census.items() if set(v) == {"MILLIMETRE"})
+_u_in = sorted(k for k, v in unit_census.items() if set(v) == {"INCH"})
+_u_mx = sorted(k for k, v in unit_census.items() if len(set(v)) > 1)
+# 单位缺陷模型（ftc_09 #9251）：同模型 inch 标注总数与「其余」数——正文/SI 逐字引用，禁止手数
+_DEFECT_MODEL, _DEFECT_ID = "nist_ftc_09_asme1_ap242-e1", "#9251"
+_def_inch = unit_census.get(_DEFECT_MODEL, {}).get("INCH", 0)
+
 summary = {
     "funnel": dict(funnel), "skipped_by_dimName": dict(skipped_dim),
+    "unit_census": unit_census,
+    "unit_models_mm": len(_u_mm), "unit_models_inch": len(_u_in), "unit_models_mixed": len(_u_mx),
+    "unit_models_inch_any": len(_u_in) + len(_u_mx),   # 「含 inch 标注的模型数」——正文 §4.1 用，禁止手算
+    "unit_models_total": len(unit_census),
+    "unit_models_mm_list": _u_mm, "unit_models_inch_list": _u_in, "unit_models_mixed_list": _u_mx,
+    "defect_model_inch_total": _def_inch, "defect_model_inch_other": max(_def_inch - 1, 0),
     "groups": len(groups), "groups_clean": grp_clean,
     "groups_clean_pct": round(100.0 * grp_clean / len(groups), 2) if groups else None,
     "faces": len(rows), "faces_in_band": face_in,

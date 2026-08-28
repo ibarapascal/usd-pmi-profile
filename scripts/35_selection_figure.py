@@ -88,19 +88,27 @@ def draw(ax, hi_tris, title, zoom=None, hl=WARM):
 
 ax1 = fig.add_subplot(121, projection="3d")
 tri_a = np.concatenate([subsets[t] for t in targets if t in subsets])
+# 目标面常常是同一个孔的两半圆柱面——画出来看着只有一个高亮体，读者会以为数字与图不符。
+# 这里按几何事实判定（全为 Cylinder ＋ 各面包围盒与合并包围盒同量级）并在读出里说明。
+_tv = [V[idx[subsets[t]]].reshape(-1, 3) for t in targets if t in subsets]
+_all = np.concatenate(_tv)
+_types = {A(stage.GetPrimAtPath(t), "pmi:surfaceType") for t in targets if t in subsets}
+_one_body = (len(_tv) > 1 and _types == {"Cylinder"}
+             and all(((v.max(0) - v.min(0)) >= 0.55 * (_all.max(0) - _all.min(0))).all() for v in _tv))
+_grouping_note = " — the two halves of one cylindrical bore" if _one_body and len(_tv) == 2 else ""
 draw(ax1, tri_a, "(a) selecting the annotation lights up the faces it governs")
 val, lo, hi_b = A(anno, "pmi:value"), A(anno, "pmi:lowerBound"), A(anno, "pmi:upperBound")
 ax1.text2D(0.02, 0.05,
            f"{A(anno,'pmi:type')}  ({A(anno,'pmi:dimName')})\n"
            f"{val:g} {lo:+g}/{hi_b:+g}  (stage units; source {A(anno,'pmi:sourceUnit')})\n"
-           f"applies to {len(targets)} face subset(s)",
+           f"applies to {len(targets)} face subsets{_grouping_note}",
            transform=ax1.transAxes, fontsize=7.2, va="bottom",
            bbox=dict(boxstyle="round,pad=0.32", fc="#fbf0ec", ec=WARM, lw=0.9))
 
 ax2 = fig.add_subplot(122, projection="3d")
 _pv = V[idx[subsets[probe]]].reshape(-1, 3)
 _c = _pv.mean(axis=0); _r = max(np.abs(_pv - _c).max() * 3.2, EXT.max() * 0.10)
-draw(ax2, subsets[probe], "(b) selecting one face reveals what governs it", zoom=(_c, _r), hl=GREEN)
+draw(ax2, subsets[probe], "(b) selecting one face reveals what governs it (view zoomed on that face)", zoom=(_c, _r), hl=GREEN)
 def _line(p):
     t = A(p, "pmi:type")
     if A(p, "pmi:value") is not None:
@@ -109,8 +117,11 @@ def _line(p):
             t += f" ({A(p,'pmi:dimName')})"
     elif A(p, "pmi:datumLetter"):
         t += f"  datum [{A(p,'pmi:datumLetter')}]"
-    else:                                  # 无数值者显示源实体号，避免出现空行
-        t += f"  {A(p,'pmi:stepId')}"
+    else:                                  # 源里没有可读值者：说明原因，而不是留一个裸实体号
+        if A(p, "pmi:dimName"):
+            t += f" ({A(p,'pmi:dimName')}) — no value entity in the source"
+        else:
+            t += f"  {A(p,'pmi:stepId')}"
     return t
 lines = [_line(p) for p in governing[:4]]
 ax2.text2D(0.02, 0.05, f"{probe.split('/')[-1]} is governed by {len(governing)} annotation(s):\n"
