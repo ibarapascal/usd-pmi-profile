@@ -1,0 +1,8 @@
+numpy
+scipy
+trimesh
+rtree
+usd-core
+point-cloud-utils
+matplotlib
+python-docx

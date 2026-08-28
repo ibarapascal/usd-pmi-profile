@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or the profile convention, please cite it as below."
+title: "usd-pmi-profile: a minimal standards-only carrier profile for semantic PMI in OpenUSD"
+type: software
+authors:
+  - family-names: "Jing"
+    given-names: "Jiawei"
+    affiliation: "Makuhari Development Corporation"
+    orcid: "https://orcid.org/0009-0000-8365-367X"
+repository-code: "https://github.com/ibarapascal/usd-pmi-profile"
+license: MIT
+keywords:
+  - OpenUSD
+  - STEP AP242
+  - semantic PMI
+  - annotation associativity
+  - CAD interoperability
+  - digital twin
+abstract: >-
+  Specification, reference STEP-to-USD writer, and full-set audit for a minimal
+  standards-only carrier profile that gives semantic PMI (tolerances, datums, and
+  their links to geometry) a machine-readable representation in OpenUSD, validated
+  on the NIST MBE PMI test models.

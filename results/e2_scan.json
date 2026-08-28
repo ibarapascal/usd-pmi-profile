@@ -1,0 +1,180 @@
+[
+ {
+  "model": "nist_ctc_01_asme1_ap242-e1",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 133,
+  "meshes": 118,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ctc_02_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 827,
+  "meshes": 803,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ctc_03_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 217,
+  "meshes": 202,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ctc_04_asme1_ap242-e1",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 605,
+  "meshes": 586,
+  "subsets": 0,
+  "pmi_hits": [
+   "/Asset/Scenes/scene/NIST_PMI_Test_Case_4_Complex_Model:nist_pmi_test_case_4_complex_model"
+  ],
+  "pmi_hit_count": 1
+ },
+ {
+  "model": "nist_ctc_05_asme1_ap242-e1",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 181,
+  "meshes": 166,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ftc_06_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 308,
+  "meshes": 293,
+  "subsets": 0,
+  "pmi_hits": [
+   "/Asset/Scenes/scene/NIST_PMI_FTC_06_ASME1:nist_pmi_ftc_06_asme1"
+  ],
+  "pmi_hit_count": 1
+ },
+ {
+  "model": "nist_ftc_07_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 338,
+  "meshes": 317,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ftc_08_asme1_ap242-e1-tg",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 288,
+  "meshes": 273,
+  "subsets": 0,
+  "pmi_hits": [
+   "/Asset/Scenes/scene/NIST_PMI_FTC_08_ASME1:nist_pmi_ftc_08_asme1"
+  ],
+  "pmi_hit_count": 1
+ },
+ {
+  "model": "nist_ftc_08_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 264,
+  "meshes": 249,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ftc_09_asme1_ap242-e1",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 493,
+  "meshes": 470,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ftc_10_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 328,
+  "meshes": 307,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_ftc_11_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 52,
+  "meshes": 42,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_stc_06_asme1_ap242-e3",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 251,
+  "meshes": 174,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_stc_07_asme1_ap242-e3",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 334,
+  "meshes": 317,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_stc_08_asme1_ap242-e3",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 411,
+  "meshes": 394,
+  "subsets": 0,
+  "pmi_hits": [
+   "/Asset/Scenes/scene/NIST_PMI_STC_08_ASME1:nist_pmi_stc_08_asme1"
+  ],
+  "pmi_hit_count": 1
+ },
+ {
+  "model": "nist_stc_09_asme1_ap242-e3",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 241,
+  "meshes": 224,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ },
+ {
+  "model": "nist_stc_10_asme1_ap242-e2",
+  "metersPerUnit": 1.0,
+  "authored_units": true,
+  "prims": 289,
+  "meshes": 274,
+  "subsets": 0,
+  "pmi_hits": [],
+  "pmi_hit_count": 0
+ }
+]

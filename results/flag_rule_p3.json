@@ -1,0 +1,111 @@
+{
+ "n_big": 93,
+ "flagged": 6,
+ "rows": [
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 13,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 15,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 18,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 19,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 13,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 15,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 18,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 19,
+   "err": 184.15,
+   "coverage": 180.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 13,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 15,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 18,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 19,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 13,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 15,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "face": 18,
+   "err": 184.15,
+   "coverage": 350.0,
+   "flag60": false
+  }
+ ]
+}
