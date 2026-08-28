@@ -26,6 +26,15 @@ plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.righ
 BLUE, GRAY, WARM, GREEN, PURPLE = "#2b5f9e", "#8a8f98", "#c4552d", "#3a7d44", "#6a4c93"
 K = json.load(open("out/e1/canonical_numbers.json"))
 
+
+def save_all(fig, stem):
+    """png（阅读用）＋ tiff（栅格备份）＋ eps（投稿交付：矢量优先，含嵌入字体）。
+    EPS 不支持 alpha，故显式给白底，避免透明区域在 EPS 里变黑。"""
+    fig.patch.set_alpha(1.0)
+    fig.savefig(f"figures/{stem}.png")
+    fig.savefig(f"figures/{stem}.tiff")
+    fig.savefig(f"figures/{stem}.eps", format="eps")
+
 def box(ax, x, y, w, h, text, fc="#eef2f7", ec=BLUE, fs=8, weight="normal"):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.02", fc=fc, ec=ec, lw=1.1))
     ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=fs, weight=weight)
@@ -56,7 +65,7 @@ def fig1():
     b.text(6.7, 7.6, "(stroked curves)", fontsize=7, color=GRAY)
     b.text(1.2, 1.2, "human-readable only: the same callout rendered as\nunstructured curve geometry — no queryable value",
            fontsize=7.5, style="italic")
-    fig.savefig("figures/fig1_pmi_concept.png"); fig.savefig("figures/fig1_pmi_concept.tiff")
+    save_all(fig, "fig1_pmi_concept")
     print("fig1 done")
 
 def fig2():
@@ -81,7 +90,7 @@ def fig2():
             arrow(ax, 8.9, y, 9.8, ty, lw=0.7)
     ax.text(0.2, 0.4, "Audit tooling predates the writer and has no privileged interface to any pipeline.",
             fontsize=7.5, style="italic")
-    fig.savefig("figures/fig2_protocol.png"); fig.savefig("figures/fig2_protocol.tiff")
+    save_all(fig, "fig2_protocol")
     print("fig2 done")
 
 def fig3():
@@ -102,7 +111,7 @@ def fig3():
     ax.text(11.0, 5.8, "relationship", fontsize=6.5, color=GREEN)
     ax.text(5.2, 0.5, "fingerprint alignment maps STEP face ids to mesh face indices (Sec. 4.5)",
             fontsize=7.5, style="italic", color=PURPLE)
-    fig.savefig("figures/fig3_profile.png"); fig.savefig("figures/fig3_profile.tiff")
+    save_all(fig, "fig3_profile")
     print("fig3 done")
 
 def fig4():
@@ -139,11 +148,11 @@ def fig4():
     ax.set_title("All 838 annotations carried by W (by construction); production pipelines carry 0.\n"
                  "Colors: the empirical anchoring stratification of the sources.", fontsize=8, loc="left")
     ax.legend(fontsize=6.8, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=3, framealpha=0.95)
-    fig.savefig("figures/fig4_inventory.png"); fig.savefig("figures/fig4_inventory.tiff")
+    save_all(fig, "fig4_inventory")
     print("fig4 done", int(left.sum()))
 
 def fig5():
-    ARC = "archive/2026-jcde-cycle/pilot"
+    ARC = os.environ.get("V1_ARCHIVE", "archive/v1-pilot") + "/pilot"
     rows = []
     for d in ["0.05", "0.1", "0.5"]:
         r = json.load(open(f"{ARC}/out/batch_v2/stc06_d{d}.v2report.json"))["B_gt_to_conv"]
@@ -162,15 +171,12 @@ def fig5():
     ax.set_xscale("log"); ax.set_yscale("log")
     ax.set_xlabel("Triangle count (STC-06)"); ax.set_ylabel("Direction-B deviation (mm)")
     ax.grid(True, which="both", lw=0.3, alpha=0.3)
-    fig.savefig("figures/fig5_budget.png"); fig.savefig("figures/fig5_budget.tiff")
+    save_all(fig, "fig5_budget")
     print("fig5 done")
 
 def fig6():
-    # v1 存档产物原样复用（重生成需重跑逐点邻近查询；产物来源与脚本 → archive fig_scripts.py fig2()）
-    for ext in ("png", "tiff"):
-        shutil.copy(f"archive/2026-jcde-cycle/figures/fig2_ctc02_feature_loss.{ext}",
-                    f"figures/fig6_spatial.{ext}")
-    print("fig6 copied from archive")
+    # fig6 已改为真重生成（分辨率需达刊要求）→ 见 34_fig6_regen.py；此处不再复用存档栅格件。
+    print("fig6: run 34_fig6_regen.py (regenerates at 600 dpi from the archived v1 data)")
 
 def fig7():
     regimes = [("A\nvertex", "A_vertex_all", {"chainA": "P1", "omni": "P2", "e2": "P3", "proto": "W"}),
@@ -230,7 +236,7 @@ def fig7():
     b.set_yscale("log"); b.set_ylabel("Absolute radius error (mm)")
     b.set_title("(b) Error distributions (measured holes)", fontsize=8.5, loc="left")
     b.tick_params(axis="x", labelsize=7)
-    fig.savefig("figures/fig7_downstream.png"); fig.savefig("figures/fig7_downstream.tiff")
+    save_all(fig, "fig7_downstream")
     print("fig7 done")
 
 which = sys.argv[1] if len(sys.argv) > 1 else "all"

@@ -1,6 +1,6 @@
-# Supplementary material
+# Online Resource 1 — Supplementary material
 
-**A minimal standards-only carrier profile for semantic PMI in OpenUSD** — Supplements S1–S9.
+**Tolerance-resolvable OpenUSD: a minimal standards-only carrier profile for semantic PMI** — Supplements S1–S10.
 
 ## S1. Search protocol
 
@@ -12,11 +12,11 @@ Round outcomes: no peer-reviewed quantitative treatment of semantic-PMI survival
 
 ## S2. Archived P1/P2 artifacts: versions and generation commands
 
-P1 (STEP-FreeCAD-OBJ-Blender-USD): FreeCAD 1.1.1 headless (`freecadcmd`), OpenCASCADE kernel, STEP import + OBJ export at linear deflection 0.1 mm; Blender 5.0.1 headless (`blender -b --python`), OBJ import + USD export, default settings. One command pair per model; scripts 01-02 of the archived pilot (repository `archive/2026-jcde-cycle/pilot/`).
+P1 (STEP-FreeCAD-OBJ-Blender-USD): FreeCAD 1.1.1 headless (`freecadcmd`), OpenCASCADE kernel, STEP import + OBJ export at linear deflection 0.1 mm; Blender 5.0.1 headless (`blender -b --python`), OBJ import + USD export, default settings. One command pair per model; scripts 01-02 of the archived pilot directory of the reproduction package.
 
 P2 (Omniverse): omni.kit.converter.hoops_core 511.3.2, HOOPS Exchange 10.6.1, Kit SDK 110.1.1, default conversion settings, executed on a Windows RTX workstation; per-model logs archived. Quantitative results published with NVIDIA's written permission.
 
-P3 (Mayo-glTF-guc): Mayo 0.10.0 (`mayo-conv --export <model>.glb <model>.stp`), guc 0.5 built against USD 25.11 (`guc <model>.glb <model>.usdc`), official prebuilt binaries; batch script (`scripts/25_e2_pcb_batch.ps1`) and per-model log archived.
+P3 (Mayo-glTF-guc): Mayo 0.10.0 (`mayo-conv --export <model>.glb <model>.stp`), guc 0.5 built against USD 25.11 (`guc <model>.glb <model>.usdc`), official prebuilt binaries; the batch driver script of the reproduction package and per-model log archived.
 
 
 ## S3. Per-model registration table
@@ -181,8 +181,8 @@ Outcome: zero curve prims in every output; the byte-level difference of each `.u
 # Independent-consumer demonstration (Supplement S8). Reads profile semantics using only the public
 # pxr API and the one-page convention (pmi:* attribute names, rel pmi:appliesTo, familyName=brepFace).
 # Imports no module from this project and does not inspect the writer implementation.
-# Code identical to scripts/22_independent_reader.py; comments translated for the supplement.
-# Usage: python 22_independent_reader_en.py <stage.usdc>
+# Code identical to the independent-reader script of the reproduction package; comments translated for the supplement.
+# Usage: python independent_reader.py <stage.usdc>
 import sys
 
 from pxr import Usd, UsdGeom
@@ -225,3 +225,52 @@ The recovery rate and the contaminated tail are insensitive to the classifier th
 
 Asset-side flaggability rule (Section 6.4; `31_flag_rule.py` / `32_flag_rule_p3.py`): angular coverage of the fitted arc, computed per face subset (W) or per accepted prim (P3) from asset-side information only; threshold 60°. On W it flags 93/1,866 cylinders (5.0%) and captures every radius error above 0.04 mm (unflagged maximum 0.037 mm; unflagged p99 0.0044 mm). On P3 it captures 6 of the 93 errors above 0.1 mm; the 184 mm cases present 180–350° of apparent coverage.
 
+## S10. Unit resolution and the stage-only decision-closure demonstration
+
+**Unit resolution.** Length values in AP242 are qualified by a unit context, and that context is not uniform across a file. Each measured value reaches the profile through `MEASURE_WITH_UNIT(LENGTH_MEASURE(v), #u)`; `#u` resolves either to `SI_UNIT(<prefix>, .METRE.)` or to `CONVERSION_BASED_UNIT('<name>', #k)`, where `#k` is itself a `LENGTH_MEASURE_WITH_UNIT` giving the factor to a base unit. The parser follows that chain numerically — it does not match on the unit's name — and records, per annotation, the factor to stage units together with the unit name. The writer multiplies value and both bounds by that factor and records the name as `pmi:sourceUnit`; the verbatim `pmi:step` record retains the unqualified source figure.
+
+This is resolved **per annotation, not per file**. Over the 16 models the resolved units are millimetre on 7 models, inch on 7, and **both units within a single part on 2** (`nist_ftc_09_asme1_ap242-e1` and `nist_stc_08_asme1_ap242-e3`). A per-file scale factor — for instance one inferred from the geometry, where the mesh arrives in millimetres regardless — cannot be correct for those two, and is silently wrong by 25.4× on the four models whose geometry is millimetre while their annotations are inch.
+
+The audit does not take the factor from the writer's output. It re-reads it from the parsed source context and additionally checks that the unit name the stage declares agrees with the source; a stage whose values were converted with the wrong factor, or whose declared unit name disagrees, fails CF6. ⚠️ The limit of that check must be stated: writer and audit read the **same** parsed graph, so CF6 detects a writer-side arithmetic or naming error, not a misreading of the STEP file by the shared parser. The verbatim `pmi:step` record is retained precisely so a reader can audit the parse itself.
+
+A length whose unit the chain cannot resolve is **not** silently treated as millimetres. The parser marks it, the writer authors `pmi:sourceUnit = UNRESOLVED`, and CF4 fails on it — converting a failed parse into a visible verdict rather than a passing one. The resolver covers `SI_UNIT` with a metre base and the usual decimal prefixes, and `CONVERSION_BASED_UNIT` chains that reduce numerically to such a base (depth ≤ 4); anything outside that is marked rather than assumed. No annotation in the NIST set is so marked.
+
+**Decision-closure demonstration (Section 6.4).** Objects: annotation groups — one `DIMENSIONAL_SIZE` with a two-sided band, together with the cylindrical faces it reaches through `pmi:appliesTo` that carry an asset-only fitted radius (regime C3). Size semantics are read from `pmi:dimName`: `diameter` compares against twice the fitted radius, `radius` against the fitted radius; any other name is excluded rather than coerced. Verdict: `value + lowerBound ≤ measured ≤ value + upperBound`, with a declared numerical tie tolerance of 1e-05 mm — an excursion below that magnitude is numerical, not physical, and is counted as at-limit. Every input to the verdict is read from the stage; the STEP file is not consulted.
+
+⚠️ **This is not an inspection of a manufactured part.** The fitted size returns the source nominal to a median of about 10⁻⁶ mm against bands of 0.0508–10.16 mm, because the mesh is a tessellation of the geometry the tolerance was authored against. The reported figure is a **closure rate**, not a pass rate.
+
+Funnel (why the denominator is what it is):
+
+| Stage | Count |
+|---|---|
+| Annotations on the delivered stages | 838 |
+| of which `DIMENSIONAL_SIZE` | 212 |
+| of which carrying a two-sided band | 149 (dropped: 63 single-sided or basic) |
+| of which naming a diameter or radius | 130 (excluded: 19 thickness / curve length / spherical diameter) |
+| reaching ≥1 cylindrical face with a fitted radius | **128** (dropped: 2) |
+| face-level rows produced by those groups | 615 |
+
+Result: **119 of 128 groups (92.97%) close cleanly**; at face level 585/615 (95.12%) inside band, of which 12 at-limit. The 9 groups that do not close are attributable as: source unit inconsistency 1 (4 faces); one annotation spanning faces of different size 5 (18 faces); tessellation 3 (8 faces).
+
+⭐ **The source unit inconsistency, in full.** `nist_ftc_09` annotation `#9251` is `DIMENSIONAL_SIZE(#9230,'diameter')`; its value entity is `#9252 = (… MEASURE_WITH_UNIT(LENGTH_MEASURE(8.000000), #8506) …)` with bounds `±0.200` bound to the same unit, and `#8506 = (CONVERSION_BASED_UNIT('INCH', #8505) …)`, `#8505 = LENGTH_MEASURE_WITH_UNIT(LENGTH_MEASURE(25.4), #12)`. The unit chain resolves numerically and unambiguously to inch, so the profile carries 203.2 mm. The four faces the annotation reaches measure 8.001 mm and the part's coordinates span about 190 mm, so the stated feature cannot exist on it; read as millimetres the callout fits exactly. The remaining 22 inch-tagged annotations of the same model convert correctly (for example `#8504`, 0.234 in → 5.9436 mm, matching its faces). We therefore report this as a defect in the source model, detected from the delivered scene alone.
+
+Per-model closure (annotation groups):
+
+| Model | Groups | Closed | Not closed |
+|---|---|---|---|
+| nist_ctc_01_asme1_ap242-e1 | 5 | 5 | 0 |
+| nist_ctc_02_asme1_ap242-e2 | 7 | 7 | 0 |
+| nist_ctc_03_asme1_ap242-e2 | 7 | 7 | 0 |
+| nist_ctc_04_asme1_ap242-e1 | 3 | 3 | 0 |
+| nist_ctc_05_asme1_ap242-e1 | 1 | 1 | 0 |
+| nist_ftc_06_asme1_ap242-e2 | 10 | 10 | 0 |
+| nist_ftc_07_asme1_ap242-e2 | 11 | 8 | 3 |
+| nist_ftc_08_asme1_ap242-e2 | 9 | 9 | 0 |
+| nist_ftc_09_asme1_ap242-e1 | 14 | 13 | 1 |
+| nist_ftc_10_asme1_ap242-e2 | 13 | 13 | 0 |
+| nist_ftc_11_asme1_ap242-e2 | 2 | 2 | 0 |
+| nist_stc_06_asme1_ap242-e3 | 8 | 7 | 1 |
+| nist_stc_07_asme1_ap242-e3 | 7 | 7 | 0 |
+| nist_stc_08_asme1_ap242-e3 | 7 | 7 | 0 |
+| nist_stc_09_asme1_ap242-e3 | 13 | 13 | 0 |
+| nist_stc_10_asme1_ap242-e2 | 11 | 7 | 4 |

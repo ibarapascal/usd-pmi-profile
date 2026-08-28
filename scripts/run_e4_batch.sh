@@ -2,7 +2,7 @@
 # E4 批量：16 模型 × {chainA, omni, proto(--subset)}，圆柱清单=batch_v3，GT=面积一致采样
 set -u
 cd "$(dirname "$0")/.."
-ARC=archive/2026-jcde-cycle/pilot/out
+ARC="${V1_ARCHIVE:-archive/v1-pilot}/pilot/out"
 for gj in out/e1/*ap242*.graph.json; do
   b=$(basename "$gj" .graph.json)
   [ "$b" = "nist_ftc_08_asme1_ap242-e1-tg" ] && continue

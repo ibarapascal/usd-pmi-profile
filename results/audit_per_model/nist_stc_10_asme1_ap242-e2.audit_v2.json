@@ -1,0 +1,134 @@
+{
+ "n_expected": 82,
+ "n_usd": 82,
+ "survive": 82,
+ "typed_eq": 82,
+ "typed_mismatch": [],
+ "rel_ok": 73,
+ "rel_bad_target": [],
+ "rel_missing": [],
+ "rel_incomplete": [
+  {
+   "stepId": 166,
+   "got": 1,
+   "want": 2
+  },
+  {
+   "stepId": 171,
+   "got": 1,
+   "want": 2
+  },
+  {
+   "stepId": 174,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 175,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 176,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 301,
+   "got": 1,
+   "want": 2
+  },
+  {
+   "stepId": 302,
+   "got": 1,
+   "want": 2
+  },
+  {
+   "stepId": 311,
+   "got": 1,
+   "want": 2
+  },
+  {
+   "stepId": 312,
+   "got": 1,
+   "want": 2
+  },
+  {
+   "stepId": 313,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 314,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 315,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 316,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 317,
+   "got": 2,
+   "want": 4
+  },
+  {
+   "stepId": 318,
+   "got": 2,
+   "want": 4
+  }
+ ],
+ "anchor_face_expected": 73,
+ "n_subsets": 256,
+ "metersPerUnit": 0.001,
+ "upAxis": "Z",
+ "cf": {
+  "CF1": {
+   "checked": 256,
+   "violations": 0,
+   "pass": true
+  },
+  "CF2": {
+   "checked": 82,
+   "violations": 0,
+   "pass": true
+  },
+  "CF3": {
+   "checked": 82,
+   "violations": 0,
+   "pass": true,
+   "detail": []
+  },
+  "CF4": {
+   "metersPerUnitAuthored": true,
+   "upAxisAuthored": true,
+   "typed_without_sourceUnit": 0,
+   "pass": true
+  },
+  "CF5": {
+   "source_faces": 256,
+   "usd_subsets": 256,
+   "bijective": true,
+   "pass": true
+  },
+  "CF6": {
+   "checked": 82,
+   "violations": 0,
+   "pass": true
+  },
+  "CF7": {
+   "checked": 73,
+   "resolved": 73,
+   "bad_target": 0,
+   "missing": 0,
+   "incomplete": 15,
+   "pass": false
+  }
+ }
+}

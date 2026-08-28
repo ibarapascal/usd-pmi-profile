@@ -2,7 +2,7 @@
 # E3 批量：16 模型 × {chainA, omni, proto_v2} × {面积一致 GT, v1 UV 网格 GT}——串行防 OOM，全部产物入 out/dirB/
 set -u
 cd "$(dirname "$0")/.."
-ARC=archive/2026-jcde-cycle/pilot/out
+ARC="${V1_ARCHIVE:-archive/v1-pilot}/pilot/out"
 for gt_kind in area uv; do
   for gj in out/e1/*ap242*.graph.json; do
     b=$(basename "$gj" .graph.json)

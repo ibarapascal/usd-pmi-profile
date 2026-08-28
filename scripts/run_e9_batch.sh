@@ -4,7 +4,7 @@
 cd "$(dirname "$0")/.."
 set -u
 PY=.venv/bin/python
-ARC=archive/2026-jcde-cycle/pilot/out
+ARC="${V1_ARCHIVE:-archive/v1-pilot}/pilot/out"
 mkdir -p out/e9 out/e9b
 for gt in out/gt_area/*.xyz; do
   b=$(basename "$gt" .xyz)

@@ -1,0 +1,58 @@
+{
+ "n_expected": 32,
+ "n_usd": 32,
+ "survive": 32,
+ "typed_eq": 32,
+ "typed_mismatch": [],
+ "rel_ok": 21,
+ "rel_bad_target": [],
+ "rel_missing": [],
+ "rel_incomplete": [],
+ "anchor_face_expected": 21,
+ "n_subsets": 484,
+ "metersPerUnit": 0.001,
+ "upAxis": "Z",
+ "cf": {
+  "CF1": {
+   "checked": 484,
+   "violations": 0,
+   "pass": true
+  },
+  "CF2": {
+   "checked": 32,
+   "violations": 0,
+   "pass": true
+  },
+  "CF3": {
+   "checked": 32,
+   "violations": 0,
+   "pass": true,
+   "detail": []
+  },
+  "CF4": {
+   "metersPerUnitAuthored": true,
+   "upAxisAuthored": true,
+   "typed_without_sourceUnit": 0,
+   "pass": true
+  },
+  "CF5": {
+   "source_faces": 484,
+   "usd_subsets": 484,
+   "bijective": true,
+   "pass": true
+  },
+  "CF6": {
+   "checked": 32,
+   "violations": 0,
+   "pass": true
+  },
+  "CF7": {
+   "checked": 21,
+   "resolved": 21,
+   "bad_target": 0,
+   "missing": 0,
+   "incomplete": 0,
+   "pass": true
+  }
+ }
+}

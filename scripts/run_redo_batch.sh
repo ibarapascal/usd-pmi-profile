@@ -2,7 +2,7 @@
 # 修复后统一重跑：13 全集（公差组件 bug 修复）→ 15/16 重同步 → chainA E3 重测 → E4 全批
 set -u
 cd "$(dirname "$0")/.."
-ARC=archive/2026-jcde-cycle/pilot/out
+ARC="${V1_ARCHIVE:-archive/v1-pilot}/pilot/out"
 NIST="${NIST_DIR:-data/nist}"   # NIST MBE PMI STEP files（README 指引下载后放 data/nist/）
 for f in "$NIST"/nist_*_ap242-*.stp; do b=$(basename "$f" .stp); python3 scripts/13_step_graph.py "$f" "out/e1/${b}.graph.json" >/dev/null 2>&1; done
 echo STEP13_DONE

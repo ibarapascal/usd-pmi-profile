@@ -12,7 +12,7 @@ from pxr import Usd, UsdGeom
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 out = sys.argv[1]
-ARC = "archive/2026-jcde-cycle/pilot/out"
+ARC = os.environ.get("V1_ARCHIVE", "archive/v1-pilot") + "/pilot/out"
 
 def load_mesh(path):
     stage = Usd.Stage.Open(path)

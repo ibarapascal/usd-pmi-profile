@@ -88,20 +88,80 @@ def sstr(a):
     m = re.match(r"^'(.*)'$", a.strip())
     return m.group(1) if m else None
 
-def find_measure_value(sid, depth=0):
-    """在实体（含引用一层展开）里找 LENGTH_MEASURE/…MEASURE(数值)"""
-    if depth > 3 or sid not in graph:
-        return None
-    for t, a in graph[sid]:
+# ---- 单位上下文解析（2026-08-29 新增）----
+# 背景：此前完全不解析单位，PMI 数值按源文件原样输出。NIST 集里存在**几何毫米而 PMI 英寸**的混合单位件
+# （如 ctc_03 同时声明 CONVERSION_BASED_UNIT('MILLIMETRE') 与 ('inch')），用几何尺度换算会错 25.4×。
+# 现按 STEP 自身的单位链数值化解析：MEASURE_WITH_UNIT(...,#u) → #u 递归求出「1 该单位 = ? 毫米」。
+_SI_PREFIX_TO_MM = {"": 1000.0, "MILLI": 1.0, "CENTI": 10.0, "DECI": 100.0,
+                    "MICRO": 0.001, "KILO": 1e6, "NANO": 1e-6}
+_unit_memo = {}
+
+def unit_to_mm(uid, depth=0):
+    """返回 (1 单位 = ? 毫米, 单位名)；无法判定时返回 (None, None)。"""
+    if uid in _unit_memo:
+        return _unit_memo[uid]
+    if depth > 4 or uid not in graph:
+        return (None, None)
+    res = (None, None)
+    for t, a in graph[uid]:
+        if t == "SI_UNIT":
+            m = re.match(r"\s*\.?([A-Z]*)\.?\s*,\s*\.METRE\.", a)
+            if m or ".METRE." in a:
+                pre = (m.group(1) if m else "").strip(".")
+                res = (_SI_PREFIX_TO_MM.get(pre), pre.title() + "metre" if pre else "Metre")
+                break
+        if t == "CONVERSION_BASED_UNIT":
+            args = split_args(a)
+            name = sstr(args[0]) if args else None
+            # 第二参数指向 LENGTH_MEASURE_WITH_UNIT(LENGTH_MEASURE(f), #base)：f 个 base 单位＝1 本单位
+            for r in (refs_in(args[1]) if len(args) > 1 else []):
+                f, base = _measure_of(r)
+                if f is None or base is None:
+                    continue
+                bs, _ = unit_to_mm(base, depth + 1)
+                if bs is not None:
+                    res = (f * bs, name)
+                    break
+            if res[0] is not None:
+                break
+    _unit_memo[uid] = res
+    return res
+
+def _measure_of(sid):
+    """取实体自身（不展开引用）的 *_MEASURE(数值) 与随后的单位引用。"""
+    for t, a in graph.get(sid, []):
         m = re.search(r"[A-Z_]*MEASURE\s*\(\s*([-\d.Ee+]+)\s*\)", a)
         if m:
-            return float(m.group(1))
+            rest = a[m.end():]
+            u = refs_in(rest)
+            return float(m.group(1)), (u[0] if u else None)
+    return None, None
+
+def find_measure(sid, depth=0):
+    """在实体（含引用展开）里找 (数值, 单位实体号)。"""
+    if depth > 3 or sid not in graph:
+        return None, None
+    v, u = _measure_of(sid)
+    if v is not None:
+        return v, u
     for t, a in graph[sid]:
         for r in refs_in(a):
-            v = find_measure_value(r, depth + 1)
+            v, u = find_measure(r, depth + 1)
             if v is not None:
-                return v
-    return None
+                return v, u
+    return None, None
+
+def find_measure_value(sid, depth=0):
+    """向后兼容的取值接口（丢弃单位）。"""
+    return find_measure(sid, depth)[0]
+
+def set_unit(rec, uid):
+    """把该标注数值所用的长度单位记进 rec：unitName ＋ unitToMm（1 单位 = ? 毫米）。"""
+    if uid is None or rec.get("unitToMm") is not None:
+        return
+    mm, name = unit_to_mm(uid)
+    if mm is not None:
+        rec["unitToMm"], rec["unitName"] = mm, (name or "UNKNOWN")
 
 # ---- 索引：反向引用 ----
 back = {}
@@ -206,9 +266,10 @@ for sid, kind in sorted(annos):
             if "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION" in types_of(user):
                 a = comp_args(user, "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION")
                 for r in refs_in(a[1] if a and len(a) > 1 else ""):
-                    v = find_measure_value(r)
+                    v, u = find_measure(r)
                     if v is not None:
                         rec["value"] = v
+                        set_unit(rec, u)
         # 公差带：PLUS_MINUS_TOLERANCE
         for user in back.get(sid, []):
             if "PLUS_MINUS_TOLERANCE" in types_of(user):
@@ -216,9 +277,10 @@ for sid, kind in sorted(annos):
                 for r in refs_in(a[0] if a else ""):
                     tv = comp_args(r, "TOLERANCE_VALUE")
                     if tv and len(tv) >= 2:
-                        lo = find_measure_value(refs_in(tv[0])[0]) if refs_in(tv[0]) else None
-                        hi = find_measure_value(refs_in(tv[1])[0]) if refs_in(tv[1]) else None
+                        lo, ul = find_measure(refs_in(tv[0])[0]) if refs_in(tv[0]) else (None, None)
+                        hi, _ = find_measure(refs_in(tv[1])[0]) if refs_in(tv[1]) else (None, None)
                         rec["lowerBound"], rec["upperBound"] = lo, hi
+                        set_unit(rec, ul)
         nm = comp_args(sid, kind)
         if nm:
             rec["dimName"] = sstr(nm[1] if kind == "DIMENSIONAL_SIZE" else nm[0])
@@ -231,9 +293,10 @@ for sid, kind in sorted(annos):
                 args = split_args(a)
                 if len(args) >= 4:
                     for r in refs_in(args[2]):
-                        v = find_measure_value(r)
+                        v, u = find_measure(r)
                         if v is not None:
                             rec["value"] = v
+                            set_unit(rec, u)
                     sa_ids = refs_in(args[3])
                     break
         # datum 引用：候选=①公差组件第 5 个及以后参数（简单实例 DATUM_SYSTEM 列表）②*DATUM_REFERENCE* 组件参数；BFS ≤3 层收 DATUM 字母
@@ -284,5 +347,15 @@ for sid, kind in sorted(annos):
 
 summary = {"file": stp, "n_entities": len(graph), "n_annos": len(annos),
            "by_type": dict(Counter(k for _, k in annos)), "coverage": dict(cov)}
+# 🔴 单位解析失败必须可见，不得静默按 1.0 处理：凡有 typed 长度却解不出单位者，
+# 标记 unitName="UNRESOLVED"（unitToMm 留空）。writer 会照此写 pmi:sourceUnit，
+# 审计器的 CF4 据此判失败——把「解析失败」从静默默认变成一次红。
+_unresolved = 0
+for _r in result:
+    if any(_r.get(k) is not None for k in ("value", "lowerBound", "upperBound")) and _r.get("unitToMm") is None:
+        _r["unitName"] = "UNRESOLVED"
+        _unresolved += 1
+summary["unit_unresolved"] = _unresolved
+
 json.dump({"summary": summary, "annotations": result}, open(out, "w"), indent=1)
 print(json.dumps(summary, indent=1))

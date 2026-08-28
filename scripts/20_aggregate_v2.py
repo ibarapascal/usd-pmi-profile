@@ -304,6 +304,30 @@ for pl in ("chainA", "omni", "mayo"):
             K[f"e9b.{pl}.p99_err"] = _fmt(float(_np.percentile(e, 99)))
             K[f"e9b.{pl}.max_err"] = _fmt(float(e.max()))
 
+
+# ---- E11：stage-only 公差判定（2026-08-29）----
+_e11p = "out/e11/tolerance_judgement.json"
+if os.path.exists(_e11p):
+    _e = json.load(open(_e11p))
+    _s = _e["summary"]
+    # ⚠️ canonical 是**平铺点分键**（渲染器 21 做平铺查表，不解析点路径）——嵌套会静默漏渲染
+    _f, _cg, _cf = _s["funnel"], _s["cause_by_group"], _s["cause_by_face"]
+    K["e11.groups"] = _s["groups"]; K["e11.groups_clean"] = _s["groups_clean"]
+    K["e11.groups_pct"] = _s["groups_clean_pct"]
+    K["e11.faces"] = _s["faces"]; K["e11.faces_in"] = _s["faces_in_band"]
+    K["e11.faces_pct"] = _s["faces_in_band_pct"]; K["e11.at_limit"] = _s["at_limit_faces"]
+    K["e11.out_groups"] = _s["groups"] - _s["groups_clean"]
+    K["e11.out_faces"] = _s["faces"] - _s["faces_in_band"]
+    for tag, key in (("tessellation", "tess"), ("unit_inconsistent_source", "unit"),
+                     ("multi_size_group", "multi")):
+        K[f"e11.{key}_g"] = _cg.get(tag, 0); K[f"e11.{key}_f"] = _cf.get(tag, 0)
+    K["e11.f_annos"] = _f["annotations_total"]; K["e11.f_size"] = _f["dimensional_size"]
+    K["e11.f_twosided"] = _f["two_sided_band"]; K["e11.f_dimok"] = _f["diameter_or_radius"]
+    K["e11.f_noband"] = _f["dropped_no_two_sided_band"]; K["e11.f_nocyl"] = _f.get("group_without_fitted_cylinder", 0)
+    K["e11.skipped"] = sum(_s["skipped_by_dimName"].values())
+    K["e11.band_min"] = _s["band_width_min"]; K["e11.band_max"] = _s["band_width_max"]
+    K["e11.tie"] = _s["tie_tolerance_mm"]
+
 json.dump(K, open("out/e1/canonical_numbers.json", "w"), indent=1, ensure_ascii=False)
 
 # ---- 人读版 ----

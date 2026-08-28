@@ -6,7 +6,7 @@ set -u
 PY=.venv/bin/python
 mkdir -p out/e2_audit
 $PY scripts/26_e2_scan.py out/e2_audit/scan.json 2>&1 | tee out/e2_audit/scan.log
-ARC=archive/2026-jcde-cycle/pilot/out
+ARC="${V1_ARCHIVE:-archive/v1-pilot}/pilot/out"
 for gt in out/gt_area/*.xyz; do
   b=$(basename "$gt" .xyz)
   usd=out/e2_mayo/$b.usdc

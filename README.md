@@ -9,13 +9,14 @@ the NIST MBE test models* (submitted, 2026).
   fingerprint alignment (14), profile writer (15), audits (16, 26), geometric ground truth and
   measurement (17, 18), hole-metrology regimes A/B/C/C2/C3 (19), the geometry-only baselines —
   regime D sequential RANSAC (29) and regime D2 per-prim fitting (30) — the asset-side
-  flaggability rule and its P3 counter-check (31, 32), aggregation to the numbers SSOT (20),
-  and figures (27). Scripts 01/02/04/07/11 are the earlier batch that produced the
-  archived P1 meshes and per-face inputs.
+  flaggability rule and its P3 counter-check (31, 32), the stage-only tolerance judgement (36),
+  aggregation to the numbers SSOT (20), and figures (27, 33, 34). Scripts 01/02/04/07/11 are
+  the earlier batch that produced the archived P1 meshes and per-face inputs.
 - **results/** — `canonical_numbers.json` (every number in the paper, keyed), the 64-row
   per-model registration table (`registration_table_v2.json`), the flaggability-rule outputs
-  (`flag_rule.json`, `flag_rule_p3.json`), the E2 scan, the E8 ablation outputs, and the
-  human-readable digest.
+  (`flag_rule.json`, `flag_rule_p3.json`), the E2 scan, the E8 ablation outputs, the
+  stage-only tolerance judgements (`e11_tolerance_judgement.json`), the per-model audit outputs
+  with their per-condition CF1–CF7 verdicts (`audit_per_model/`), and the human-readable digest.
 - **figures/** — the paper's figures as generated.
 
 ## Reproduce
@@ -28,7 +29,10 @@ the NIST MBE test models* (submitted, 2026).
 3. Run order and per-script usage are documented in each script header; batch entry points are
    the `scripts/run_*.sh` files (`run_e9_batch.sh` runs the D/D2 baselines; `PRIM_RMS_TOL` scans the
    D2 classifier threshold). `scripts/20_aggregate_v2.py` regenerates
-   `results/canonical_numbers.json`.
+   `results/canonical_numbers.json`. After a change to unit handling or the writer, the
+   minimal re-run is `scripts/run_unit_fix_rerun.sh` (parser → writer → audit only): the hole
+   metrology and the geometry-only baselines read `pmi:surfaceType` and geometry, never
+   `pmi:value`, so they are unaffected by the typed-value units.
 4. P2 (Omniverse) meshes are archived artifacts; re-conversion requires an Omniverse
    environment and the vendor's written permission (see the paper, Section 4.7). P3 conversion
    uses official prebuilt binaries of Mayo 0.10.0 and guc 0.5 (`scripts/25_e2_pcb_batch.ps1`).

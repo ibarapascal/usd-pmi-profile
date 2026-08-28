@@ -2,7 +2,7 @@
 # 内部审 P0-1/P0-3 修复批：proto 重跑（含 C3 asset-only）＋全 48 组 WIN_R=0.30 窗口敏感性
 set -u
 cd "$(dirname "$0")/.."
-ARC=archive/2026-jcde-cycle/pilot/out
+ARC="${V1_ARCHIVE:-archive/v1-pilot}/pilot/out"
 for gj in out/e1/*ap242*.graph.json; do
   b=$(basename "$gj" .graph.json); [ "$b" = "nist_ftc_08_asme1_ap242-e1-tg" ] && continue
   CY="$ARC/batch_v3/${b}.cylinders.json"; GT="out/gt_area/${b}.xyz"

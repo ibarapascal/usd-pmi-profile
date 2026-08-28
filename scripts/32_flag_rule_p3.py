@@ -7,7 +7,7 @@ import numpy as np
 sys.path.insert(0,'')
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from pxr import Usd, UsdGeom
-ARC="archive/2026-jcde-cycle/pilot/out"
+ARC=os.environ.get("V1_ARCHIVE", "archive/v1-pilot") + "/pilot/out"
 rng=np.random.default_rng(42)
 res=[]
 for f in sorted(glob.glob('out/e9b/*.mayo.json')):

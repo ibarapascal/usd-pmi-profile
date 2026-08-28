@@ -1,0 +1,73 @@
+# Graphical Abstract 生成（用于 TOC/摘要展示；故意不含任何结果数字——期刊要求不剧透结果）
+# 构图：CAD(AP242 语义 PMI) → [今日的交付：几何到达、语义与关联断链] vs [本文的载体 profile：语义与关联随几何到达]
+#      → 下游 design/manufacturing 消费者（检验计量・机器人・设计评审）
+# 风格沿用 scripts/27_figures_v2.py（Helvetica 9pt / 同色板 / 300dpi）
+# 用法: .venv/bin/python scripts/33_graphical_abstract.py
+import os
+
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+
+os.chdir(os.path.join(os.path.dirname(__file__), ".."))
+os.makedirs("figures", exist_ok=True)
+plt.rcParams.update({"font.size": 9, "figure.dpi": 300, "savefig.bbox": "tight",
+                     "font.family": "Helvetica"})
+BLUE, GRAY, WARM, GREEN = "#2b5f9e", "#8a8f98", "#c4552d", "#3a7d44"
+
+
+def box(ax, x, y, w, h, title, sub=None, fc="#eef2f7", ec=BLUE, fs=8.5):
+    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.015", fc=fc, ec=ec, lw=1.2))
+    ax.text(x + w / 2, y + h - 0.20 if sub else y + h / 2, title, ha="center",
+            va="center", fontsize=fs, fontweight="bold", color="#1a1a1a")
+    if sub:
+        ax.text(x + w / 2, y + h / 2 - 0.075, sub, ha="center", va="center",
+                fontsize=fs - 1.3, color="#3a3a3a", linespacing=1.45)
+
+
+def arrow(ax, x1, y1, x2, y2, color=BLUE, style="-", lw=1.6):
+    ax.add_patch(FancyArrowPatch((x1, y1), (x2, y2), arrowstyle="-|>", mutation_scale=13,
+                                 color=color, lw=lw, linestyle=style,
+                                 shrinkA=2, shrinkB=2))
+
+
+fig, ax = plt.subplots(figsize=(7.4, 3.05))
+ax.set_xlim(0, 10.2); ax.set_ylim(0, 4.1); ax.axis("off")
+
+# 左：源
+box(ax, 0.05, 1.30, 1.85, 1.45, "CAD source", "STEP AP242\ngeometry +\nsemantic PMI",
+    fc="#f2f5f9", ec=GRAY)
+
+# 上路：今日的交付
+box(ax, 2.55, 2.42, 3.15, 1.42, "Today's delivery to USD",
+    "geometry arrives\ntolerances, datums and the\nlink to the face do not", fc="#fbf0ec", ec=WARM)
+arrow(ax, 1.90, 2.28, 2.55, 3.02, color=WARM)
+ax.text(2.00, 3.02, "convert", fontsize=7.4, color=WARM)
+
+# 下路：本文
+box(ax, 2.55, 0.22, 3.15, 1.42, "This paper: carrier profile",
+    "per-face subsets, typed PMI,\nnative association —\nUSD mechanisms only", fc="#eef5ef", ec=GREEN)
+arrow(ax, 1.90, 1.78, 2.55, 1.02, color=GREEN)
+ax.text(2.00, 0.86, "convert", fontsize=7.4, color=GREEN)
+
+# 右：下游消费者
+box(ax, 6.30, 1.24, 3.82, 1.57, "Downstream design and manufacturing",
+    "inspection and metrology planning\nrobotic handling and assembly\ninteractive design review",
+    fc="#eef2f7", ec=BLUE, fs=8.2)
+
+arrow(ax, 5.70, 3.02, 6.95, 2.86, color=WARM, style=(0, (3, 2)), lw=1.3)
+ax.text(5.88, 3.16, "no tolerance link", fontsize=7.4, color=WARM)
+arrow(ax, 5.70, 1.02, 6.95, 1.22, color=GREEN)
+ax.text(5.82, 0.74, "feature-to-tolerance link preserved", fontsize=7.4, color=GREEN)
+
+# 底部一句话（不含任何结果数字）
+ax.text(5.1, -0.13, "A standards-only convention, stated as conformance conditions any converter can be checked against",
+        ha="center", va="center", fontsize=8.2, color="#1a1a1a", style="italic")
+
+fig.patch.set_alpha(1.0)
+for ext, dpi in (("png", 300), ("tiff", 600), ("eps", 600)):
+    fig.savefig(f"figures/graphical_abstract.{ext}", dpi=dpi)
+plt.close(fig)
+print("[33] figures/graphical_abstract.{png,tiff} written")
