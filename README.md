@@ -35,7 +35,7 @@ the NIST MBE test models* (submitted, 2026).
 
 ## Cite
 
-Citation metadata will be added on publication (CITATION.cff placeholder).
+See CITATION.cff (GitHub "Cite this repository" button). The concept DOI will be added after the first Zenodo-linked release.
 
 ## License
 
