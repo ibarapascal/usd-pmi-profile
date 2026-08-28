@@ -1,7 +1,7 @@
 #!/bin/bash
 # E9/E9b 基线批：29（RANSAC regime D）+ 30（per-prim regime D2）逐管线；输入=P1/P2 存档网格＋P3 e2_mayo。
 # 敏感性：PRIM_RMS_TOL 环境变量（D2 圆柱性阈值扫描，产物 out/e9b_rms{t}/，仅 P3 有意义）。
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 set -u
 PY=.venv/bin/python
 ARC=archive/2026-jcde-cycle/pilot/out

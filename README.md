@@ -26,7 +26,7 @@ the NIST MBE test models* (submitted, 2026).
 2. Environment: Python 3.13; `pip install -r requirements.txt`; FreeCAD 1.1.1 (headless
    `freecadcmd`) for scripts 14/17; Blender 5.0.1 for the import check (24).
 3. Run order and per-script usage are documented in each script header; batch entry points are
-   the `run_*.sh` files (`run_e9_batch.sh` runs the D/D2 baselines; `PRIM_RMS_TOL` scans the
+   the `scripts/run_*.sh` files (`run_e9_batch.sh` runs the D/D2 baselines; `PRIM_RMS_TOL` scans the
    D2 classifier threshold). `scripts/20_aggregate_v2.py` regenerates
    `results/canonical_numbers.json`.
 4. P2 (Omniverse) meshes are archived artifacts; re-conversion requires an Omniverse

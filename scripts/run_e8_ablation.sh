@@ -1,6 +1,6 @@
 #!/bin/bash
 # E8：面匹配消融批（S5）——noscale / notype 两变体全集重跑 14 号，产物 out/e8_ablation/
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 set -u
 FC=/Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd
 STEP_DIR=../../.cache/usd-cad/nist/NIST-PMI-STEP-Files/NIST-PMI-STEP-Files
