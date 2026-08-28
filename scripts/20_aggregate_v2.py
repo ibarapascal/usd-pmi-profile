@@ -192,7 +192,7 @@ for pl in ("chainA", "omni", "proto"):
         for t in (4, 8, 16, 32, 64):
             K[f"e4scan.{pl}.{key}.t{t}.pct"] = round(100 * float((arr >= t).mean()), 1)
 
-# ---- E2：第二开源链 Mayo→glTF→guc（pc-b 转换脚本 25，审计 26/18/19 → out/e2_audit）----
+# ---- E2：第二开源链 Mayo→glTF→guc（Windows 侧转换脚本 25，审计 26/18/19 → out/e2_audit）----
 if glob.glob("out/e2_audit/*.dirB.json"):
     scan = json.load(open("out/e2_audit/scan.json"))
     # 语义扫描：pmi_hit 逐条核过均为产品名字符串假阳性（NIST_PMI_*），载体计零

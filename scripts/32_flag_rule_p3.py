@@ -5,7 +5,7 @@
 import glob, json, os, sys
 import numpy as np
 sys.path.insert(0,'')
-os.chdir('/Users/kk/Documents/main/workspace/papers/08-usd-cad')
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from pxr import Usd, UsdGeom
 ARC="archive/2026-jcde-cycle/pilot/out"
 rng=np.random.default_rng(42)

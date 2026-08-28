@@ -1,5 +1,5 @@
 #!/bin/bash
-# E2 审计批：Mayo→glTF→guc 链（out/e2_mayo/*.usdc，pc-b 转换，脚本 25）过全测量框架。
+# E2 审计批：Mayo→glTF→guc 链（out/e2_mayo/*.usdc，Windows 侧转换，脚本 25）过全测量框架。
 # ①26 语义/结构扫描 ②18 几何偏差（面积一致 GT）③19 孔径 A/B 口径。逐件串行防 OOM。
 cd "$(dirname "$0")"
 set -u

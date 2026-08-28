@@ -3,7 +3,7 @@
 set -u
 cd "$(dirname "$0")/.."
 ARC=archive/2026-jcde-cycle/pilot/out
-NIST="/Users/kk/Documents/main/workspace/.cache/usd-cad/nist/NIST-PMI-STEP-Files/NIST-PMI-STEP-Files"
+NIST="${NIST_DIR:-data/nist}"   # NIST MBE PMI STEP files（README 指引下载后放 data/nist/）
 for f in "$NIST"/nist_*_ap242-*.stp; do b=$(basename "$f" .stp); python3 scripts/13_step_graph.py "$f" "out/e1/${b}.graph.json" >/dev/null 2>&1; done
 echo STEP13_DONE
 for gj in out/e1/*ap242*.graph.json; do

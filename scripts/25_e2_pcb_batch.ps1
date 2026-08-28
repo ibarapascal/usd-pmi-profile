@@ -1,4 +1,4 @@
-# E2 第二开源链批转换（pc-b, Windows）：STEP -> Mayo 0.10.0 (mayo-conv) -> glTF(.glb) -> guc 0.5 (USD 25.11) -> .usdc
+# E2 第二开源链批转换（Windows workstation）：STEP -> Mayo 0.10.0 (mayo-conv) -> glTF(.glb) -> guc 0.5 (USD 25.11) -> .usdc
 # 环境：C:\e2-mayo\{mayo\Mayo-0.10.0-win64-binaries\mayo-conv.exe, bin\guc.exe, lib=USD25.11 prebuilt(pablode/USD v25.11-ci-release)}
 # 输入：C:\e2-mayo\step\*.stp（NIST MBE PMI 17 件）；输出：C:\e2-mayo\out\*.glb / *.usdc；日志：C:\e2-mayo\out\e2_batch.log
 # 用法：powershell -ExecutionPolicy Bypass -File 25_e2_pcb_batch.ps1
