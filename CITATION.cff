@@ -8,6 +8,10 @@ authors:
     affiliation: "Makuhari Development Corporation"
     orcid: "https://orcid.org/0009-0000-8365-367X"
 repository-code: "https://github.com/ibarapascal/usd-pmi-profile"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22142164
+    description: "Concept DOI — always resolves to the latest version"
 license: MIT
 keywords:
   - OpenUSD

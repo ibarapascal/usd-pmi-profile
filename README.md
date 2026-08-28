@@ -35,7 +35,7 @@ the NIST MBE test models* (submitted, 2026).
 
 ## Cite
 
-See CITATION.cff (GitHub "Cite this repository" button). The concept DOI will be added after the first Zenodo-linked release.
+See CITATION.cff (GitHub "Cite this repository" button). Concept DOI: [10.5281/zenodo.22142164](https://doi.org/10.5281/zenodo.22142164) (always resolves to the latest version).
 
 ## License
 
