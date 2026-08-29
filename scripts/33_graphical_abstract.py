@@ -16,7 +16,9 @@ os.makedirs("figures", exist_ok=True)
 # 字号：本刊 8–12 pt；GA 还会被缩成 TOC 缩略图，故按双栏满宽 174 mm 作图并把最小字号抬到 8.5 pt
 plt.rcParams.update({"font.size": 9, "figure.dpi": 300, "savefig.bbox": None,
                      "font.family": "Helvetica", "ps.fonttype": 42, "pdf.fonttype": 42})
-BLUE, GRAY, WARM, GREEN = "#2b5f9e", "#8a8f98", "#c4552d", "#3a7d44"
+# 无障碍：GA 的两条路径此前是红/绿——色觉差异下最不安全的一对。绿改为偏青的深绿
+# （与正文 W 的绿同族但离橙更远），并让两条箭头一虚一实，不只靠颜色区分。
+BLUE, GRAY, WARM, GREEN = "#2b5f9e", "#8a8f98", "#c4552d", "#1b6b5a"
 
 
 def box(ax, x, y, w, h, title, sub=None, fc="#eef2f7", ec=BLUE, fs=9.8):
@@ -49,7 +51,7 @@ ax.text(2.02, 3.12, "convert", fontsize=8.5, color=WARM, ha="center")
 
 # 下路：本文
 box(ax, 2.55, 0.22, 3.15, 1.42, "This paper: carrier profile",
-    "per-face subsets, typed PMI,\nnative association —\nUSD mechanisms only", fc="#eef5ef", ec=GREEN)
+    "per-face subsets, typed PMI,\nnative association —\nUSD mechanisms only", fc="#e9f2ef", ec=GREEN)
 arrow(ax, 1.90, 1.78, 2.55, 1.02, color=GREEN)
 ax.text(2.02, 0.78, "convert", fontsize=8.5, color=GREEN, ha="center")
 
@@ -60,7 +62,7 @@ box(ax, 6.02, 1.24, 4.14, 1.57, "Downstream design and manufacturing",
 
 arrow(ax, 5.70, 3.02, 6.80, 2.86, color=WARM, style=(0, (3, 2)), lw=1.3)
 ax.text(5.88, 3.16, "no tolerance link", fontsize=8.5, color=WARM)
-arrow(ax, 5.70, 1.02, 6.80, 1.22, color=GREEN)
+arrow(ax, 5.70, 1.02, 6.80, 1.22, color=GREEN, lw=1.9)
 ax.text(5.80, 0.70, "feature-to-tolerance link preserved", fontsize=8.5, color=GREEN)
 
 # 底部一句话（不含任何结果数字）

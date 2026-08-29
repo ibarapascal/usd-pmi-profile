@@ -9,6 +9,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
@@ -54,14 +55,22 @@ else:
     d = ProximityQuery(conv).on_surface(sub)[1]
     np.savez_compressed(CACHE, sub=sub, d=d)
 
-fig, ax = plt.subplots(figsize=(3.35, 1.95), layout="constrained")
+# 🔴 版式：这是空间图，85 mm 单栏下画幅只有 ~55×20 mm，点密度不可读 → 174 mm 双栏。
+# 🔴 色标：全体偏差的 p90 = 0.11 mm、p99 = 0.23 mm，原来的 vmin/vmax = 0/2 让 98% 的点
+#    落在色标最淡的一端（白底上几乎不可见，对比度远低于本刊 4.5:1）。改为 0–0.25 饱和
+#    （colorbar extend="max"）＋截断 Blues 的浅色端，使最淡的点仍是可见的中蓝。
+CMAP = LinearSegmentedColormap.from_list("Blues_t", plt.get_cmap("Blues")(np.linspace(0.32, 1.0, 256)))
+VMAX = 0.25
+fig, ax = plt.subplots(figsize=(6.85, 2.45), layout="constrained")
 near = d <= 2.0
-ax.scatter(sub[near, 1], sub[near, 2], c=d[near], cmap="Blues", s=1, vmin=0, vmax=2, rasterized=True)
-ax.scatter(sub[~near, 1], sub[~near, 2], color=WARM, s=14, marker="^", rasterized=True,
+ax.scatter(sub[near, 1], sub[near, 2], c=d[near], cmap=CMAP, s=2, vmin=0, vmax=VMAX,
+           rasterized=True)
+ax.scatter(sub[~near, 1], sub[~near, 2], color=WARM, s=16, marker="^", rasterized=True,
            label=f"dev. > 2 mm (n={int((~near).sum())})")
-sm = plt.cm.ScalarMappable(cmap="Blues", norm=plt.Normalize(0, 2))
-cb = fig.colorbar(sm, ax=ax, shrink=1.0, pad=0.03, label="distance to mesh (mm)")
-cb.set_ticks([0, 0.5, 1.0, 1.5, 2.0])
+sm = plt.cm.ScalarMappable(cmap=CMAP, norm=plt.Normalize(0, VMAX))
+cb = fig.colorbar(sm, ax=ax, shrink=0.62, aspect=14, pad=0.02, extend="max",
+                  label="distance to mesh (mm)")
+cb.set_ticks([0, 0.05, 0.10, 0.15, 0.20, 0.25])
 ax.set_xlabel("y (mm)")
 ax.set_ylabel("z (mm)")
 ax.set_aspect("equal")

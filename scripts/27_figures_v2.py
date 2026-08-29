@@ -137,7 +137,7 @@ def fig4():
             k = a.get("anchorKind")
             cnt[k if k in cnt else "datum"] += 1
         rows.append((b.replace("nist_", "").replace("_asme1_ap242", ""), cnt))
-    fig, ax = plt.subplots(figsize=(WIDE, 5.3), layout="constrained")
+    fig, ax = plt.subplots(figsize=(WIDE, 5.0), layout="constrained")
     names = [r[0] for r in rows]
     y = np.arange(len(rows))
     # 无障碍：灰度下 green/warm 与 blue/purple 会并到一起，故段也用图案区分（本刊明文要求）
@@ -157,8 +157,8 @@ def fig4():
     ax.set_yticks(y, names, fontsize=FS_BODY)
     ax.invert_yaxis()
     ax.set_xlabel("Top-level semantic PMI annotations (anchoring stratification)")
-    ax.set_title("All 838 annotations carried by W (by construction); production pipelines carry 0.\n"
-                 "Colours and patterns: the empirical anchoring stratification of the sources.", fontsize=FS_TITLE, loc="left")
+    # 🔴 本刊明文：图注写在正文文件里，不得嵌进图片。原来这里嵌了两句完整说明文字，
+    #    与正文图注重复且形同「图内 caption」——删除，说明全部由正文图注承担。
     ax.legend(fontsize=FS_BODY, loc="upper center", bbox_to_anchor=(0.5, -0.11), ncol=2, framealpha=0.95)
     save_all(fig, "fig4_inventory")
     print("fig4 done", int(left.sum()))
@@ -178,6 +178,9 @@ def fig5():
         ax.annotate(key, (x[-1], rows[-1][1][key]), xytext=(6, 0), textcoords="offset points",
                     va="center", color=BLUE, fontsize=FS_BODY)
         ax.scatter([5951], [omni[key]], marker="D", s=26, color=WARM, zorder=5)
+        # 图必须自足：三个菱形分别是哪一个统计量，此前只有图注外的正文才说得清
+        ax.annotate(key, (5951, omni[key]), xytext=(-5, 0), textcoords="offset points",
+                    ha="right", va="center", color=WARM, fontsize=FS_BODY)
     ax.annotate("Omniverse\n(default)", (5951, omni["mean"]), xytext=(0, -26),
                 textcoords="offset points", ha="center", color=WARM, fontsize=FS_BODY)
     ax.set_xscale("log"); ax.set_yscale("log")
@@ -218,7 +221,7 @@ def fig7():
         pl = {"P1": "chainA", "P2": "omni", "W": "proto"}[name]
         return K[f"e4.{pl}.{key}.pct"]
 
-    fig, (a, b) = plt.subplots(1, 2, figsize=(WIDE, 4.1), gridspec_kw={"width_ratios": [1.7, 1]}, layout="constrained")
+    fig, (a, b) = plt.subplots(1, 2, figsize=(WIDE, 4.1), gridspec_kw={"width_ratios": [1.35, 1]}, layout="constrained")
     xpos, xt, xl = 0.0, [], []
     seen = set()
     for block, oracle in ((REF, False), (ASSET, True)):
@@ -232,11 +235,13 @@ def fig7():
                 a.bar(xpos, v, width=0.8, color=colors[name],
                       hatch=HATCH[name], edgecolor="white", linewidth=0.6,
                       label=name if name not in seen else None)
-                if v < 3.0:                     # 近零柱看不见，会被读成「没画」——写出数值
+                if v < 3.0:                     # 近零柱看不见，会被读成「没画」——写出数值＋引导线
                     nz = sum(1 for n2 in names[:names.index(name)] if pct_of(key, n2) < 3.0)
-                    a.annotate(f"{name} {v:g}", (xpos, 0), xytext=(0, 3 + 11 * nz),
-                               textcoords="offset points", ha="center",
-                               fontsize=FS_BODY, color=colors[name])
+                    a.annotate(f"{name} {v:g}%", (xpos, v), xytext=(-3, 3 + 12 * nz),
+                               textcoords="offset points", ha="right", va="bottom",
+                               fontsize=FS_BODY, color="#222",
+                               arrowprops=dict(arrowstyle="-", lw=0.6, color=colors[name],
+                                               shrinkA=0.5, shrinkB=0.5))
                 seen.add(name)
                 xpos += 1
             xt.append((first + xpos - 1) / 2); xl.append(label)
@@ -246,14 +251,14 @@ def fig7():
     a.set_xlabel("A per-vertex · B surface sampling · C nominal axis · C2 self-fit\n"
                  "C3 asset-only · D RANSAC · D2 per-prim  (D and D2 oracle-scored)")
     a.set_xlim(-1.1, xpos - 3.0)
-    a.set_ylim(0, 132)
+    a.set_ylim(0, 124)
     a.set_yticks([0, 20, 40, 60, 80, 100])
     a.axhline(100, color=GRAY, lw=0.5, ls=":")
     a.set_ylabel("Measurable cylinders (%)")
     a.set_title("(a) Measurability by regime (n = 1,866)", fontsize=FS_TITLE, loc="left")
-    a.text((xt[0] + xt[3]) / 2, 108, "reference arms\n(use source-side information)", ha="center",
+    a.text((xt[0] + xt[3]) / 2, 104, "reference arms\n(use source-side information)", ha="center",
            va="bottom", fontsize=FS_BODY, style="italic", color="#444", linespacing=1.25)
-    a.text((xt[4] + xt[6]) / 2, 108, "asset-only\nconsumer", ha="center",
+    a.text((xt[4] + xt[6]) / 2, 104, "asset-only\nconsumer", ha="center",
            va="bottom", fontsize=FS_BODY, style="italic", color="#444", linespacing=1.25)
     a.legend(ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.22), frameon=False,
              handlelength=1.6, columnspacing=1.4, fontsize=FS_BODY)
@@ -272,15 +277,19 @@ def fig7():
                 out.append(max(r["abs_err"], 1e-9))
         return out
     dists, dl, dc, dh = [], [], [], []
+
+    def add(vals, lab, name):
+        dists.append(vals); dl.append(lab); dc.append(colors[name]); dh.append(HATCH[name])
+
     for pl, name in [("chainA", "P1"), ("omni", "P2")]:
-        dists.append(perhole(glob.glob(f"out/hole/*.{pl}.json"), "B_surface"))
-        dl.append(f"B\n{name}"); dc.append(colors[name]); dh.append(HATCH[name])
-    dists.append(perhole(glob.glob("out/e2_audit/*.hole.json"), "B_surface"))
-    dl.append("B\nP3"); dc.append(colors["P3"]); dh.append(HATCH["P3"])
-    dists.append(perhole(glob.glob("out/hole/*.proto.json"), "B_surface"))
-    dl.append("B\nW"); dc.append(colors["W"]); dh.append(HATCH["W"])
-    dists.append(perhole(glob.glob("out/e9b/*.mayo.json"), "D2_perprim", sub=True))
-    dl.append("D2\nP3"); dc.append(colors["P3"]); dh.append(HATCH["P3"])
+        add(perhole(glob.glob(f"out/hole/*.{pl}.json"), "B_surface"), f"B\n{name}", name)
+    add(perhole(glob.glob("out/e2_audit/*.hole.json"), "B_surface"), "B\nP3", "P3")
+    add(perhole(glob.glob("out/hole/*.proto.json"), "B_surface"), "B\nW", "W")
+    # 🔴 D（几何独立 RANSAC）必须进 (b)：它是「无 face identity 能恢复到什么程度」的主基线，
+    #    只画 D2 会让 §6.4 的差异化论证在图上没有证据。
+    for pl, name in [("chainA", "P1"), ("omni", "P2"), ("mayo", "P3")]:
+        add(perhole(glob.glob(f"out/e9/*.{pl}.json"), "D_ransac", sub=True), f"D\n{name}", name)
+    add(perhole(glob.glob("out/e9b/*.mayo.json"), "D2_perprim", sub=True), "D2\nP3", "P3")
     c3 = []
     for f in glob.glob("out/hole/*.proto.json"):
         d = json.load(open(f))
@@ -288,10 +297,19 @@ def fig7():
             r = h.get("C3_asset_only") or h.get("C2_selfcontained")
             if r and r.get("abs_err") is not None:
                 c3.append(max(r["abs_err"], 1e-9))
-    dists.append(c3); dl.append("C3\nW"); dc.append(colors["W"]); dh.append(HATCH["W"])
-    bp = b.boxplot(dists, tick_labels=dl, showfliers=False, patch_artist=True, widths=0.55)
+    add(c3, "C3\nW", "W")
+    # 🔴 whis=(0,100)：须画到最小/最大值。默认 1.5 IQR + showfliers=False 会把 Table 7 报告的
+    #    尾部（D2/P3 max 184.1 mm、C3/W max 3.4709 mm）整段隐去，图与表互相矛盾。
+    bp = b.boxplot(dists, tick_labels=dl, whis=(0, 100), showfliers=False,
+                   patch_artist=True, widths=0.6)
     for patch, c, hh in zip(bp["boxes"], dc, dh):
         patch.set_facecolor(c); patch.set_alpha(0.55); patch.set_hatch(hh)
+    for i, d in enumerate(dists, 1):        # p99 与 Table 7 的列一一对应
+        b.plot([i], [np.percentile(d, 99)], marker="D", ms=2.4, mfc="#222", mec="#222",
+               ls="none", zorder=6)
+    b.plot([], [], marker="D", ms=2.4, mfc="#222", mec="#222", ls="none", label="p99")
+    b.legend(loc="upper right", frameon=False, fontsize=FS_BODY, handletextpad=0.4,
+             borderpad=0.1, handlelength=1.0)
     b.set_yscale("log"); b.set_ylabel("Absolute radius error (mm)")
     b.set_title("(b) Error distributions", fontsize=FS_TITLE, loc="left")
     print("   [fig7] n per box:", [len(d) for d in dists])

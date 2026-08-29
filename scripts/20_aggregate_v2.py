@@ -336,6 +336,29 @@ if os.path.exists(_e11p):
     K["e11.u_inch_any"] = _s["unit_models_inch_any"]   # 含 inch 标注的模型数（inch-only ＋ mixed）
     K["e11.u_total"] = _s["unit_models_total"]
 
+# ---- 实现层的规模与代价（§5.4）：逐面 tessellation 保住了面身份，代价是共享边上的顶点被复制。
+#      2026-08-29 第四轮 review：§5.4 原本只有三句、无任何可核对的量，与标题声称的「open
+#      implementation」不相称。这两组数由交付 stage 现算，不手写。
+try:
+    from pxr import Usd as _Usd, UsdGeom as _UG
+    _dups, _sizes = [], []
+    for _f in sorted(glob.glob("out/proto_v2/*.usdc")):
+        _sizes.append(os.path.getsize(_f) / 1048576.0)
+        _st = _Usd.Stage.Open(_f)
+        for _pr in _st.Traverse():
+            if _pr.IsA(_UG.Mesh):
+                _pt = _np.array(_UG.Mesh(_pr).GetPointsAttr().Get())
+                _dups.append(len(_pt) / len(_np.unique(_np.round(_pt, 6), axis=0)))
+                break
+    if _dups:
+        K["impl.vdup_min"] = round(min(_dups), 2)
+        K["impl.vdup_max"] = round(max(_dups), 2)
+        K["impl.vdup_med"] = round(float(_np.median(_dups)), 2)
+        K["impl.stage_mb_min"] = f"{min(_sizes):.2f}"      # 字符串：两端小数位一致，正文才不会出现 0.14–1.6
+        K["impl.stage_mb_max"] = f"{max(_sizes):.2f}"
+except Exception as _e:                      # usd-core 缺席时不阻断聚合
+    print("[20] impl.* skipped:", _e)
+
 json.dump(K, open("out/e1/canonical_numbers.json", "w"), indent=1, ensure_ascii=False)
 
 # ---- 人读版 ----

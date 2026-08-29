@@ -674,5 +674,10 @@
  "e11.u_defect_inch": 22,
  "e11.u_defect_other": 21,
  "e11.u_inch_any": 10,
- "e11.u_total": 16
+ "e11.u_total": 16,
+ "impl.vdup_min": 1.11,
+ "impl.vdup_max": 2.04,
+ "impl.vdup_med": 1.41,
+ "impl.stage_mb_min": "0.14",
+ "impl.stage_mb_max": "1.60"
 }
