@@ -1,8 +1,8 @@
 # usd-pmi-profile
 
-Specification, reference writer, and full-set audit for the paper *A minimal standards-only
-carrier profile for semantic PMI in OpenUSD: design, open implementation, and validation on
-the NIST MBE test models* (submitted, 2026).
+Specification, reference writer, and full-set audit for the paper *Tolerance-resolvable
+OpenUSD: a minimal standards-only carrier profile for semantic PMI, its open implementation,
+and validation on the NIST MBE test models* (submitted, 2026).
 
 - **SPEC.md** — the one-page profile convention (face subsets, typed PMI, associations, units).
 - **scripts/** — the complete pipeline: STEP entity-graph parser (13), STEP-face-to-mesh
@@ -34,7 +34,7 @@ the NIST MBE test models* (submitted, 2026).
    metrology and the geometry-only baselines read `pmi:surfaceType` and geometry, never
    `pmi:value`, so they are unaffected by the typed-value units.
 4. P2 (Omniverse) meshes are archived artifacts; re-conversion requires an Omniverse
-   environment and the vendor's written permission (see the paper, Section 4.7). P3 conversion
+   environment and the vendor's written permission (see the paper, Section 4.6). P3 conversion
    uses official prebuilt binaries of Mayo 0.10.0 and guc 0.5 (`scripts/25_e2_pcb_batch.ps1`).
 
 ## Cite

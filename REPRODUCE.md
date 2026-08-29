@@ -40,6 +40,8 @@
 | 33 | `33_graphical_abstract.py` | Graphical Abstract（部分期刊的强制项；刻意不含结果数字） | .venv | `figures/graphical_abstract.{png,tiff,eps}` |
 | 34 | `34_fig6_regen.py` | fig6 重生成（原为 v1 存档栅格件，dpi 不达刊要求；同数据/同种子/同阈值重跑邻近查询） | .venv | `figures/fig6_spatial.{png,tiff,eps}` |
 | 37 | `37_preflight.py` | **投稿包 preflight**：跨文件不变量（源/交付物新鲜度・正文声称的存档物是否真在 repo・实验→SI 归属登记・cover letter 陈旧・期刊硬指标・双盲・SI 节数・repo 漂移与白名单）；**红项必须清零才可提交** | .venv | 退出码 |
+| 38 | `38_figure_check.py` | **图合规检查**（2026-08-29 新建）：解 EPS 的 PostScript 源逐图判定 ①最小字号 ≥8 pt（数学上标 0.7×/0.5× 白名单放行）②画幅 ∈{85,174} mm——**按最终排版尺寸作图，排版才不会缩放使字号失效** ③内嵌栅格等效 dpi ≥600 ④正文 `Fig. N` 首现序 ⑤**源件 `figures/*.eps` ⇄ 包内 `Fig{N}.eps` 逐字节一致**（`--deploy` 先复制再检查；手工 cp 会漏，已实踩）。被 `37` 的 I 组调用 | .venv | 退出码 |
+| 39 | `39_anon_archive.py` | **ESM_2＝双盲审稿用的去标识 archive**（2026-08-29 新建）：先断言 `41 --check` drift=0（保证与论文数字同源）→ 从公开 repo checkout 复制 → 移除引用元数据文件、匿名化版权行与 Cite 节、全树替换一切定位串 → **逐字节复扫全部文件，命中即中止不出包** → 定时间戳打包。与 37/40/41 同属论文侧工具，不入公开 repo | .venv | `ijidem-submission/ESM_2.zip` |
 | 35 | `35_selection_figure.py` | **Fig 8：选择往返**——标注→其管辖面、面→管辖它的标注，双向均只读交付场景（CF1–CF3 读取路径的静态取样，非交互工具） | .venv | `figures/fig8_selection.{png,tiff,eps}` |
 | 36 | `36_tolerance_judgement.py` | **E11：stage-only 判定链闭合演示**——按**标注组**（非按面）把 C3 拟合尺寸与经 `pmi:appliesTo` 关联的公差带对判；尺寸语义取自 `pmi:dimName`；输出漏斗计数、双口径与出带真因分类；含数值平局容差。**并逐模型普查 `pmi:sourceUnit`**（mm-only / inch-only / mixed 分类与单位缺陷模型的同伴计数 → canonical `e11.u_*`，供 SI S10 直接取值，不再手数） | .venv | `out/e11/tolerance_judgement.json` |
 
@@ -47,7 +49,7 @@
 
 **单位修复后的最小重跑（2026-08-29）**：`scripts/run_unit_fix_rerun.sh`——只重跑 13→15→16。⚠️ 只需这三步：孔计量(19)与基线(29/30/31/32)经核仅读 `pmi:surfaceType` 与几何，**不读 `pmi:value`**，故单位换算不影响任何几何/经验结果（实测 canonical 全键零漂移；该轮键数 669）。E11 随后跑 36。
 
-**全面 review 后的增补（2026-08-29 晚）**：36 增加单位普查、20 增加 `e11.u_*` 五键，canonical 由 669 → **674 键，既有键零漂移**（逐键 diff 核实）。27 的 fig7 组间距与 35 的 Fig 8 读出同轮修正，需重跑 `27 7`＋`35`。
+**全面 review 后的增补（2026-08-29 晚）**：36 增加单位普查、20 增加 `e11.u_*` 七键，canonical 由 669 → **676 键，既有键零漂移**（逐键 diff 核实）。27 的 fig7 组间距与 35 的 Fig 8 读出同轮修正，需重跑 `27 7`＋`35`。
 
 ## P1/P2 存档网格的来源（scripts/01–12＝v1 时代脚本，保留供追溯）
 

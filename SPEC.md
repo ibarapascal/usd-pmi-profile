@@ -1,7 +1,8 @@
 # The minimal carrier profile for semantic PMI in OpenUSD — specification
 
-Version 1.0 (2026-08-28). Companion to the paper *A minimal standards-only carrier profile
-for semantic PMI in OpenUSD*. Every construct below is an already-standardized USD mechanism;
+Version 1.0 (2026-08-28). Companion to the paper *Tolerance-resolvable OpenUSD: a minimal
+standards-only carrier profile for semantic PMI, its open implementation, and validation on the
+NIST MBE test models*. Every construct below is an already-standardized USD mechanism;
 this document defines only their usage convention.
 
 ## 1. Face identity

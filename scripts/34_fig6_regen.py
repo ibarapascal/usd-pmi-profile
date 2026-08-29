@@ -12,8 +12,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
-plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False,
-                     "figure.dpi": 600, "savefig.bbox": "tight", "font.family": "Helvetica"})
+# 单栏 85 mm 作图＋字号 ≥8 pt（本刊硬要求）；栅格 600 dpi 在该尺寸上即为最终尺寸下的 600 dpi
+plt.rcParams.update({"font.size": 8.5, "axes.spines.top": False, "axes.spines.right": False,
+                     "figure.dpi": 600, "savefig.bbox": None, "font.family": "Helvetica",
+                     "ps.fonttype": 42, "pdf.fonttype": 42,
+                     "axes.labelsize": 8.5, "xtick.labelsize": 8.0, "ytick.labelsize": 8.0})
 WARM = "#c4552d"
 PILOT = os.environ.get("V1_ARCHIVE", "archive/v1-pilot") + "/pilot"
 BASE = "nist_ctc_02_asme1_ap242-e2"
@@ -41,20 +44,28 @@ conv = trimesh.Trimesh(cv, np.vstack(all_f), process=False)
 
 gt = np.loadtxt(f"{PILOT}/out/batch_v2/{BASE}.gtv2.xyz")
 sub = gt[np.random.default_rng(7).choice(len(gt), 50000, replace=False)]
-print("[34] running proximity query on 50,000 points ...")
-d = ProximityQuery(conv).on_surface(sub)[1]
+CACHE = f".cache/fig6_{BASE}.npz"          # 邻近查询要数分钟；只调版式时不必重算
+os.makedirs(".cache", exist_ok=True)
+if os.path.exists(CACHE):
+    z = np.load(CACHE); sub, d = z["sub"], z["d"]
+    print("[34] using cached proximity result", CACHE)
+else:
+    print("[34] running proximity query on 50,000 points ...")
+    d = ProximityQuery(conv).on_surface(sub)[1]
+    np.savez_compressed(CACHE, sub=sub, d=d)
 
-fig, ax = plt.subplots(figsize=(4.6, 3.6))
+fig, ax = plt.subplots(figsize=(3.35, 1.95), layout="constrained")
 near = d <= 2.0
 ax.scatter(sub[near, 1], sub[near, 2], c=d[near], cmap="Blues", s=1, vmin=0, vmax=2, rasterized=True)
 ax.scatter(sub[~near, 1], sub[~near, 2], color=WARM, s=14, marker="^", rasterized=True,
-           label=f"deviation > 2 mm (n={int((~near).sum())})")
+           label=f"dev. > 2 mm (n={int((~near).sum())})")
 sm = plt.cm.ScalarMappable(cmap="Blues", norm=plt.Normalize(0, 2))
-fig.colorbar(sm, ax=ax, shrink=0.8, label="distance to converted mesh (mm)")
+cb = fig.colorbar(sm, ax=ax, shrink=1.0, pad=0.03, label="distance to mesh (mm)")
+cb.set_ticks([0, 0.5, 1.0, 1.5, 2.0])
 ax.set_xlabel("y (mm)")
 ax.set_ylabel("z (mm)")
 ax.set_aspect("equal")
-ax.legend(loc="upper left", frameon=False, fontsize=8)
+ax.legend(loc="upper left", frameon=False, fontsize=8, handletextpad=0.3, borderpad=0.1)
 fig.patch.set_alpha(1.0)
 for ext in ("png", "tiff", "eps"):
     fig.savefig(f"figures/fig6_spatial.{ext}", dpi=600)
