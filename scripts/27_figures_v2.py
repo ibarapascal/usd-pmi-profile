@@ -6,6 +6,10 @@
 # fig7 downstream hole task: five regimes (measurable% + error distributions)
 # 数据源：out/e1/canonical_numbers.json、out/hole/*.json、out/e2_audit/*.hole.json、archive pilot 扫描件
 # 用法: .venv/bin/python scripts/27_figures_v2.py [1-7|all]
+# R1（2026-10-05）：输出目录走环境变量 FIG_OUT（默认 figures/，v4 行为不变；R1 修回用 ijidem-submission-r1/figures/src）；
+#   fig4 图例计数改为从条形数据现算并对 canonical e1.anchor_* 断言（原先 "(690)/(21)/(11)" 写死，I-1/I-7 修复后陈旧）。
+#   fig3 底注 "maps STEP face ids to mesh face indices" → "to B-rep faces, hence to mesh faces"（R2-4：指纹在 B-rep 顶点上算，
+#   与正文 §5.3 标题／摘要同步；v5.1 图轮）。
 import glob
 import json
 import os
@@ -20,7 +24,8 @@ import numpy as np
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
-os.makedirs("figures", exist_ok=True)
+FIG_OUT = os.environ.get("FIG_OUT", "figures")
+os.makedirs(FIG_OUT, exist_ok=True)
 # 🔴 字号硬约束（IJIDeM 明文）：图内无衬线 8–12 pt。达成方式＝**按最终排版尺寸作图**，
 #    使排版时不发生缩放：WIDE=174 mm（双栏满宽）/ NARROW=85 mm（单栏）。
 #    任何 <8 pt 的显式 fontsize 都是缺陷；`scripts/38_figure_check.py` 会解 EPS 逐图判定。
@@ -41,9 +46,9 @@ def save_all(fig, stem):
     """png（阅读用）＋ tiff（栅格备份）＋ eps（投稿交付：矢量优先，含嵌入字体）。
     EPS 不支持 alpha，故显式给白底，避免透明区域在 EPS 里变黑。"""
     fig.patch.set_alpha(1.0)
-    fig.savefig(f"figures/{stem}.png")
-    fig.savefig(f"figures/{stem}.tiff")
-    fig.savefig(f"figures/{stem}.eps", format="eps")
+    fig.savefig(f"{FIG_OUT}/{stem}.png")
+    fig.savefig(f"{FIG_OUT}/{stem}.tiff")
+    fig.savefig(f"{FIG_OUT}/{stem}.eps", format="eps")
 
 def box(ax, x, y, w, h, text, fc="#eef2f7", ec=BLUE, fs=FS_BODY, weight="normal"):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.02", fc=fc, ec=ec, lw=1.1))
@@ -119,7 +124,7 @@ def fig3():
     arrow(ax, 4.8, 2.7, 8.0, 2.1, color=PURPLE)
     arrow(ax, 10.8, 5.6, 10.8, 6.3, color=GREEN, ls="--")
     ax.text(11.0, 5.75, "relationship", fontsize=FS_BODY, color=GREEN)
-    ax.text(5.2, 0.5, "fingerprint alignment maps STEP face ids to mesh face indices (Sec. 5.3)",
+    ax.text(4.6, 0.5, "fingerprint alignment maps STEP face ids to B-rep faces, hence to mesh faces (Sec. 5.3)",
             fontsize=FS_BODY, style="italic", color=PURPLE)
     save_all(fig, "fig3_profile")
     print("fig3 done")
@@ -141,10 +146,13 @@ def fig4():
     names = [r[0] for r in rows]
     y = np.arange(len(rows))
     # 无障碍：灰度下 green/warm 与 blue/purple 会并到一起，故段也用图案区分（本刊明文要求）
-    segs = [("face", GREEN, "", "face-anchored (690)"), ("edge", BLUE, "//", "edge-anchored (21)"),
-            ("part", PURPLE, "xx", "whole-part (2)"),
-            ("none", WARM, "\\\\", "no machine-readable link in source (11)"),
-            ("datum", "#d9dde3", "", "DATUM (identity only, 114)")]
+    tot = {k: sum(r[1][k] for r in rows) for k in ("face", "edge", "part", "none", "datum")}
+    for k in ("face", "edge", "part", "none"):      # 图例数＝条形数据＝canonical，三者不一致即报错
+        assert tot[k] == K[f"e1.anchor_{k}"], (k, tot[k], K[f"e1.anchor_{k}"])
+    segs = [("face", GREEN, "", f"face-anchored ({tot['face']})"), ("edge", BLUE, "//", f"edge-anchored ({tot['edge']})"),
+            ("part", PURPLE, "xx", f"whole-part ({tot['part']})"),
+            ("none", WARM, "\\\\", f"no machine-readable link in source ({tot['none']})"),
+            ("datum", "#d9dde3", "", f"DATUM (identity only, {tot['datum']})")]
     left = np.zeros(len(rows))
     for key, color, hat, label in segs:
         vals = np.array([r[1][key] for r in rows])

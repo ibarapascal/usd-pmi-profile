@@ -1,0 +1,192 @@
+{
+ "per_model": {
+  "ctc_01-e1": {
+   "dim_units": {
+    "MILLIMETRE": 7
+   },
+   "gt_units": {
+    "MILLIMETRE": 6
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ctc_02-e2": {
+   "dim_units": {
+    "MILLIMETRE": 7
+   },
+   "gt_units": {
+    "MILLIMETRE": 22
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ctc_03-e2": {
+   "dim_units": {
+    "INCH": 9
+   },
+   "gt_units": {
+    "INCH": 13
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ctc_04-e1": {
+   "dim_units": {
+    "MILLIMETRE": 9
+   },
+   "gt_units": {
+    "MILLIMETRE": 7
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ctc_05-e1": {
+   "dim_units": {
+    "INCH": 6
+   },
+   "gt_units": {
+    "INCH": 10
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ftc_06-e2": {
+   "dim_units": {
+    "INCH": 24
+   },
+   "gt_units": {
+    "INCH": 28
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ftc_07-e2": {
+   "dim_units": {
+    "INCH": 17
+   },
+   "gt_units": {
+    "INCH": 27
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ftc_08-e2": {
+   "dim_units": {
+    "INCH": 10
+   },
+   "gt_units": {
+    "INCH": 33
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ftc_09-e1": {
+   "dim_units": {
+    "INCH": 22
+   },
+   "gt_units": {
+    "MILLIMETRE": 31
+   },
+   "dim_gt_unit_mismatch": true
+  },
+  "ftc_10-e2": {
+   "dim_units": {
+    "MILLIMETRE": 26
+   },
+   "gt_units": {
+    "MILLIMETRE": 40
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "ftc_11-e2": {
+   "dim_units": {
+    "MILLIMETRE": 6
+   },
+   "gt_units": {
+    "MILLIMETRE": 4
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "stc_06-e3": {
+   "dim_units": {
+    "INCH": 17
+   },
+   "gt_units": {
+    "INCH": 25
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "stc_07-e3": {
+   "dim_units": {
+    "INCH": 39
+   },
+   "gt_units": {
+    "INCH": 22
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "stc_08-e3": {
+   "dim_units": {
+    "INCH": 7
+   },
+   "gt_units": {
+    "INCH": 29,
+    "MILLIMETRE": 1
+   },
+   "dim_gt_unit_mismatch": true
+  },
+  "stc_09-e3": {
+   "dim_units": {
+    "INCH": 22
+   },
+   "gt_units": {
+    "INCH": 27
+   },
+   "dim_gt_unit_mismatch": false
+  },
+  "stc_10-e2": {
+   "dim_units": {
+    "MILLIMETRE": 27
+   },
+   "gt_units": {
+    "MILLIMETRE": 37
+   },
+   "dim_gt_unit_mismatch": false
+  }
+ },
+ "flagged": [
+  {
+   "model": "ftc_10-e2",
+   "stepId": 19372,
+   "type": "POSITION_TOLERANCE",
+   "kind": "gt",
+   "value": 0.0,
+   "unit": "Millimetre",
+   "value_mm": 0.0,
+   "flag": "gt_magnitude_implausible"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 19741,
+   "type": "POSITION_TOLERANCE",
+   "kind": "gt",
+   "value": 0.0,
+   "unit": "Millimetre",
+   "value_mm": 0.0,
+   "flag": "gt_magnitude_implausible"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": 98,
+   "type": "POSITION_TOLERANCE",
+   "kind": "gt",
+   "value": 0.0,
+   "unit": "Millimetre",
+   "value_mm": 0.0,
+   "flag": "gt_magnitude_implausible"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": 99,
+   "type": "POSITION_TOLERANCE",
+   "kind": "gt",
+   "value": 0.0,
+   "unit": "Millimetre",
+   "value_mm": 0.0,
+   "flag": "gt_magnitude_implausible"
+  }
+ ],
+ "n_values": 617
+}

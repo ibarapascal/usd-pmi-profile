@@ -96,22 +96,22 @@
   "defect_model_inch_total": 22,
   "defect_model_inch_other": 21,
   "groups": 128,
-  "groups_clean": 119,
-  "groups_clean_pct": 92.97,
-  "faces": 615,
+  "groups_clean": 122,
+  "groups_clean_pct": 95.31,
+  "faces": 599,
   "faces_in_band": 585,
-  "faces_in_band_pct": 95.12,
+  "faces_in_band_pct": 97.66,
   "at_limit_faces": 12,
   "cause_by_face": {
    "at_limit": 12,
    "tessellation": 8,
    "unit_inconsistent_source": 4,
-   "multi_size_group": 18
+   "multi_size_group": 2
   },
   "cause_by_group": {
    "tessellation": 3,
    "unit_inconsistent_source": 1,
-   "multi_size_group": 5
+   "multi_size_group": 2
   },
   "band_width_min": 0.0508,
   "band_width_max": 10.16,
@@ -1057,12 +1057,12 @@
    "model": "nist_stc_06_asme1_ap242-e3",
    "stepId": "#8982",
    "dimName": "diameter",
-   "faces": 8,
+   "faces": 4,
    "nominal": 10.540999999999999,
    "band_width": 0.4064000000000014,
-   "uniform": false,
-   "clean": false,
-   "cause": "multi_size_group"
+   "uniform": true,
+   "clean": true,
+   "cause": null
   },
   {
    "model": "nist_stc_06_asme1_ap242-e3",
@@ -1409,12 +1409,12 @@
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#295",
    "dimName": "diameter",
-   "faces": 6,
+   "faces": 2,
    "nominal": 6.0,
    "band_width": 0.3000000000000007,
-   "uniform": false,
-   "clean": false,
-   "cause": "multi_size_group"
+   "uniform": true,
+   "clean": true,
+   "cause": null
   },
   {
    "model": "nist_stc_10_asme1_ap242-e2",
@@ -1453,7 +1453,7 @@
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#299",
    "dimName": "diameter",
-   "faces": 6,
+   "faces": 5,
    "nominal": 10.0,
    "band_width": 0.5,
    "uniform": false,
@@ -1486,7 +1486,7 @@
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#307",
    "dimName": "diameter",
-   "faces": 8,
+   "faces": 5,
    "nominal": 10.0,
    "band_width": 0.5,
    "uniform": false,
@@ -1519,12 +1519,12 @@
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#319",
    "dimName": "diameter",
-   "faces": 8,
+   "faces": 4,
    "nominal": 7.0,
    "band_width": 0.5,
-   "uniform": false,
-   "clean": false,
-   "cause": "multi_size_group"
+   "uniform": true,
+   "clean": true,
+   "cause": null
   }
  ],
  "rows": [
@@ -7786,21 +7786,6 @@
   {
    "model": "nist_stc_06_asme1_ap242-e3",
    "stepId": "#8982",
-   "face_index": 43,
-   "dimName": "diameter",
-   "measured": 15.875000176998496,
-   "nominal": 10.540999999999999,
-   "band_lo": 10.337799999999998,
-   "band_hi": 10.7442,
-   "band_width": 0.4064000000000014,
-   "excess": 5.1308001769984966,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "INCH"
-  },
-  {
-   "model": "nist_stc_06_asme1_ap242-e3",
-   "stepId": "#8982",
    "face_index": 70,
    "dimName": "diameter",
    "measured": 10.540999605951018,
@@ -7811,21 +7796,6 @@
    "excess": 0.0,
    "verdict": "in",
    "cause": null,
-   "sourceUnit": "INCH"
-  },
-  {
-   "model": "nist_stc_06_asme1_ap242-e3",
-   "stepId": "#8982",
-   "face_index": 72,
-   "dimName": "diameter",
-   "measured": 15.87499940207348,
-   "nominal": 10.540999999999999,
-   "band_lo": 10.337799999999998,
-   "band_hi": 10.7442,
-   "band_width": 0.4064000000000014,
-   "excess": 5.13079940207348,
-   "verdict": "out",
-   "cause": "multi_size_group",
    "sourceUnit": "INCH"
   },
   {
@@ -7846,21 +7816,6 @@
   {
    "model": "nist_stc_06_asme1_ap242-e3",
    "stepId": "#8982",
-   "face_index": 75,
-   "dimName": "diameter",
-   "measured": 15.875000176995746,
-   "nominal": 10.540999999999999,
-   "band_lo": 10.337799999999998,
-   "band_hi": 10.7442,
-   "band_width": 0.4064000000000014,
-   "excess": 5.130800176995747,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "INCH"
-  },
-  {
-   "model": "nist_stc_06_asme1_ap242-e3",
-   "stepId": "#8982",
    "face_index": 76,
    "dimName": "diameter",
    "measured": 10.540999605941355,
@@ -7871,21 +7826,6 @@
    "excess": 0.0,
    "verdict": "in",
    "cause": null,
-   "sourceUnit": "INCH"
-  },
-  {
-   "model": "nist_stc_06_asme1_ap242-e3",
-   "stepId": "#8982",
-   "face_index": 78,
-   "dimName": "diameter",
-   "measured": 15.874999402088147,
-   "nominal": 10.540999999999999,
-   "band_lo": 10.337799999999998,
-   "band_hi": 10.7442,
-   "band_width": 0.4064000000000014,
-   "excess": 5.130799402088147,
-   "verdict": "out",
-   "cause": "multi_size_group",
    "sourceUnit": "INCH"
   },
   {
@@ -10051,21 +9991,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#295",
-   "face_index": 27,
-   "dimName": "diameter",
-   "measured": 9.999999655349466,
-   "nominal": 6.0,
-   "band_lo": 5.85,
-   "band_hi": 6.15,
-   "band_width": 0.3000000000000007,
-   "excess": 3.8499996553494658,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#295",
    "face_index": 28,
    "dimName": "diameter",
    "measured": 5.999999981320367,
@@ -10081,36 +10006,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#295",
-   "face_index": 30,
-   "dimName": "diameter",
-   "measured": 9.999999968424657,
-   "nominal": 6.0,
-   "band_lo": 5.85,
-   "band_hi": 6.15,
-   "band_width": 0.3000000000000007,
-   "excess": 3.8499999684246564,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#295",
-   "face_index": 248,
-   "dimName": "diameter",
-   "measured": 10.000000267417086,
-   "nominal": 6.0,
-   "band_lo": 5.85,
-   "band_hi": 6.15,
-   "band_width": 0.3000000000000007,
-   "excess": 3.8500002674170855,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#295",
    "face_index": 249,
    "dimName": "diameter",
    "measured": 5.9999998968354085,
@@ -10121,21 +10016,6 @@
    "excess": 0.0,
    "verdict": "in",
    "cause": null,
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#295",
-   "face_index": 251,
-   "dimName": "diameter",
-   "measured": 10.000000580488583,
-   "nominal": 6.0,
-   "band_lo": 5.85,
-   "band_hi": 6.15,
-   "band_width": 0.3000000000000007,
-   "excess": 3.850000580488583,
-   "verdict": "out",
-   "cause": "multi_size_group",
    "sourceUnit": "MILLIMETRE"
   },
   {
@@ -10306,21 +10186,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#299",
-   "face_index": 28,
-   "dimName": "diameter",
-   "measured": 5.999999981320367,
-   "nominal": 10.0,
-   "band_lo": 9.75,
-   "band_hi": 10.25,
-   "band_width": 0.5,
-   "excess": 3.750000018679633,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#299",
    "face_index": 30,
    "dimName": "diameter",
    "measured": 9.999999968424657,
@@ -10456,21 +10321,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#307",
-   "face_index": 66,
-   "dimName": "diameter",
-   "measured": 6.999942704680771,
-   "nominal": 10.0,
-   "band_lo": 9.75,
-   "band_hi": 10.25,
-   "band_width": 0.5,
-   "excess": 2.7500572953192286,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#307",
    "face_index": 68,
    "dimName": "diameter",
    "measured": 10.00000013136339,
@@ -10516,21 +10366,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#307",
-   "face_index": 72,
-   "dimName": "diameter",
-   "measured": 6.9999426022048254,
-   "nominal": 10.0,
-   "band_lo": 9.75,
-   "band_hi": 10.25,
-   "band_width": 0.5,
-   "excess": 2.7500573977951746,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#307",
    "face_index": 74,
    "dimName": "diameter",
    "measured": 9.999999073359529,
@@ -10541,21 +10376,6 @@
    "excess": 0.0,
    "verdict": "in",
    "cause": null,
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#307",
-   "face_index": 75,
-   "dimName": "diameter",
-   "measured": 6.999942434434774,
-   "nominal": 10.0,
-   "band_lo": 9.75,
-   "band_hi": 10.25,
-   "band_width": 0.5,
-   "excess": 2.7500575655652257,
-   "verdict": "out",
-   "cause": "multi_size_group",
    "sourceUnit": "MILLIMETRE"
   },
   {
@@ -10651,21 +10471,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#319",
-   "face_index": 68,
-   "dimName": "diameter",
-   "measured": 10.00000013136339,
-   "nominal": 7.0,
-   "band_lo": 6.75,
-   "band_hi": 7.25,
-   "band_width": 0.5,
-   "excess": 2.7500001313633895,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#319",
    "face_index": 69,
    "dimName": "diameter",
    "measured": 6.99994236315634,
@@ -10676,21 +10481,6 @@
    "excess": 0.0,
    "verdict": "in",
    "cause": null,
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#319",
-   "face_index": 71,
-   "dimName": "diameter",
-   "measured": 10.000000320591784,
-   "nominal": 7.0,
-   "band_lo": 6.75,
-   "band_hi": 7.25,
-   "band_width": 0.5,
-   "excess": 2.7500003205917842,
-   "verdict": "out",
-   "cause": "multi_size_group",
    "sourceUnit": "MILLIMETRE"
   },
   {
@@ -10711,21 +10501,6 @@
   {
    "model": "nist_stc_10_asme1_ap242-e2",
    "stepId": "#319",
-   "face_index": 74,
-   "dimName": "diameter",
-   "measured": 9.999999073359529,
-   "nominal": 7.0,
-   "band_lo": 6.75,
-   "band_hi": 7.25,
-   "band_width": 0.5,
-   "excess": 2.749999073359529,
-   "verdict": "out",
-   "cause": "multi_size_group",
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#319",
    "face_index": 75,
    "dimName": "diameter",
    "measured": 6.999942434434774,
@@ -10736,21 +10511,6 @@
    "excess": 0.0,
    "verdict": "in",
    "cause": null,
-   "sourceUnit": "MILLIMETRE"
-  },
-  {
-   "model": "nist_stc_10_asme1_ap242-e2",
-   "stepId": "#319",
-   "face_index": 77,
-   "dimName": "diameter",
-   "measured": 9.99999951417352,
-   "nominal": 7.0,
-   "band_lo": 6.75,
-   "band_hi": 7.25,
-   "band_width": 0.5,
-   "excess": 2.7499995141735205,
-   "verdict": "out",
-   "cause": "multi_size_group",
    "sourceUnit": "MILLIMETRE"
   }
  ]

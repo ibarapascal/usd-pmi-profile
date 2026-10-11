@@ -1,0 +1,968 @@
+{
+ "summary": {
+  "models": 17,
+  "models_with_pmi_hits": 0,
+  "pmi_hits": 0,
+  "typed_numeric_hits": 0,
+  "hits_on_geomsubset": 0,
+  "hits_with_relationship": 0,
+  "new_attrs_total": 0,
+  "geomsubsets_total": 0
+ },
+ "rows": [
+  {
+   "model": "nist_ctc_01_asme1_ap242-e1",
+   "meta": {
+    "bytes": 48981,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ctc_01_asme1_ap242e1_kb0/Prototypes/tn__NISTTestCase1_nD9E/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_01_asme1_ap242e1_kb0/Prototypes/tn__NISTTestCase1_nD9E/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ctc_01_asme1_ap242e1_kb0/tn__NISTTestCase1_nD9E/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_01_asme1_ap242e1_kb0/tn__NISTTestCase1_nD9E/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ctc_01_asme1_ap242-e1.usdc",
+    "bytes": 48981,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ctc_02_asme1_ap242-e2",
+   "meta": {
+    "bytes": 363484,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ctc_02_asme1_ap242e2_kb0/Prototypes/tn__NISTTestCase02_oE9E/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_02_asme1_ap242e2_kb0/Prototypes/tn__NISTTestCase02_oE9E/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ctc_02_asme1_ap242e2_kb0/tn__NISTTestCase02_oE9E/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_02_asme1_ap242e2_kb0/tn__NISTTestCase02_oE9E/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ctc_02_asme1_ap242-e2.usdc",
+    "bytes": 363484,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ctc_03_asme1_ap242-e2",
+   "meta": {
+    "bytes": 58131,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ctc_03_asme1_ap242e2_kb0/Prototypes/tn__NISTTestCase3_nD9E/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_03_asme1_ap242e2_kb0/Prototypes/tn__NISTTestCase3_nD9E/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ctc_03_asme1_ap242e2_kb0/tn__NISTTestCase3_nD9E/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_03_asme1_ap242e2_kb0/tn__NISTTestCase3_nD9E/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ctc_03_asme1_ap242-e2.usdc",
+    "bytes": 58131,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ctc_04_asme1_ap242-e1",
+   "meta": {
+    "bytes": 240248,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ctc_04_asme1_ap242e1_kb0/Prototypes/tn__2012_CTC_04_ASME1_RD_/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_04_asme1_ap242e1_kb0/Prototypes/tn__2012_CTC_04_ASME1_RD_/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ctc_04_asme1_ap242e1_kb0/tn__2012_CTC_04_ASME1_RD_/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_04_asme1_ap242e1_kb0/tn__2012_CTC_04_ASME1_RD_/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ctc_04_asme1_ap242-e1.usdc",
+    "bytes": 240248,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "meta": {
+    "bytes": 137450,
+    "prims": 15,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 59,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ctc_05_asme1_ap242e1_kb0/Prototypes/nist_ctc_05_asme1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_05_asme1_ap242e1_kb0/Prototypes/nist_ctc_05_asme1/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ctc_05_asme1_ap242e1_kb0/nist_ctc_05_asme1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ctc_05_asme1_ap242e1_kb0/nist_ctc_05_asme1/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ctc_05_asme1_ap242-e1.usdc",
+    "bytes": 137450,
+    "prims": 15,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 59,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_06_asme1_ap242-e2",
+   "meta": {
+    "bytes": 166617,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_06_asme1_ap242e2_kb0/Prototypes/tn__NISTPMIFTC06ASME1_rH8CF/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_06_asme1_ap242e2_kb0/Prototypes/tn__NISTPMIFTC06ASME1_rH8CF/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_06_asme1_ap242e2_kb0/tn__NISTPMIFTC06ASME1_rH8CF/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_06_asme1_ap242e2_kb0/tn__NISTPMIFTC06ASME1_rH8CF/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_06_asme1_ap242-e2.usdc",
+    "bytes": 166617,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_07_asme1_ap242-e2",
+   "meta": {
+    "bytes": 152342,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_07_asme1_ap242e2_kb0/Prototypes/nist_ftc_07_asme1/Solid1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_07_asme1_ap242e2_kb0/Prototypes/nist_ftc_07_asme1/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_07_asme1_ap242e2_kb0/nist_ftc_07_asme1/Solid1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_07_asme1_ap242e2_kb0/nist_ftc_07_asme1/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_07_asme1_ap242-e2.usdc",
+    "bytes": 152342,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e1-tg",
+   "meta": {
+    "bytes": 92454,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_08_asme1_ap242e1tg_he0Q/Prototypes/tn__NISTPMIFTC08ASME1_rH8CF/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_08_asme1_ap242e1tg_he0Q/Prototypes/tn__NISTPMIFTC08ASME1_rH8CF/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_08_asme1_ap242e1tg_he0Q/tn__NISTPMIFTC08ASME1_rH8CF/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_08_asme1_ap242e1tg_he0Q/tn__NISTPMIFTC08ASME1_rH8CF/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_08_asme1_ap242-e1-tg.usdc",
+    "bytes": 92454,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e2",
+   "meta": {
+    "bytes": 118068,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_08_asme1_ap242e2_kb0/Prototypes/nist_ftc_08_asme1_rc/tn__Extrude2_l8v1L/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_08_asme1_ap242e2_kb0/Prototypes/nist_ftc_08_asme1_rc/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_08_asme1_ap242e2_kb0/nist_ftc_08_asme1_rc/tn__Extrude2_l8v1L/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_08_asme1_ap242e2_kb0/nist_ftc_08_asme1_rc/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_08_asme1_ap242-e2.usdc",
+    "bytes": 118068,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_09_asme1_ap242-e1",
+   "meta": {
+    "bytes": 94608,
+    "prims": 37,
+    "meshes": 12,
+    "subsets": 0,
+    "n_attrs": 263,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_1",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_1"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_2",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_3",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_4",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_5",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/Prototypes/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_1",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_1"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_2",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_3",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_4",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Mesh_5",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_09_asme1_ap242e1_kb0/tn__nist_ftc_09_asme1_ap242e1_kb0/Looks/Diffuse_2"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_09_asme1_ap242-e1.usdc",
+    "bytes": 94608,
+    "prims": 37,
+    "meshes": 12,
+    "subsets": 0,
+    "n_attrs": 263,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_10_asme1_ap242-e2",
+   "meta": {
+    "bytes": 211549,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_10_asme1_ap242e2_kb0/Prototypes/nist_ftc_10_asme1/Solid1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_10_asme1_ap242e2_kb0/Prototypes/nist_ftc_10_asme1/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_10_asme1_ap242e2_kb0/nist_ftc_10_asme1/Solid1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_10_asme1_ap242e2_kb0/nist_ftc_10_asme1/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_10_asme1_ap242-e2.usdc",
+    "bytes": 211549,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_ftc_11_asme1_ap242-e2",
+   "meta": {
+    "bytes": 87991,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_ftc_11_asme1_ap242e2_kb0/Prototypes/nist_ftc_11_asme1_rb/tn__Revolve2_l8v1L/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_11_asme1_ap242e2_kb0/Prototypes/nist_ftc_11_asme1_rb/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_ftc_11_asme1_ap242e2_kb0/nist_ftc_11_asme1_rb/tn__Revolve2_l8v1L/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_ftc_11_asme1_ap242e2_kb0/nist_ftc_11_asme1_rb/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_ftc_11_asme1_ap242-e2.usdc",
+    "bytes": 87991,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_stc_06_asme1_ap242-e3",
+   "meta": {
+    "bytes": 143842,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_stc_06_asme1_ap242e3_kb0/Prototypes/nist_stc_06_asme1/Body/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_06_asme1_ap242e3_kb0/Prototypes/nist_stc_06_asme1/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_stc_06_asme1_ap242e3_kb0/nist_stc_06_asme1/Body/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_06_asme1_ap242e3_kb0/nist_stc_06_asme1/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_stc_06_asme1_ap242-e3.usdc",
+    "bytes": 143842,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_stc_07_asme1_ap242-e3",
+   "meta": {
+    "bytes": 148577,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_stc_07_asme1_ap242e3_kb0/Prototypes/nist_stc_07_asme1/Solid1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_07_asme1_ap242e3_kb0/Prototypes/nist_stc_07_asme1/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_stc_07_asme1_ap242e3_kb0/nist_stc_07_asme1/Solid1/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_07_asme1_ap242e3_kb0/nist_stc_07_asme1/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_stc_07_asme1_ap242-e3.usdc",
+    "bytes": 148577,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_stc_08_asme1_ap242-e3",
+   "meta": {
+    "bytes": 129028,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_stc_08_asme1_ap242e3_kb0/Prototypes/tn__NISTPMISTC08ASME1_rH8CF/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_08_asme1_ap242e3_kb0/Prototypes/tn__NISTPMISTC08ASME1_rH8CF/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_stc_08_asme1_ap242e3_kb0/tn__NISTPMISTC08ASME1_rH8CF/PartBody/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_08_asme1_ap242e3_kb0/tn__NISTPMISTC08ASME1_rH8CF/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_stc_08_asme1_ap242-e3.usdc",
+    "bytes": 129028,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_stc_09_asme1_ap242-e3",
+   "meta": {
+    "bytes": 87510,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_stc_09_asme1_ap242e3_kb0/Prototypes/tn__nist_stc_09_asme1_ap242e3_kb0/Body/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_09_asme1_ap242e3_kb0/Prototypes/tn__nist_stc_09_asme1_ap242e3_kb0/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_stc_09_asme1_ap242e3_kb0/tn__nist_stc_09_asme1_ap242e3_kb0/Body/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_09_asme1_ap242e3_kb0/tn__nist_stc_09_asme1_ap242e3_kb0/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_stc_09_asme1_ap242-e3.usdc",
+    "bytes": 87510,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  },
+  {
+   "model": "nist_stc_10_asme1_ap242-e2",
+   "meta": {
+    "bytes": 233304,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "pmi_hits": [],
+   "prim_meta": [],
+   "rels": [
+    {
+     "prim": "/tn__nist_stc_10_asme1_ap242e2_kb0/Prototypes/nist_stc_10_asme1/tn__Extrude2_l8v1L/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_10_asme1_ap242e2_kb0/Prototypes/nist_stc_10_asme1/Looks/Diffuse"
+     ]
+    },
+    {
+     "prim": "/tn__nist_stc_10_asme1_ap242e2_kb0/nist_stc_10_asme1/tn__Extrude2_l8v1L/Mesh",
+     "name": "material:binding",
+     "targets": [
+      "/tn__nist_stc_10_asme1_ap242e2_kb0/nist_stc_10_asme1/Looks/Diffuse"
+     ]
+    }
+   ],
+   "default": {
+    "file": "nist_stc_10_asme1_ap242-e2.usdc",
+    "bytes": 233304,
+    "prims": 17,
+    "meshes": 2,
+    "subsets": 0,
+    "n_attrs": 63,
+    "customLayerData": {
+     "creator": "'omni.kit.converter.hoops_core 511.3.2 hoops_cad_converter 10.6.1+v10-6-1.4099.e46ada55.gl'"
+    }
+   },
+   "diff": {
+    "new_attrs": 0,
+    "removed_attrs": 0,
+    "changed_values": 0,
+    "new_attr_namespaces": {},
+    "new_attr_examples": [],
+    "changed_examples": [],
+    "prim_meta_new": 0,
+    "rels_new": 0
+   }
+  }
+ ]
+}

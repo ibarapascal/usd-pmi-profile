@@ -1,0 +1,119 @@
+{
+ "summary": {
+  "changed": 9,
+  "none_to_face": 9,
+  "with_area": 9,
+  "area_ok_2pct": 9,
+  "not_superset": 0
+ },
+ "rows": [
+  {
+   "model": "ctc_02-e2",
+   "stepId": 79,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 102191.424,
+   "nist_area": 102206.307639738,
+   "ratio": 0.9999
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": 93,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 7059.142,
+   "nist_area": 7060.96600186039,
+   "ratio": 0.9997
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": 95,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 80906.479,
+   "nist_area": 80927.5590408227,
+   "ratio": 0.9997
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 140,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 71263.834,
+   "nist_area": 71265.45873996455,
+   "ratio": 1.0
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 141,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 44621.833,
+   "nist_area": 44642.37087751632,
+   "ratio": 0.9995
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 144,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 27315.124,
+   "nist_area": 27315.433528007037,
+   "ratio": 1.0
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 145,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 7795.293,
+   "nist_area": 7783.701055353722,
+   "ratio": 1.0015
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": 446,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 16309.9,
+   "nist_area": 16310.404246255,
+   "ratio": 1.0
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": 449,
+   "type": "DATUM_FEATURE",
+   "anchor_r1": "none",
+   "n_r1": 0,
+   "n_whatif": 1,
+   "old_subset_new": true,
+   "area_whatif": 36237.188,
+   "nist_area": 36241.7616249422,
+   "ratio": 0.9999
+  }
+ ]
+}

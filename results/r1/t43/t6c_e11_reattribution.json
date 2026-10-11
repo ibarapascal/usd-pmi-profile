@@ -1,0 +1,3601 @@
+{
+ "changed_groups": [
+  {
+   "model": "stc_06-e3",
+   "stepId": "#8982",
+   "v4": {
+    "faces": 8,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.540999999999999,
+    "band_width": 0.4064000000000014
+   },
+   "nist_area_mm2": 0.0,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w4X ⌀0.415 ±0.008",
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "area_zero+nx_ok"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#295",
+   "v4": {
+    "faces": 6,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#299",
+   "v4": {
+    "faces": 6,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 5,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 5,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#307",
+   "v4": {
+    "faces": 8,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 5,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#319",
+   "v4": {
+    "faces": 8,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  }
+ ],
+ "evidence_counts": {
+  "no_area": 68,
+  "area_ok": 52,
+  "no_area+nx_ok": 6,
+  "area_zero+nx_ok": 2
+ },
+ "groups": [
+  {
+   "model": "ctc_01-e1",
+   "stepId": "#120",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 35.0,
+    "band_width": 0.20000000000000284
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": "#121",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 35.0,
+    "band_width": 0.20000000000000284
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": "#122",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 20.0,
+    "band_width": 0.15000000000000213
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": "#123",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 20.0,
+    "band_width": 0.15000000000000213
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": "#128",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 25.0,
+    "band_width": 0.29999999999999716
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#403",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 100.0,
+    "band_width": 0.30000000000001137
+   },
+   "nist_area_mm2": 5023.24156096812,
+   "ratio_v4": 1.0006,
+   "ratio_down": 1.0006,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#404",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 52.0,
+    "band_width": 0.29999999999999716
+   },
+   "nist_area_mm2": 10441.9552144992,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#405",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 12.0,
+    "band_width": 0.10000000000000142
+   },
+   "nist_area_mm2": 941.282020537784,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#406",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 12.0,
+    "band_width": 0.10000000000000142
+   },
+   "nist_area_mm2": 941.282020537789,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#407",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 22.0,
+    "band_width": 0.20000000000000284
+   },
+   "nist_area_mm2": 5591.21520199442,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#408",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 22.0,
+    "band_width": 0.20000000000000284
+   },
+   "nist_area_mm2": 5591.21520199441,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_02-e2",
+   "stepId": "#409",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 40.0,
+    "band_width": 0.29999999999999716
+   },
+   "nist_area_mm2": 6149.70920084685,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#263",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 11.125200000044526,
+    "band_width": 0.2540000000010174
+   },
+   "nist_area_mm2": 66.5855496832917,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#264",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 11.125200000044526,
+    "band_width": 0.2540000000010174
+   },
+   "nist_area_mm2": 66.5855496832917,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#265",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 15.8750000000635,
+    "band_width": 0.2540000000010174
+   },
+   "nist_area_mm2": 380.0545073247232,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#266",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 11.125200000044499,
+    "band_width": 0.2540000000010174
+   },
+   "nist_area_mm2": 133.1710993665834,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#267",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 50.80000000020319,
+    "band_width": 0.5080000000020277
+   },
+   "nist_area_mm2": 304.04360585977787,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#268",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 38.1000000001524,
+    "band_width": 0.25400000000101386
+   },
+   "nist_area_mm2": 228.0327043948339,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": "#271",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 27.051000000108203,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": 161.9032201203186,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_04-e1",
+   "stepId": "#19037",
+   "v4": {
+    "faces": 12,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 12,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.65,
+    "band_width": 0.2400000000000002
+   },
+   "nist_area_mm2": 3133.738672,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀6.65 ±0.12",
+   "n_faces_down": 12,
+   "inst_down": 6,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_04-e1",
+   "stepId": "#19384",
+   "v4": {
+    "faces": 60,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 60,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 14.0,
+    "band_width": 0.1999999999999993
+   },
+   "nist_area_mm2": 35625.660692,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀14. ±0.1",
+   "n_faces_down": 60,
+   "inst_down": 30,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_04-e1",
+   "stepId": "#19475",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 20.0,
+    "band_width": 0.3999999999999986
+   },
+   "nist_area_mm2": 5026.548246,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀20. ±0.2",
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": "#888",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 254.0,
+    "band_width": 0.05079999999998108
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#270",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 12.700000000050798,
+    "band_width": 1.0160000000040625
+   },
+   "nist_area_mm2": 1265.1614725446457,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#271",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 14.287500000057124,
+    "band_width": 0.406400000001625
+   },
+   "nist_area_mm2": 1565.6373262793365,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#273",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 20.63750000008252,
+    "band_width": 1.0160000000040625
+   },
+   "nist_area_mm2": 1850.2986583301206,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#274",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.137399999999974,
+    "band_width": 0.406400000001625
+   },
+   "nist_area_mm2": 2707.567013665613,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#275",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.159999999999975,
+    "band_width": 0.5079999999999991
+   },
+   "nist_area_mm2": 1004.0321471719861,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#276",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.541000000042189,
+    "band_width": 0.406400000001625
+   },
+   "nist_area_mm2": 2520.201659756322,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#277",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 15.8750000000635,
+    "band_width": 1.0160000000040643
+   },
+   "nist_area_mm2": 2530.3229515625626,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#279",
+   "v4": {
+    "faces": 16,
+    "clean": true,
+    "cause": null,
+    "uniform": false
+   },
+   "r1": {
+    "faces": 16,
+    "clean": true,
+    "cause": null,
+    "uniform": false,
+    "nominal": 3.1750000000126994,
+    "band_width": 1.016
+   },
+   "nist_area_mm2": 7762.096239103634,
+   "ratio_v4": 1.0021,
+   "ratio_down": 1.0021,
+   "nist_ues": null,
+   "n_faces_down": 30,
+   "inst_down": 16,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#280",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.350000000025374,
+    "band_width": 0.406400000001625
+   },
+   "nist_area_mm2": 253.03229515625367,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": "#281",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.350000000025425,
+    "band_width": 0.406400000001625
+   },
+   "nist_area_mm2": 253.03229515625625,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15130",
+   "v4": {
+    "faces": 2,
+    "clean": false,
+    "cause": "tessellation",
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": false,
+    "cause": "tessellation",
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": 152.01195403999998,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀0.25\\\\u+.003\\\\n-0\\\\u",
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15238",
+   "v4": {
+    "faces": 2,
+    "clean": false,
+    "cause": "tessellation",
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": false,
+    "cause": "tessellation",
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": 152.01195403999998,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.25\\\\u+.003\\\\n-0\\\\u",
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15344",
+   "v4": {
+    "faces": 4,
+    "clean": false,
+    "cause": "tessellation",
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": false,
+    "cause": "tessellation",
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": 304.02455324,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀0.25\\\\u+.003\\\\n-0\\\\u",
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15389",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.10160000000000036
+   },
+   "nist_area_mm2": 608.04910648,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.250\\\\u+.003\\\\n-.001\\\\u",
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15607",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 22.224999999999998,
+    "band_width": 1.0159999999999982
+   },
+   "nist_area_mm2": 1993.8463348799999,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.875 ±.02",
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15653",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 22.224999999999998,
+    "band_width": 0.5080000000000027
+   },
+   "nist_area_mm2": 1993.8463348799999,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.875 ±.01",
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15699",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 4.3942,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": 525.53572312,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀0.173\\\\u+.005\\\\n-.001\\\\u",
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15745",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 15.082519999999999,
+    "band_width": 0.3556000000000008
+   },
+   "nist_area_mm2": 902.05432492,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.594\\\\u+.012\\\\n-.002\\\\u",
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15791",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.1374,
+    "band_width": 0.1778000000000004
+   },
+   "nist_area_mm2": 1025.17085288,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.281\\\\u+.006\\\\n-.001\\\\u",
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#15883",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 11.112499999999999,
+    "band_width": 0.5079999999999991
+   },
+   "nist_area_mm2": 1064.08561376,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.4375 ±.01",
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": "#16004",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 15.082519999999999,
+    "band_width": 0.3556000000000008
+   },
+   "nist_area_mm2": 902.05432492,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": "DIM\\\\w⌀.594\\\\u+.012\\\\n-.002\\\\u",
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#535",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0325,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#536",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0325,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#537",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0325,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#538",
+   "v4": {
+    "faces": 10,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 10,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.4102,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 10,
+   "inst_down": 10,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#539",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.1778000000000004
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#540",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.7912,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#541",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.1468,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#542",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.1468,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_08-e2",
+   "stepId": "#543",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.7912,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#8504",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.9436,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#8539",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.9436,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#8595",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.9436,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#8661",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#8727",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#8946",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9062",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 9.524999999999999,
+    "band_width": 0.4064000000000014
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9157",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.9623999999999997,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9251",
+   "v4": {
+    "faces": 4,
+    "clean": false,
+    "cause": "unit_inconsistent_source",
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": false,
+    "cause": "unit_inconsistent_source",
+    "uniform": true,
+    "nominal": 203.2,
+    "band_width": 10.160000000000025
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9314",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.1374,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9367",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.9623999999999997,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9397",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 19.049999999999997,
+    "band_width": 0.4063999999999979
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9429",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.6133999999999995,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": "#9482",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.9623999999999997,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#19787",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#19817",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#19847",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#19877",
+   "v4": {
+    "faces": 16,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 16,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 2.5,
+    "band_width": 0.2999999999999998
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 16,
+   "inst_down": 8,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#19954",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20047",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.5,
+    "band_width": 0.40000000000000036
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20088",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.5,
+    "band_width": 0.16000000000000014
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20206",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20370",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.5,
+    "band_width": 0.40000000000000036
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20401",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.5,
+    "band_width": 0.40000000000000036
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20442",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.5,
+    "band_width": 0.16000000000000014
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20540",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": "#20713",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_11-e2",
+   "stepId": "#109",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 32.0,
+    "band_width": 0.5999999999999979
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "ftc_11-e2",
+   "stepId": "#111",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 63.0,
+    "band_width": 1.0
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#11272",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.1374,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w4X ⌀0.281 ±0.008",
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "no_area+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#8621",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 20.6375,
+    "band_width": 1.0159999999999982
+   },
+   "nist_area_mm2": 0.0,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w2X ⌀0.8125 ±0.02",
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "area_zero+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#8744",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w2X ⌀0.25 ±0.008",
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#8864",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.16,
+    "band_width": 0.5079999999999991
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w4X ⌀0.4 ±0.01",
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "no_area+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#8982",
+   "v4": {
+    "faces": 8,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.540999999999999,
+    "band_width": 0.4064000000000014
+   },
+   "nist_area_mm2": 0.0,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w4X ⌀0.415 ±0.008",
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "area_zero+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#9112",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 14.2875,
+    "band_width": 0.4064000000000014
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w2X ⌀0.5625 ±0.008",
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#9195",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 12.7,
+    "band_width": 1.0159999999999982
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w2X CR0.5 ±0.02",
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area+nx_ok"
+  },
+  {
+   "model": "stc_06-e3",
+   "stepId": "#9432",
+   "v4": {
+    "faces": 16,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 16,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.175,
+    "band_width": 1.016
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": "DIM\\\\w24X R0.125 ±0.02",
+   "n_faces_down": 24,
+   "inst_down": 16,
+   "nist_evidence": "no_area+nx_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14717",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": 304.0244874898089,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14760",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.10160000000000036
+   },
+   "nist_area_mm2": 608.0489749796178,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14808",
+   "v4": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 6,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 22.224999999999998,
+    "band_width": 1.0159999999999982
+   },
+   "nist_area_mm2": 1993.8461942157653,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 3,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14854",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 4.3942,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": 525.535786152132,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14897",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 15.082519999999999,
+    "band_width": 0.3556000000000008
+   },
+   "nist_area_mm2": 1804.1079843187504,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14941",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.1374,
+    "band_width": 0.1778000000000004
+   },
+   "nist_area_mm2": 1025.1705718160458,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_07-e3",
+   "stepId": "#14989",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 11.112499999999999,
+    "band_width": 0.5079999999999991
+   },
+   "nist_area_mm2": 1064.085706211428,
+   "ratio_v4": 0.9999,
+   "ratio_down": 0.9999,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 4,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#166",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.032500000000025,
+    "band_width": 0.15240000000060938
+   },
+   "nist_area_mm2": 192.30454431798472,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#167",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.032500000000025,
+    "band_width": 0.15240000000060938
+   },
+   "nist_area_mm2": 192.30454431798472,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#168",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.032500000000025,
+    "band_width": 0.15240000000060938
+   },
+   "nist_area_mm2": 384.60908863597075,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#169",
+   "v4": {
+    "faces": 20,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 20,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.410200000021641,
+    "band_width": 0.15240000000060938
+   },
+   "nist_area_mm2": 582.0754917774514,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 20,
+   "inst_down": 10,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#170",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.350000000025399,
+    "band_width": 0.17780000000071094
+   },
+   "nist_area_mm2": 136.63743938437855,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#171",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.7912000000231645,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": 124.61334471855339,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": "#172",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.146800000024612,
+    "band_width": 0.1524000000000001
+   },
+   "nist_area_mm2": 132.2650413240786,
+   "ratio_v4": 1.0012,
+   "ratio_down": 1.0012,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 2,
+   "nist_evidence": "area_ok"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7768",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7806",
+   "v4": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 3,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7830",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 9.524999999999999,
+    "band_width": 0.4064000000000014
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7865",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 8.001,
+    "band_width": 0.40640000000000054
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7889",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 19.049999999999997,
+    "band_width": 0.4063999999999979
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7915",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.6133999999999995,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7954",
+   "v4": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.9623999999999997,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 3,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#7992",
+   "v4": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.35,
+    "band_width": 0.07620000000000005
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 3,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#8035",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.9623999999999997,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#8074",
+   "v4": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.1374,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 3,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#8396",
+   "v4": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.9436,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#8431",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.9436,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": "#8466",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.9436,
+    "band_width": 0.40639999999999965
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#295",
+   "v4": {
+    "faces": 6,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 2,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 2,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#296",
+   "v4": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 8,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 2.5,
+    "band_width": 0.2999999999999998
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 8,
+   "inst_down": 8,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#297",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#298",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 6.0,
+    "band_width": 0.3000000000000007
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 1,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#299",
+   "v4": {
+    "faces": 6,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 5,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 5,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#301",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.5,
+    "band_width": 0.40000000000000036
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#303",
+   "v4": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 5,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#307",
+   "v4": {
+    "faces": 8,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 5,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false,
+    "nominal": 10.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 6,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#310",
+   "v4": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 3,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 3.5,
+    "band_width": 0.40000000000000036
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 3,
+   "inst_down": 3,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#311",
+   "v4": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true
+   },
+   "r1": {
+    "faces": 1,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 5.5,
+    "band_width": 0.40000000000000036
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 2,
+   "inst_down": 1,
+   "nist_evidence": "no_area"
+  },
+  {
+   "model": "stc_10-e2",
+   "stepId": "#319",
+   "v4": {
+    "faces": 8,
+    "clean": false,
+    "cause": "multi_size_group",
+    "uniform": false
+   },
+   "r1": {
+    "faces": 4,
+    "clean": true,
+    "cause": null,
+    "uniform": true,
+    "nominal": 7.0,
+    "band_width": 0.5
+   },
+   "nist_area_mm2": null,
+   "ratio_v4": null,
+   "ratio_down": null,
+   "nist_ues": null,
+   "n_faces_down": 4,
+   "inst_down": 4,
+   "nist_evidence": "no_area"
+  }
+ ],
+ "i5_ftc07": [
+  {
+   "stepId": "#15130",
+   "face_index": 145,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.334459119486155e-06,
+   "vertex_radial_dev_mean_mm": -5.205188928791083e-05,
+   "vertex_radial_dev_min_mm": -0.0001961238518970454,
+   "fixed_true_axis_r_f64": 3.174947948110712,
+   "fixed_true_axis_r_f32": 3.1749480227332714,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.0001961238518970454,
+   "vertex_radial_dev_max_f32_mm": 0.00019972078851804298,
+   "c3_fitted_r": 3.174949335059687,
+   "c3_r_err_mm": -5.0664940312916684e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.00010132988062583337
+  },
+  {
+   "stepId": "#15130",
+   "face_index": 146,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.333685748785342e-06,
+   "vertex_radial_dev_mean_mm": -5.205206834531115e-05,
+   "vertex_radial_dev_min_mm": -0.00019612385192813164,
+   "fixed_true_axis_r_f64": 3.1749479479316545,
+   "fixed_true_axis_r_f32": 3.174947966959148,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.00019612385192813164,
+   "vertex_radial_dev_max_f32_mm": 0.0002000053346420394,
+   "c3_fitted_r": 3.174949660618136,
+   "c3_r_err_mm": -5.033938186382869e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.00010067876372765738
+  },
+  {
+   "stepId": "#15238",
+   "face_index": 149,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.334459119486155e-06,
+   "vertex_radial_dev_mean_mm": -5.2051889282477626e-05,
+   "vertex_radial_dev_min_mm": -0.00019612385189970993,
+   "fixed_true_axis_r_f64": 3.1749479481107175,
+   "fixed_true_axis_r_f32": 3.1749480227332714,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.00019612385189970993,
+   "vertex_radial_dev_max_f32_mm": 0.00019972078851804298,
+   "c3_fitted_r": 3.174949335055677,
+   "c3_r_err_mm": -5.066494432304225e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.0001013298886460845
+  },
+  {
+   "stepId": "#15238",
+   "face_index": 150,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.3336857869770142e-06,
+   "vertex_radial_dev_mean_mm": -5.2052068348722985e-05,
+   "vertex_radial_dev_min_mm": -0.0001961238519343489,
+   "fixed_true_axis_r_f64": 3.1749479479316514,
+   "fixed_true_axis_r_f32": 3.174947966959148,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.0001961238519343489,
+   "vertex_radial_dev_max_f32_mm": 0.0002000053346420394,
+   "c3_fitted_r": 3.174949660623865,
+   "c3_r_err_mm": -5.0339376134633795e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.00010067875226926759
+  },
+  {
+   "stepId": "#15344",
+   "face_index": 143,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.3336850893128656e-06,
+   "vertex_radial_dev_mean_mm": -5.2052073983642335e-05,
+   "vertex_radial_dev_min_mm": -0.00019612385189970993,
+   "fixed_true_axis_r_f64": 3.1749479479260163,
+   "fixed_true_axis_r_f32": 3.174947966959148,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.00019612385189970993,
+   "vertex_radial_dev_max_f32_mm": 0.0002000053346420394,
+   "c3_fitted_r": 3.174949660618136,
+   "c3_r_err_mm": -5.033938186382869e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.00010067876372765738
+  },
+  {
+   "stepId": "#15344",
+   "face_index": 144,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.3343271761410165e-06,
+   "vertex_radial_dev_mean_mm": -5.205190162504597e-05,
+   "vertex_radial_dev_min_mm": -0.0001961238519343489,
+   "fixed_true_axis_r_f64": 3.1749479480983744,
+   "fixed_true_axis_r_f32": 3.1749480227332714,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.0001961238519343489,
+   "vertex_radial_dev_max_f32_mm": 0.00019972078851804298,
+   "c3_fitted_r": 3.174949335059687,
+   "c3_r_err_mm": -5.0664940312916684e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.00010132988062583337
+  },
+  {
+   "stepId": "#15344",
+   "face_index": 147,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.3336850702170295e-06,
+   "vertex_radial_dev_mean_mm": -5.2052073986052665e-05,
+   "vertex_radial_dev_min_mm": -0.0001961238518970454,
+   "fixed_true_axis_r_f64": 3.174947947926014,
+   "fixed_true_axis_r_f32": 3.174947966959148,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.0001961238518970454,
+   "vertex_radial_dev_max_f32_mm": 0.0002000053346420394,
+   "c3_fitted_r": 3.174949660623865,
+   "c3_r_err_mm": -5.0339376134633795e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.00010067875226926759
+  },
+  {
+   "stepId": "#15344",
+   "face_index": 148,
+   "nominal_r": 3.175,
+   "vertex_radial_dev_median_mm": -3.3343271761410165e-06,
+   "vertex_radial_dev_mean_mm": -5.2051901623539135e-05,
+   "vertex_radial_dev_min_mm": -0.00019612385192813164,
+   "fixed_true_axis_r_f64": 3.1749479480983767,
+   "fixed_true_axis_r_f32": 3.1749480227332714,
+   "share_vertices_inside": 0.7241379310344828,
+   "vertex_radial_dev_max_mm": 0.00019612385192813164,
+   "vertex_radial_dev_max_f32_mm": 0.00019972078851804298,
+   "c3_fitted_r": 3.174949335055677,
+   "c3_r_err_mm": -5.066494432304225e-05,
+   "arc_span_deg": 180.0,
+   "n_vertices": 145,
+   "diameter_excess_below_band_mm": 0.0001013298886460845
+  }
+ ],
+ "r1_summary": {
+  "funnel": {
+   "annotations_total": 838,
+   "dimensional_size": 212,
+   "two_sided_band": 149,
+   "diameter_or_radius": 130,
+   "dropped_no_two_sided_band": 63,
+   "groups_judged": 128,
+   "group_without_fitted_cylinder": 2
+  },
+  "skipped_by_dimName": {
+   "thickness": 10,
+   "spherical diameter": 2,
+   "curve length": 7
+  },
+  "unit_census": {
+   "nist_ctc_01_asme1_ap242-e1": {
+    "MILLIMETRE": 13
+   },
+   "nist_ctc_02_asme1_ap242-e2": {
+    "MILLIMETRE": 29
+   },
+   "nist_ctc_03_asme1_ap242-e2": {
+    "INCH": 22
+   },
+   "nist_ctc_04_asme1_ap242-e1": {
+    "MILLIMETRE": 16
+   },
+   "nist_ctc_05_asme1_ap242-e1": {
+    "INCH": 16
+   },
+   "nist_ftc_06_asme1_ap242-e2": {
+    "INCH": 52
+   },
+   "nist_ftc_07_asme1_ap242-e2": {
+    "INCH": 44
+   },
+   "nist_ftc_08_asme1_ap242-e2": {
+    "INCH": 43
+   },
+   "nist_ftc_09_asme1_ap242-e1": {
+    "INCH": 22,
+    "MILLIMETRE": 31
+   },
+   "nist_ftc_10_asme1_ap242-e2": {
+    "MILLIMETRE": 66
+   },
+   "nist_ftc_11_asme1_ap242-e2": {
+    "MILLIMETRE": 10
+   },
+   "nist_stc_06_asme1_ap242-e3": {
+    "INCH": 42
+   },
+   "nist_stc_07_asme1_ap242-e3": {
+    "INCH": 61
+   },
+   "nist_stc_08_asme1_ap242-e3": {
+    "INCH": 36,
+    "MILLIMETRE": 1
+   },
+   "nist_stc_09_asme1_ap242-e3": {
+    "INCH": 49
+   },
+   "nist_stc_10_asme1_ap242-e2": {
+    "MILLIMETRE": 64
+   }
+  },
+  "unit_models_mm": 6,
+  "unit_models_inch": 8,
+  "unit_models_mixed": 2,
+  "unit_models_inch_any": 10,
+  "unit_models_total": 16,
+  "unit_models_mm_list": [
+   "nist_ctc_01_asme1_ap242-e1",
+   "nist_ctc_02_asme1_ap242-e2",
+   "nist_ctc_04_asme1_ap242-e1",
+   "nist_ftc_10_asme1_ap242-e2",
+   "nist_ftc_11_asme1_ap242-e2",
+   "nist_stc_10_asme1_ap242-e2"
+  ],
+  "unit_models_inch_list": [
+   "nist_ctc_03_asme1_ap242-e2",
+   "nist_ctc_05_asme1_ap242-e1",
+   "nist_ftc_06_asme1_ap242-e2",
+   "nist_ftc_07_asme1_ap242-e2",
+   "nist_ftc_08_asme1_ap242-e2",
+   "nist_stc_06_asme1_ap242-e3",
+   "nist_stc_07_asme1_ap242-e3",
+   "nist_stc_09_asme1_ap242-e3"
+  ],
+  "unit_models_mixed_list": [
+   "nist_ftc_09_asme1_ap242-e1",
+   "nist_stc_08_asme1_ap242-e3"
+  ],
+  "defect_model_inch_total": 22,
+  "defect_model_inch_other": 21,
+  "groups": 128,
+  "groups_clean": 122,
+  "groups_clean_pct": 95.31,
+  "faces": 599,
+  "faces_in_band": 585,
+  "faces_in_band_pct": 97.66,
+  "at_limit_faces": 12,
+  "cause_by_face": {
+   "at_limit": 12,
+   "tessellation": 8,
+   "unit_inconsistent_source": 4,
+   "multi_size_group": 2
+  },
+  "cause_by_group": {
+   "tessellation": 3,
+   "unit_inconsistent_source": 1,
+   "multi_size_group": 2
+  },
+  "band_width_min": 0.0508,
+  "band_width_max": 10.16,
+  "tie_tolerance_mm": 1e-05
+ }
+}

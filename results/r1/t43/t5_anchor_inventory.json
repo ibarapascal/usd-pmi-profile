@@ -1,0 +1,458 @@
+{
+ "counts": {
+  "typed_fail": 5,
+  "anchor_edge": 23,
+  "anchor_none": 2,
+  "anchor_part": 2
+ },
+ "rows": [
+  {
+   "model": "ctc_01-e1",
+   "stepId": 24,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "typed_fail",
+   "anchorKind": "face",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "PROPERTY_DEFINITION": 1
+   }
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": 25,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "typed_fail",
+   "anchorKind": "face",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "PROPERTY_DEFINITION": 1
+   }
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": 126,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "typed_fail",
+   "anchorKind": "face",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   }
+  },
+  {
+   "model": "ctc_01-e1",
+   "stepId": 127,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "typed_fail",
+   "anchorKind": "face",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   }
+  },
+  {
+   "model": "ctc_03-e2",
+   "stepId": 269,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "typed_fail",
+   "anchorKind": "face",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "PROPERTY_DEFINITION": 1
+   }
+  },
+  {
+   "model": "ctc_04-e1",
+   "stepId": 18891,
+   "type": "POSITION_TOLERANCE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "TOLERANCE_ZONE": 1,
+    "PROPERTY_DEFINITION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 4
+   }
+  },
+  {
+   "model": "ctc_04-e1",
+   "stepId": 18938,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "PROPERTY_DEFINITION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 4
+   }
+  },
+  {
+   "model": "ctc_04-e1",
+   "stepId": 20208,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "PLUS_MINUS_TOLERANCE": 1,
+    "PROPERTY_DEFINITION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "EDGE_CURVE": 60
+   }
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": 941,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "PLUS_MINUS_TOLERANCE": 1
+   },
+   "nonFaceAnchorTypes": {
+    "EDGE_CURVE": 2
+   }
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": 942,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": 943,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": 944,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": 945,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 1
+   }
+  },
+  {
+   "model": "ctc_05-e1",
+   "stepId": 957,
+   "type": "STRAIGHTNESS_TOLERANCE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 1
+   }
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 155,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "PROPERTY_DEFINITION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 156,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "PROPERTY_DEFINITION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 282,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "PROPERTY_DEFINITION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 283,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "PROPERTY_DEFINITION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_06-e2",
+   "stepId": 348,
+   "type": "SURFACE_PROFILE_TOLERANCE",
+   "category": "anchor_none",
+   "anchorKind": "none",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "PROPERTY_DEFINITION": 1
+   },
+   "sa_closure_size": 1,
+   "gisu_or_iiru_in_closure": 0,
+   "sa_closure_users": {
+    "SURFACE_PROFILE_TOLERANCE": 1,
+    "GEOMETRIC_TOLERANCE_WITH_DATUM_REFERENCE": 1,
+    "GEOMETRIC_TOLERANCE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "ID_ATTRIBUTE": 1
+   }
+  },
+  {
+   "model": "ftc_07-e2",
+   "stepId": 13917,
+   "type": "SURFACE_PROFILE_TOLERANCE",
+   "category": "anchor_part",
+   "anchorKind": "part",
+   "referencing_entity_types": {
+    "PROPERTY_DEFINITION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   }
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": 8885,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "PLUS_MINUS_TOLERANCE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "EDGE_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": 8918,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "PLUS_MINUS_TOLERANCE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "EDGE_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_09-e1",
+   "stepId": 9192,
+   "type": "DIMENSIONAL_LOCATION",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "TRIMMED_CURVE": 2
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 18511,
+   "type": "SURFACE_PROFILE_TOLERANCE",
+   "category": "anchor_part",
+   "anchorKind": "part",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 19580,
+   "type": "POSITION_TOLERANCE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "TOLERANCE_ZONE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 2
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 19617,
+   "type": "POSITION_TOLERANCE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "TOLERANCE_ZONE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 2
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 19654,
+   "type": "POSITION_TOLERANCE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "TOLERANCE_ZONE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 2
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 20632,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 2
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 20659,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 2
+   }
+  },
+  {
+   "model": "ftc_10-e2",
+   "stepId": 20686,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "GEOMETRIC_CURVE_SET": 2
+   }
+  },
+  {
+   "model": "stc_08-e3",
+   "stepId": 234,
+   "type": "SURFACE_PROFILE_TOLERANCE",
+   "category": "anchor_none",
+   "anchorKind": "none",
+   "referencing_entity_types": {
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION_WITH_PLACEHOLDER": 1,
+    "PROPERTY_DEFINITION": 1
+   },
+   "sa_closure_size": 1,
+   "gisu_or_iiru_in_closure": 0,
+   "sa_closure_users": {
+    "SURFACE_PROFILE_TOLERANCE": 1,
+    "GEOMETRIC_TOLERANCE_WITH_DATUM_REFERENCE": 1,
+    "GEOMETRIC_TOLERANCE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1,
+    "ID_ATTRIBUTE": 1
+   }
+  },
+  {
+   "model": "stc_09-e3",
+   "stepId": 8350,
+   "type": "DIMENSIONAL_SIZE",
+   "category": "anchor_edge",
+   "anchorKind": "edge",
+   "referencing_entity_types": {
+    "DIMENSIONAL_CHARACTERISTIC_REPRESENTATION": 1,
+    "PLUS_MINUS_TOLERANCE": 1,
+    "DRAUGHTING_MODEL_ITEM_ASSOCIATION": 1
+   },
+   "nonFaceAnchorTypes": {
+    "EDGE_CURVE": 8
+   }
+  }
+ ]
+}

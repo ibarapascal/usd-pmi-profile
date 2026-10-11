@@ -1,0 +1,8 @@
+{
+ "e3.area.chainA.mean_of_means": 0.0549,
+ "e3.area.omni.mean_of_means": 0.0158,
+ "e3.area.proto.mean_of_means": 0.001,
+ "e2.geom.mean_of_means": 0.0112,
+ "e2.geom.n_models": 16,
+ "e2.geom.nonidentity": 2
+}

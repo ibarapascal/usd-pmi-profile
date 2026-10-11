@@ -1,0 +1,37 @@
+# 2026-10-06 R4 外审 A-P1-8：系统 usdchecker（/usr/bin/usdchecker＝Apple USD Tools 0.24.3；REPRODUCE E5 同为 `usdchecker`，v4 当时版本未核）对 r1b 16 件 stage（out/proto_v2，10-05 22:31）与 T12 组合/扁平 stage 重跑；全部 Success
+== nist_ctc_01_asme1_ap242-e1.usdc rc=0
+Success!
+== nist_ctc_02_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_ctc_03_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_ctc_04_asme1_ap242-e1.usdc rc=0
+Success!
+== nist_ctc_05_asme1_ap242-e1.usdc rc=0
+Success!
+== nist_ftc_06_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_ftc_07_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_ftc_08_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_ftc_09_asme1_ap242-e1.usdc rc=0
+Success!
+== nist_ftc_10_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_ftc_11_asme1_ap242-e2.usdc rc=0
+Success!
+== nist_stc_06_asme1_ap242-e3.usdc rc=0
+Success!
+== nist_stc_07_asme1_ap242-e3.usdc rc=0
+Success!
+== nist_stc_08_asme1_ap242-e3.usdc rc=0
+Success!
+== nist_stc_09_asme1_ap242-e3.usdc rc=0
+Success!
+== nist_stc_10_asme1_ap242-e2.usdc rc=0
+Success!
+== assembly_flat.usdc (out/r1/t12b) rc=0
+Success!
+== assembly.usda (out/r1/t12b，引用路径改为本机 out/proto_v2 后) 
+Success!

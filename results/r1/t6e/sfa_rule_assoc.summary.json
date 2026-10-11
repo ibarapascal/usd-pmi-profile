@@ -1,0 +1,151 @@
+{
+ "n": 724,
+ "rel": {
+  "equal": 697,
+  "equal_empty": 27
+ },
+ "nonface_rel": {
+  "equal_empty": 657,
+  "equal": 67
+ },
+ "by_type": {
+  "ANGULARITY_TOLERANCE": {
+   "equal": 1
+  },
+  "CIRCULAR_RUNOUT_TOLERANCE": {
+   "equal": 3
+  },
+  "CONCENTRICITY_TOLERANCE": {
+   "equal": 1
+  },
+  "CYLINDRICITY_TOLERANCE": {
+   "equal": 4
+  },
+  "DATUM_FEATURE": {
+   "equal": 102
+  },
+  "DIMENSIONAL_LOCATION": {
+   "equal": 38,
+   "equal_empty": 10
+  },
+  "DIMENSIONAL_SIZE": {
+   "equal": 204,
+   "equal_empty": 8
+  },
+  "FLATNESS_TOLERANCE": {
+   "equal": 16
+  },
+  "GEOMETRIC_TOLERANCE": {
+   "equal": 7
+  },
+  "LINE_PROFILE_TOLERANCE": {
+   "equal": 1
+  },
+  "PARALLELISM_TOLERANCE": {
+   "equal": 12
+  },
+  "PERPENDICULARITY_TOLERANCE": {
+   "equal": 36
+  },
+  "POSITION_TOLERANCE": {
+   "equal": 153,
+   "equal_empty": 4
+  },
+  "ROUNDNESS_TOLERANCE": {
+   "equal": 2
+  },
+  "STRAIGHTNESS_TOLERANCE": {
+   "equal_empty": 1,
+   "equal": 2
+  },
+  "SURFACE_PROFILE_TOLERANCE": {
+   "equal": 108,
+   "equal_empty": 4
+  },
+  "SYMMETRY_TOLERANCE": {
+   "equal": 2
+  },
+  "TOTAL_RUNOUT_TOLERANCE": {
+   "equal": 2
+  },
+  "UNEQUALLY_DISPOSED_GEOMETRIC_TOLERANCE": {
+   "equal": 3
+  }
+ },
+ "e11": {
+  "n": 128,
+  "rel": {
+   "equal": 128
+  }
+ },
+ "ftc_08_11": {
+  "nist_ftc_08_asme1_ap242-e2": {
+   "n": 54,
+   "rel": {
+    "equal": 54
+   },
+   "e11_rel": {
+    "equal": 9
+   }
+  },
+  "nist_ftc_09_asme1_ap242-e1": {
+   "n": 61,
+   "rel": {
+    "equal": 58,
+    "equal_empty": 3
+   },
+   "e11_rel": {
+    "equal": 14
+   }
+  },
+  "nist_ftc_10_asme1_ap242-e2": {
+   "n": 77,
+   "rel": {
+    "equal": 70,
+    "equal_empty": 7
+   },
+   "e11_rel": {
+    "equal": 13
+   }
+  },
+  "nist_ftc_11_asme1_ap242-e2": {
+   "n": 12,
+   "rel": {
+    "equal": 12
+   },
+   "e11_rel": {
+    "equal": 2
+   }
+  }
+ },
+ "naming_sensitivity": {
+  "complex_sa": 300,
+  "stat_sar_user_skipped_not_relationship_type": 63
+ },
+ "rel_v4_vs_sfa": {
+  "equal": 609,
+  "ours_empty": 9,
+  "ours_superset": 79,
+  "equal_empty": 25,
+  "sfa_empty": 2
+ },
+ "rel_v4_vs_sfa_e11": {
+  "equal": 122,
+  "ours_superset": 6
+ },
+ "rel_r1_vs_sfa": {
+  "equal": 688,
+  "ours_empty": 9,
+  "equal_empty": 27
+ },
+ "rel_r1_vs_sfa_e11": {
+  "equal": 128
+ },
+ "nist_area": {
+  "n": 283,
+  "ok2_ours": 251,
+  "ok2_sfa": 251,
+  "differ_sets_with_area": []
+ },
+ "non_equal": []
+}

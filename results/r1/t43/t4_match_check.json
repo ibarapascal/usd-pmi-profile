@@ -1,0 +1,2316 @@
+{
+ "summary": {
+  "pairs": 3824,
+  "type_eq": 3824,
+  "resid_tested": 3744,
+  "resid_le_1e-3": 3578,
+  "resid_le_1e-5": 3035,
+  "unmatched": 19,
+  "unmatched_step_faces": 19,
+  "bspline_pairs": 80,
+  "bspline_resid_tested": 80,
+  "bspline_resid_le_1e-3": 33,
+  "bspline_resid_max": 0.020664190967028557
+ },
+ "nonconforming": [
+  {
+   "model": "ctc_01-e1",
+   "occ": 103,
+   "step": 867,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018503672834810914
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 102,
+   "step": 866,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018503672312064623
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 101,
+   "step": 865,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018503672227137002
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 100,
+   "step": 864,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018503672706833285
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 99,
+   "step": 863,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018503671773446584
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 98,
+   "step": 862,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.00185036723610299
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 70,
+   "step": 834,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003236805770189477
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 69,
+   "step": 833,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0021298581546531636
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 68,
+   "step": 832,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002129001572217959
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 67,
+   "step": 831,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003244579052962493
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 66,
+   "step": 830,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0032367946218005983
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 65,
+   "step": 829,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002129857474482577
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 64,
+   "step": 828,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0021290022709212764
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 63,
+   "step": 827,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003244579053047758
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 43,
+   "step": 807,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033476239875191993
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 29,
+   "step": 793,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0032840287021294046
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 19,
+   "step": 783,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033476239879028924
+  },
+  {
+   "model": "ctc_01-e1",
+   "occ": 9,
+   "step": 773,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003284019896312884
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 631,
+   "step": 3144,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033586283140678574
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 630,
+   "step": 3143,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003358628305846878
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 626,
+   "step": 3139,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003358628313169021
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 625,
+   "step": 3138,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.00335862831789413
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 552,
+   "step": 3065,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001289211609737606
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 538,
+   "step": 3051,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001284987790997505
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 535,
+   "step": 3048,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0012958371880777975
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 526,
+   "step": 3039,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001284987791814629
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 523,
+   "step": 3036,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0012958371856086615
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 512,
+   "step": 3025,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0012849877921503605
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 511,
+   "step": 3024,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0012958371851752304
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 474,
+   "step": 2987,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131191036604
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 464,
+   "step": 2977,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131202547397
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 461,
+   "step": 2974,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001908113121899646
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 458,
+   "step": 2971,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131270439755
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 457,
+   "step": 2970,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001147248525069422
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 456,
+   "step": 2969,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018115466298311844
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 455,
+   "step": 2968,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018115466672563585
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 454,
+   "step": 2967,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001512549408082542
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 453,
+   "step": 2966,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018115466135668612
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 452,
+   "step": 2965,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0018115466722550266
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 390,
+   "step": 2903,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131131493123
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 389,
+   "step": 2902,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131243368077
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 388,
+   "step": 2901,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131127620665
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 371,
+   "step": 2884,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017330807808058069
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 370,
+   "step": 2883,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017336733624038203
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 369,
+   "step": 2882,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017336724168881545
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 368,
+   "step": 2881,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003368172424416116
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 367,
+   "step": 2880,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033681723540901487
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 366,
+   "step": 2879,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003368152460007323
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 136,
+   "step": 2649,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001908113118613386
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 90,
+   "step": 2603,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131151850173
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 88,
+   "step": 2601,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131131990503
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 86,
+   "step": 2599,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131083105163
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 80,
+   "step": 2593,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0019081131211855507
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 64,
+   "step": 2577,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0010259579574700695
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 63,
+   "step": 2576,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0010211133615332102
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 62,
+   "step": 2575,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0010238910123447909
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 61,
+   "step": 2574,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0010270963016942858
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 45,
+   "step": 2558,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0012914809941921845
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 36,
+   "step": 2549,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033618071318741727
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 33,
+   "step": 2546,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033618070152776625
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 31,
+   "step": 2544,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0033618069119079053
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 28,
+   "step": 2541,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003361807073712697
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 549,
+   "step": 3062,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019301596719592071
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 546,
+   "step": 3059,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019135972330532349
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 541,
+   "step": 3054,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019308841781916063
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 539,
+   "step": 3052,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019128084612122854
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 534,
+   "step": 3047,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.002548547926232393
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 531,
+   "step": 3044,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.001930884177278371
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 529,
+   "step": 3042,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019128084598872732
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 528,
+   "step": 3041,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.003768610063237595
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 527,
+   "step": 3040,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0037626816628302203
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 518,
+   "step": 3031,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019308841774859458
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 516,
+   "step": 3029,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0019128084602446534
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 515,
+   "step": 3028,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.003778819847783029
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 514,
+   "step": 3027,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0037635163850513833
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 508,
+   "step": 3021,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.002548547925559361
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 483,
+   "step": 2996,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0025485479268358754
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 481,
+   "step": 2994,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0011405025740952924
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 480,
+   "step": 2993,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0011405720023230797
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 479,
+   "step": 2992,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0011405608740848333
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 478,
+   "step": 2991,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0011405138926034403
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 408,
+   "step": 2921,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0037364634856866187
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 407,
+   "step": 2920,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.003723925858373178
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 403,
+   "step": 2916,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0037412662174039378
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 402,
+   "step": 2915,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0037375761968096236
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 387,
+   "step": 2900,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0020168218612151086
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 384,
+   "step": 2897,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0028721963111371035
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 382,
+   "step": 2895,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0015384764259580572
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 380,
+   "step": 2893,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0015384765062628676
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 378,
+   "step": 2891,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0028721964963608726
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 137,
+   "step": 2650,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0020168219032399336
+  },
+  {
+   "model": "ctc_02-e2",
+   "occ": 73,
+   "step": 2586,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.002548547926532731
+  },
+  {
+   "model": "ctc_04-e1",
+   "occ": 387,
+   "step": 13062,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.05061670649210814
+  },
+  {
+   "model": "ctc_04-e1",
+   "occ": 385,
+   "step": 13013,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.05061670649208061
+  },
+  {
+   "model": "ctc_04-e1",
+   "occ": 373,
+   "step": 12538,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.05061670649207706
+  },
+  {
+   "model": "ctc_04-e1",
+   "occ": 357,
+   "step": 11727,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.05061670649207706
+  },
+  {
+   "model": "ctc_04-e1",
+   "occ": 354,
+   "step": 11629,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.05061670649210814
+  },
+  {
+   "model": "ctc_04-e1",
+   "occ": 343,
+   "step": 11285,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.05061670649208061
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 112,
+   "step": 1423,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(complex)",
+   "type_eq": true,
+   "max_resid_mm": 0.020664190967028557
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 109,
+   "step": 1420,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(complex)",
+   "type_eq": true,
+   "max_resid_mm": 0.020555028496793432
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 97,
+   "step": 1408,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(complex)",
+   "type_eq": true,
+   "max_resid_mm": 0.02055502875630859
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 93,
+   "step": 1404,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(complex)",
+   "type_eq": true,
+   "max_resid_mm": 0.020664190913380637
+  },
+  {
+   "model": "ftc_06-e2",
+   "occ": 114,
+   "step": 3290,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003403165846810108
+  },
+  {
+   "model": "ftc_06-e2",
+   "occ": 113,
+   "step": 3289,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0034031658424718003
+  },
+  {
+   "model": "ftc_06-e2",
+   "occ": 110,
+   "step": 3286,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0034031162764027734
+  },
+  {
+   "model": "ftc_06-e2",
+   "occ": 12,
+   "step": 3188,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.0017852951742991507
+  },
+  {
+   "model": "ftc_06-e2",
+   "occ": 11,
+   "step": 3187,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.0017852951531125427
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 285,
+   "step": 12940,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005181272733143505
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 284,
+   "step": 12914,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005181270856455367
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 283,
+   "step": 12888,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005186364048684666
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 282,
+   "step": 12862,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005181272733143505
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 271,
+   "step": 12640,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.03455431965510991
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 230,
+   "step": 10866,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005186365004679949
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 229,
+   "step": 10842,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005186366076324056
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 228,
+   "step": 10818,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0051812728971225575
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 227,
+   "step": 10794,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005186365004679949
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 224,
+   "step": 10714,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029558769954283193
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 199,
+   "step": 10096,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002861459287124557
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 198,
+   "step": 10067,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028660891423453183
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 193,
+   "step": 9907,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028631022697733766
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 192,
+   "step": 9883,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028631022697733766
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 191,
+   "step": 9864,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002955425905942999
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 173,
+   "step": 9345,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002993769962497339
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 172,
+   "step": 9321,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029954572794055334
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 171,
+   "step": 9280,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029948371036359056
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 170,
+   "step": 9256,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002955425905942999
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 161,
+   "step": 8935,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029529040640805526
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 160,
+   "step": 8911,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029529043523770504
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 158,
+   "step": 8845,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029554263726458974
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 90,
+   "step": 6197,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029964114268441477
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 59,
+   "step": 4166,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029964114268441477
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 55,
+   "step": 3809,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028675991383602106
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 45,
+   "step": 2888,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028660891423453183
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 43,
+   "step": 2762,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002993769962497339
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 30,
+   "step": 1929,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.03455431965510991
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 29,
+   "step": 1873,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029948371036359056
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 28,
+   "step": 1831,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029954572794055334
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 23,
+   "step": 1499,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028675991383602106
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 21,
+   "step": 1396,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002861459287124557
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 20,
+   "step": 1344,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029529040640805526
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 18,
+   "step": 1262,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029586343303740215
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 196,
+   "step": 10029,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.005919297060316936
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 89,
+   "step": 6159,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.005919800835283339
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 88,
+   "step": 6056,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.005914131977869161
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 87,
+   "step": 5953,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.00591463912911901
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 58,
+   "step": 4124,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0059198032530021
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 44,
+   "step": 2846,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.005917404523317519
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 25,
+   "step": 1633,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.005914639128425507
+  },
+  {
+   "model": "ftc_07-e2",
+   "occ": 24,
+   "step": 1566,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.00592282254483222
+  },
+  {
+   "model": "ftc_10-e2",
+   "occ": 233,
+   "step": 13309,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0021260056312772946
+  },
+  {
+   "model": "ftc_10-e2",
+   "occ": 232,
+   "step": 13295,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002164451905856346
+  },
+  {
+   "model": "ftc_10-e2",
+   "occ": 230,
+   "step": 13259,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.001914031910114855
+  },
+  {
+   "model": "ftc_10-e2",
+   "occ": 227,
+   "step": 13182,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001162299754630891
+  },
+  {
+   "model": "ftc_10-e2",
+   "occ": 28,
+   "step": 1777,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.001162299751852447
+  },
+  {
+   "model": "ftc_10-e2",
+   "occ": 23,
+   "step": 1399,
+   "occ_type": "Sphere",
+   "step_type": "Sphere",
+   "type_eq": true,
+   "max_resid_mm": 0.0019123469397819282
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 37,
+   "step": 1229,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0036646071994724805
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 35,
+   "step": 1227,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.014024565244906917
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 27,
+   "step": 1219,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005190178903508091
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 25,
+   "step": 1217,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.008250347675052172
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 17,
+   "step": 1209,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0035999581186126894
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 11,
+   "step": 1203,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029853972114193272
+  },
+  {
+   "model": "ftc_11-e2",
+   "occ": 0,
+   "step": 1192,
+   "occ_type": "Plane",
+   "step_type": "Plane",
+   "type_eq": true,
+   "max_resid_mm": 0.0037499999999999756
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 287,
+   "step": 10734,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0051812716067827225
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 286,
+   "step": 10708,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005181271773779361
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 285,
+   "step": 10682,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005181271773773144
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 284,
+   "step": 10656,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0051812716067827225
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 232,
+   "step": 8987,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0051812717037234
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 231,
+   "step": 8963,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.00518127158663928
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 230,
+   "step": 8939,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005181271586638836
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 229,
+   "step": 8915,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0051812717037234
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 226,
+   "step": 8840,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029558770964397407
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 201,
+   "step": 8245,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002861458209894696
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 200,
+   "step": 8222,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002861458209894696
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 195,
+   "step": 8076,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028631013153592733
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 194,
+   "step": 8057,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028631013153550544
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 193,
+   "step": 8043,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029554265663316315
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 175,
+   "step": 7529,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029937744657579923
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 173,
+   "step": 7467,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002993774588563314
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 172,
+   "step": 7443,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029554265663316315
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 163,
+   "step": 7200,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029529041295051073
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 162,
+   "step": 7176,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029529043108762476
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 92,
+   "step": 5078,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029954611415012877
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 61,
+   "step": 3526,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0029954611415012877
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 47,
+   "step": 2512,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0028614582098807073
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 31,
+   "step": 1621,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002993774588563314
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 30,
+   "step": 1581,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002995461004736688
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 198,
+   "step": 8184,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0029881589834105968
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 46,
+   "step": 2477,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.002986637351692712
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 27,
+   "step": 1472,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.002951547197356953
+  },
+  {
+   "model": "stc_07-e3",
+   "occ": 26,
+   "step": 1412,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(simple)",
+   "type_eq": true,
+   "max_resid_mm": 0.0029566586390197195
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 100,
+   "step": 7084,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990365476834302
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 99,
+   "step": 7083,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990365476743264
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 98,
+   "step": 7082,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990221245338667
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 97,
+   "step": 7081,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.001799022124480798
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 96,
+   "step": 7080,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990221245338667
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 95,
+   "step": 7079,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990221245312021
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 94,
+   "step": 7078,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990221245325344
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 93,
+   "step": 7077,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0017990221245336446
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 87,
+   "step": 7071,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0031286648471189338
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 86,
+   "step": 7070,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0031286648471218204
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 75,
+   "step": 7059,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0023884239340161706
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 72,
+   "step": 7056,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0023884160462337434
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 69,
+   "step": 7053,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.002388416046232411
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 66,
+   "step": 7050,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0023884160462337434
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 65,
+   "step": 7049,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.004109165995359376
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 64,
+   "step": 7048,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003128664847099616
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 63,
+   "step": 7047,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.003128664847125595
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 62,
+   "step": 7046,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0031286648471064993
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 61,
+   "step": 7045,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0031286648471113843
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 1,
+   "step": 6985,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.0011318343860535762
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 60,
+   "step": 7044,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.005984188542247804
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 58,
+   "step": 7042,
+   "occ_type": "Cylinder",
+   "step_type": "Cylinder",
+   "type_eq": true,
+   "max_resid_mm": 0.00598418854224958
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 139,
+   "step": 7123,
+   "occ_type": "BSplineSurface",
+   "step_type": "BSplineSurface(complex)",
+   "type_eq": true,
+   "max_resid_mm": 0.0018922021973401865
+  }
+ ],
+ "unmatched": [
+  {
+   "model": "ctc_05-e1",
+   "occ": 29,
+   "type": "Cone",
+   "area_mm2": 57.71,
+   "bbox_mm": [
+    7.94,
+    7.94,
+    2.38
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1340,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 0,
+     "radius_mm": 3.96875
+    }
+   ]
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 31,
+   "type": "Cone",
+   "area_mm2": 57.71,
+   "bbox_mm": [
+    7.94,
+    7.94,
+    2.38
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1342,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 0,
+     "radius_mm": 3.96875
+    }
+   ]
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 33,
+   "type": "Cone",
+   "area_mm2": 57.71,
+   "bbox_mm": [
+    7.94,
+    7.94,
+    2.38
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1344,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 3.96875
+    }
+   ]
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 35,
+   "type": "Cone",
+   "area_mm2": 57.71,
+   "bbox_mm": [
+    7.94,
+    7.94,
+    2.38
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1346,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 3.96875
+    }
+   ]
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 78,
+   "type": "Cone",
+   "area_mm2": 105.18,
+   "bbox_mm": [
+    3.22,
+    10.71,
+    10.72
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1389,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 5.35813
+    }
+   ]
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 80,
+   "type": "Cone",
+   "area_mm2": 105.18,
+   "bbox_mm": [
+    3.22,
+    10.71,
+    10.72
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1391,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 5.35813
+    }
+   ]
+  },
+  {
+   "model": "ctc_05-e1",
+   "occ": 82,
+   "type": "Cone",
+   "area_mm2": 105.18,
+   "bbox_mm": [
+    3.22,
+    10.71,
+    10.72
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1393,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 5.35813
+    }
+   ]
+  },
+  {
+   "model": "stc_06-e3",
+   "occ": 32,
+   "type": "Sphere",
+   "area_mm2": 2597.61,
+   "bbox_mm": [
+    31.74,
+    31.75,
+    26.07
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1945,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 15.875
+    }
+   ]
+  },
+  {
+   "model": "stc_06-e3",
+   "occ": 34,
+   "type": "Cone",
+   "area_mm2": 36.93,
+   "bbox_mm": [
+    6.35,
+    6.35,
+    1.91
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 1975,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 3.175
+    }
+   ]
+  },
+  {
+   "model": "stc_06-e3",
+   "occ": 39,
+   "type": "Cone",
+   "area_mm2": 36.93,
+   "bbox_mm": [
+    6.35,
+    6.35,
+    1.91
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 2076,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 3.175
+    }
+   ]
+  },
+  {
+   "model": "stc_06-e3",
+   "occ": 80,
+   "type": "Sphere",
+   "area_mm2": 2597.61,
+   "bbox_mm": [
+    31.74,
+    31.75,
+    26.07
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 2840,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 15.875
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 55,
+   "type": "Cone",
+   "area_mm2": 8.24,
+   "bbox_mm": [
+    3.0,
+    0.9,
+    3.0
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7039,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 1.5
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 57,
+   "type": "Cone",
+   "area_mm2": 27.71,
+   "bbox_mm": [
+    1.65,
+    5.5,
+    5.5
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7041,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 2.75
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 59,
+   "type": "Cone",
+   "area_mm2": 27.71,
+   "bbox_mm": [
+    1.65,
+    5.5,
+    5.5
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7043,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 2.75
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 202,
+   "type": "Cone",
+   "area_mm2": 8.24,
+   "bbox_mm": [
+    3.0,
+    0.9,
+    3.0
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7186,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 1.5
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 204,
+   "type": "Cone",
+   "area_mm2": 8.24,
+   "bbox_mm": [
+    3.0,
+    0.9,
+    3.0
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7188,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 1.5
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 206,
+   "type": "Cone",
+   "area_mm2": 8.24,
+   "bbox_mm": [
+    3.0,
+    0.9,
+    3.0
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7190,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 1.5
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 208,
+   "type": "Cone",
+   "area_mm2": 8.24,
+   "bbox_mm": [
+    3.0,
+    0.9,
+    3.0
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7192,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 1.5
+    }
+   ]
+  },
+  {
+   "model": "stc_10-e2",
+   "occ": 210,
+   "type": "Cone",
+   "area_mm2": 8.24,
+   "bbox_mm": [
+    3.0,
+    0.9,
+    3.0
+   ],
+   "geom_coincident_step_faces": [
+    {
+     "step": 7194,
+     "matched_to_other": false,
+     "n_step_verts": 1,
+     "step_verts_on_occ_tess": 1,
+     "radius_mm": 1.5
+    }
+   ]
+  }
+ ]
+}

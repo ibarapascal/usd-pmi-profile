@@ -1,0 +1,542 @@
+{
+ "mefisto": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1854,
+   "median": 0.0004,
+   "p99": 2.4215,
+   "max": 94.9296,
+   "n_gt_0.04": 325
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 118,
+   "groups_clean_pct": 92.19,
+   "faces": 599,
+   "faces_in_band": 563,
+   "at_limit_faces": 0,
+   "cause_by_group": {
+    "tessellation": 1,
+    "other": 6,
+    "unit_inconsistent_source": 1,
+    "multi_size_group": 2
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ctc_01_asme1_ap242-e1",
+    "stepId": "#121",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15130",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "other"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15238",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "other"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15344",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "other"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15389",
+    "dimName": "diameter",
+    "faces": 8,
+    "cause": "other"
+   },
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_07_asme1_ap242-e3",
+    "stepId": "#14717",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "other"
+   },
+   {
+    "model": "nist_stc_07_asme1_ap242-e3",
+    "stepId": "#14760",
+    "dimName": "diameter",
+    "faces": 8,
+    "cause": "other"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ },
+ "netgen_f2": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1866,
+   "median": 6.7e-05,
+   "p99": 0.1679,
+   "max": 94952.4675,
+   "n_gt_0.04": 47
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 122,
+   "groups_clean_pct": 95.31,
+   "faces": 599,
+   "faces_in_band": 589,
+   "at_limit_faces": 3,
+   "cause_by_group": {
+    "multi_size_group": 4,
+    "unit_inconsistent_source": 1,
+    "tessellation": 1
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ctc_01_asme1_ap242-e1",
+    "stepId": "#120",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_ctc_01_asme1_ap242-e1",
+    "stepId": "#121",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_07_asme1_ap242-e3",
+    "stepId": "#14717",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ },
+ "occ_d0.01": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1866,
+   "median": 1.3e-06,
+   "p99": 0.0041,
+   "max": 1.6915,
+   "n_gt_0.04": 4
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 122,
+   "groups_clean_pct": 95.31,
+   "faces": 599,
+   "faces_in_band": 585,
+   "at_limit_faces": 10,
+   "cause_by_group": {
+    "tessellation": 3,
+    "unit_inconsistent_source": 1,
+    "multi_size_group": 2
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15130",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15238",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15344",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ },
+ "occ_d0.05": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1866,
+   "median": 1.8e-06,
+   "p99": 0.0084,
+   "max": 2.795,
+   "n_gt_0.04": 4
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 122,
+   "groups_clean_pct": 95.31,
+   "faces": 599,
+   "faces_in_band": 585,
+   "at_limit_faces": 12,
+   "cause_by_group": {
+    "tessellation": 3,
+    "unit_inconsistent_source": 1,
+    "multi_size_group": 2
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15130",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15238",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15344",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ },
+ "occ_d0.1": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1866,
+   "median": 1.8e-06,
+   "p99": 0.0073,
+   "max": 3.4709,
+   "n_gt_0.04": 4
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 122,
+   "groups_clean_pct": 95.31,
+   "faces": 599,
+   "faces_in_band": 585,
+   "at_limit_faces": 12,
+   "cause_by_group": {
+    "tessellation": 3,
+    "unit_inconsistent_source": 1,
+    "multi_size_group": 2
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15130",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15238",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15344",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ },
+ "occ_d0.5": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1866,
+   "median": 1.8e-06,
+   "p99": 0.0058,
+   "max": 3.1808,
+   "n_gt_0.04": 4
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 122,
+   "groups_clean_pct": 95.31,
+   "faces": 599,
+   "faces_in_band": 585,
+   "at_limit_faces": 12,
+   "cause_by_group": {
+    "tessellation": 3,
+    "unit_inconsistent_source": 1,
+    "multi_size_group": 2
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15130",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15238",
+    "dimName": "diameter",
+    "faces": 2,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_07_asme1_ap242-e2",
+    "stepId": "#15344",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ },
+ "occ_d0.5_a1.0": {
+  "cf_pass_models": {
+   "CF1": "16/16",
+   "CF2": "16/16",
+   "CF3": "15/16",
+   "CF4": "16/16",
+   "CF5": "16/16",
+   "CF6": "16/16",
+   "CF7": "14/16"
+  },
+  "c3": {
+   "n": 1866,
+   "median": 4.8e-06,
+   "p99": 0.1761,
+   "max": 4.7294,
+   "n_gt_0.04": 48
+  },
+  "e11": {
+   "groups": 128,
+   "groups_clean": 124,
+   "groups_clean_pct": 96.88,
+   "faces": 599,
+   "faces_in_band": 591,
+   "at_limit_faces": 2,
+   "cause_by_group": {
+    "unit_inconsistent_source": 1,
+    "tessellation": 1,
+    "multi_size_group": 2
+   }
+  },
+  "e11_incidents": [
+   {
+    "model": "nist_ftc_09_asme1_ap242-e1",
+    "stepId": "#9251",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "unit_inconsistent_source"
+   },
+   {
+    "model": "nist_stc_07_asme1_ap242-e3",
+    "stepId": "#14717",
+    "dimName": "diameter",
+    "faces": 4,
+    "cause": "tessellation"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#299",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   },
+   {
+    "model": "nist_stc_10_asme1_ap242-e2",
+    "stepId": "#307",
+    "dimName": "diameter",
+    "faces": 5,
+    "cause": "multi_size_group"
+   }
+  ]
+ }
+}

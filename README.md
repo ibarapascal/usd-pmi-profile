@@ -12,11 +12,20 @@ and validation on the NIST MBE test models* (submitted, 2026).
   flaggability rule and its P3 counter-check (31, 32), the stage-only tolerance judgement (36),
   aggregation to the numbers SSOT (20), and figures (27, 33, 34). Scripts 01/02/04/07/11 are
   the earlier batch that produced the archived P1 meshes and per-face inputs.
+  Added in the first revision: the association cross-check against the CAx-IF validation
+  properties (42) and a re-implementation of the NIST SFA association rules (50), the revision
+  tables (43: unaligned faces, anchoring inventory, E11 re-attribution, unit census, float
+  precision), stage overhead (44), the minimality ablation (45), the composition check (46),
+  tessellation and topology robustness (47, 48), the P2 metadata re-conversion scan (49), the
+  revision-number extractor (51), and a results-only verifier (54).
 - **results/** — `canonical_numbers.json` (every number in the paper, keyed), the 64-row
   per-model registration table (`registration_table_v2.json`), the flaggability-rule outputs
   (`flag_rule.json`, `flag_rule_p3.json`), the E2 scan, the E8 ablation outputs, the
   stage-only tolerance judgements (`e11_tolerance_judgement.json`), the per-model audit outputs
   with their per-condition CF1–CF7 verdicts (`audit_per_model/`), and the human-readable digest.
+  `results/r1/` holds the revision outputs behind the new numbers and supplementary tables
+  (`canonical_r1.json`, the summary tables of each revision experiment, and the `usdchecker`
+  log of the revised stages, `t13/usdchecker_r1b.log`).
 - **figures/** — the paper's figures as generated.
 
 ## Reproduce
@@ -33,7 +42,13 @@ and validation on the NIST MBE test models* (submitted, 2026).
    minimal re-run is `scripts/run_unit_fix_rerun.sh` (parser → writer → audit only): the hole
    metrology and the geometry-only baselines read `pmi:surfaceType` and geometry, never
    `pmi:value`, so they are unaffected by the typed-value units.
-4. P2 (Omniverse) meshes are archived artifacts; re-conversion requires an Omniverse
+4. Verification without FreeCAD or the NIST download: `python scripts/54_verify_results.py`
+   re-derives the audit, association-target and E11 counts from the archived per-model outputs
+   and re-runs the revision-number extractor (51) on `results/r1/`, asserting every frozen value.
+   The revision re-runs are `scripts/run_r1_assoc_rerun.sh` (parser fix → writer → audit → E11
+   → aggregation), `scripts/run_r1_t1t2.sh` and `scripts/run_r1_t1_downstream.sh` (tessellation
+   and topology robustness, FreeCAD 1.1.1).
+5. P2 (Omniverse) meshes are archived artifacts; re-conversion requires an Omniverse
    environment and the vendor's written permission (see the paper, Section 4.6). P3 conversion
    uses official prebuilt binaries of Mayo 0.10.0 and guc 0.5 (`scripts/25_e2_pcb_batch.ps1`).
 

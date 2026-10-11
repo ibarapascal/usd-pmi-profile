@@ -3,6 +3,8 @@
 #      → 下游 design/manufacturing 消费者（检验计量・机器人・设计评审）
 # 风格沿用 scripts/27_figures_v2.py（Helvetica 9pt / 同色板 / 300dpi）
 # 用法: .venv/bin/python scripts/33_graphical_abstract.py
+# R1（2026-10-05，v5.1 图轮）：上路标题 "Today's delivery to USD" → "Three tested converters"（R2-9：正文已把生产管线结论
+#   收窄到实测的三条与其配置，GA 不得比正文更泛）；输出目录走环境变量 FIG_OUT（默认 figures/，不设时行为同 v4）。
 import os
 
 import matplotlib
@@ -12,7 +14,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
-os.makedirs("figures", exist_ok=True)
+FIG_OUT = os.environ.get("FIG_OUT", "figures")
+os.makedirs(FIG_OUT, exist_ok=True)
 # 字号：本刊 8–12 pt；GA 还会被缩成 TOC 缩略图，故按双栏满宽 174 mm 作图并把最小字号抬到 8.5 pt
 plt.rcParams.update({"font.size": 9, "figure.dpi": 300, "savefig.bbox": None,
                      "font.family": "Helvetica", "ps.fonttype": 42, "pdf.fonttype": 42})
@@ -44,7 +47,7 @@ box(ax, 0.05, 1.30, 1.85, 1.45, "CAD source", "STEP AP242\ngeometry +\nsemantic 
     fc="#f2f5f9", ec=GRAY)
 
 # 上路：今日的交付
-box(ax, 2.55, 2.42, 3.15, 1.42, "Today's delivery to USD",
+box(ax, 2.55, 2.42, 3.15, 1.42, "Three tested converters",
     "geometry arrives\ntolerances, datums and the\nlink to the face do not", fc="#fbf0ec", ec=WARM)
 arrow(ax, 1.90, 2.28, 2.55, 3.02, color=WARM)
 ax.text(2.02, 3.12, "convert", fontsize=8.5, color=WARM, ha="center")
@@ -71,6 +74,6 @@ ax.text(5.1, -0.13, "A standards-only convention, stated as conformance conditio
 
 fig.patch.set_alpha(1.0)
 for ext, dpi in (("png", 300), ("tiff", 600), ("eps", 600)):
-    fig.savefig(f"figures/graphical_abstract.{ext}", dpi=dpi)
+    fig.savefig(f"{FIG_OUT}/graphical_abstract.{ext}", dpi=dpi)
 plt.close(fig)
-print("[33] figures/graphical_abstract.{png,tiff} written")
+print(f"[33] {FIG_OUT}/graphical_abstract.{{png,tiff,eps}} written")

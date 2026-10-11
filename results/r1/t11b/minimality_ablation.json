@@ -1,0 +1,3096 @@
+{
+ "summary": {
+  "full": {
+   "K1_locate": "2527/2527",
+   "K2_read": "617/617",
+   "K3_phys": "617/617",
+   "K4_reverse": "2527/2527",
+   "K5_judged": "128/128",
+   "K5_clean": "122/122",
+   "K6_cyl": "1866/1866",
+   "K7_sourceUnit": "617/617"
+  },
+  "no_face_identity": {
+   "K1_locate": "0/2527",
+   "K2_read": "617/617",
+   "K3_phys": "617/617",
+   "K4_reverse": "0/2527",
+   "K5_judged": "0/128",
+   "K5_clean": "0/122",
+   "K6_cyl": "0/1866",
+   "K7_sourceUnit": "617/617"
+  },
+  "no_typed": {
+   "K1_locate": "2527/2527",
+   "K2_read": "0/617",
+   "K3_phys": "0/617",
+   "K4_reverse": "2527/2527",
+   "K5_judged": "0/128",
+   "K5_clean": "0/122",
+   "K6_cyl": "1866/1866",
+   "K7_sourceUnit": "617/617"
+  },
+  "no_association": {
+   "K1_locate": "0/2527",
+   "K2_read": "617/617",
+   "K3_phys": "617/617",
+   "K4_reverse": "0/2527",
+   "K5_judged": "0/128",
+   "K5_clean": "0/122",
+   "K6_cyl": "1866/1866",
+   "K7_sourceUnit": "617/617"
+  },
+  "no_units": {
+   "K1_locate": "2527/2527",
+   "K2_read": "617/617",
+   "K3_phys": "4/617",
+   "K4_reverse": "2527/2527",
+   "K5_judged": "128/128",
+   "K5_clean": "122/122",
+   "K6_cyl": "1866/1866",
+   "K7_sourceUnit": "0/617"
+  }
+ },
+ "rows": [
+  {
+   "model": "nist_ctc_01_asme1_ap242-e1",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 23,
+   "K1_locate": [
+    41,
+    41
+   ],
+   "K2_read": [
+    13,
+    13
+   ],
+   "K3_phys": [
+    13,
+    13
+   ],
+   "K4_reverse": [
+    41,
+    41
+   ],
+   "K5_judged": [
+    5,
+    5
+   ],
+   "K5_clean": [
+    5,
+    5
+   ],
+   "K6_cyl": [
+    57,
+    57
+   ],
+   "K7_sourceUnit": [
+    13,
+    13
+   ]
+  },
+  {
+   "model": "nist_ctc_01_asme1_ap242-e1",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 23,
+   "K1_locate": [
+    0,
+    41
+   ],
+   "K2_read": [
+    13,
+    13
+   ],
+   "K3_phys": [
+    13,
+    13
+   ],
+   "K4_reverse": [
+    0,
+    41
+   ],
+   "K5_judged": [
+    0,
+    5
+   ],
+   "K5_clean": [
+    0,
+    5
+   ],
+   "K6_cyl": [
+    0,
+    57
+   ],
+   "K7_sourceUnit": [
+    13,
+    13
+   ]
+  },
+  {
+   "model": "nist_ctc_01_asme1_ap242-e1",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 23,
+   "K1_locate": [
+    41,
+    41
+   ],
+   "K2_read": [
+    0,
+    13
+   ],
+   "K3_phys": [
+    0,
+    13
+   ],
+   "K4_reverse": [
+    41,
+    41
+   ],
+   "K5_judged": [
+    0,
+    5
+   ],
+   "K5_clean": [
+    0,
+    5
+   ],
+   "K6_cyl": [
+    57,
+    57
+   ],
+   "K7_sourceUnit": [
+    13,
+    13
+   ]
+  },
+  {
+   "model": "nist_ctc_01_asme1_ap242-e1",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 23,
+   "K1_locate": [
+    0,
+    41
+   ],
+   "K2_read": [
+    13,
+    13
+   ],
+   "K3_phys": [
+    13,
+    13
+   ],
+   "K4_reverse": [
+    0,
+    41
+   ],
+   "K5_judged": [
+    0,
+    5
+   ],
+   "K5_clean": [
+    0,
+    5
+   ],
+   "K6_cyl": [
+    57,
+    57
+   ],
+   "K7_sourceUnit": [
+    13,
+    13
+   ]
+  },
+  {
+   "model": "nist_ctc_01_asme1_ap242-e1",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 23,
+   "K1_locate": [
+    41,
+    41
+   ],
+   "K2_read": [
+    13,
+    13
+   ],
+   "K3_phys": [
+    0,
+    13
+   ],
+   "K4_reverse": [
+    41,
+    41
+   ],
+   "K5_judged": [
+    5,
+    5
+   ],
+   "K5_clean": [
+    5,
+    5
+   ],
+   "K6_cyl": [
+    57,
+    57
+   ],
+   "K7_sourceUnit": [
+    0,
+    13
+   ]
+  },
+  {
+   "model": "nist_ctc_02_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 45,
+   "K1_locate": [
+    67,
+    67
+   ],
+   "K2_read": [
+    29,
+    29
+   ],
+   "K3_phys": [
+    29,
+    29
+   ],
+   "K4_reverse": [
+    67,
+    67
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    314,
+    314
+   ],
+   "K7_sourceUnit": [
+    29,
+    29
+   ]
+  },
+  {
+   "model": "nist_ctc_02_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 45,
+   "K1_locate": [
+    0,
+    67
+   ],
+   "K2_read": [
+    29,
+    29
+   ],
+   "K3_phys": [
+    29,
+    29
+   ],
+   "K4_reverse": [
+    0,
+    67
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    0,
+    314
+   ],
+   "K7_sourceUnit": [
+    29,
+    29
+   ]
+  },
+  {
+   "model": "nist_ctc_02_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 45,
+   "K1_locate": [
+    67,
+    67
+   ],
+   "K2_read": [
+    0,
+    29
+   ],
+   "K3_phys": [
+    0,
+    29
+   ],
+   "K4_reverse": [
+    67,
+    67
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    314,
+    314
+   ],
+   "K7_sourceUnit": [
+    29,
+    29
+   ]
+  },
+  {
+   "model": "nist_ctc_02_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 45,
+   "K1_locate": [
+    0,
+    67
+   ],
+   "K2_read": [
+    29,
+    29
+   ],
+   "K3_phys": [
+    29,
+    29
+   ],
+   "K4_reverse": [
+    0,
+    67
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    314,
+    314
+   ],
+   "K7_sourceUnit": [
+    29,
+    29
+   ]
+  },
+  {
+   "model": "nist_ctc_02_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 45,
+   "K1_locate": [
+    67,
+    67
+   ],
+   "K2_read": [
+    29,
+    29
+   ],
+   "K3_phys": [
+    0,
+    29
+   ],
+   "K4_reverse": [
+    67,
+    67
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    314,
+    314
+   ],
+   "K7_sourceUnit": [
+    0,
+    29
+   ]
+  },
+  {
+   "model": "nist_ctc_03_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 35,
+   "K1_locate": [
+    71,
+    71
+   ],
+   "K2_read": [
+    22,
+    22
+   ],
+   "K3_phys": [
+    22,
+    22
+   ],
+   "K4_reverse": [
+    71,
+    71
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    22,
+    22
+   ]
+  },
+  {
+   "model": "nist_ctc_03_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 35,
+   "K1_locate": [
+    0,
+    71
+   ],
+   "K2_read": [
+    22,
+    22
+   ],
+   "K3_phys": [
+    22,
+    22
+   ],
+   "K4_reverse": [
+    0,
+    71
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    0,
+    58
+   ],
+   "K7_sourceUnit": [
+    22,
+    22
+   ]
+  },
+  {
+   "model": "nist_ctc_03_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 35,
+   "K1_locate": [
+    71,
+    71
+   ],
+   "K2_read": [
+    0,
+    22
+   ],
+   "K3_phys": [
+    0,
+    22
+   ],
+   "K4_reverse": [
+    71,
+    71
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    22,
+    22
+   ]
+  },
+  {
+   "model": "nist_ctc_03_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 35,
+   "K1_locate": [
+    0,
+    71
+   ],
+   "K2_read": [
+    22,
+    22
+   ],
+   "K3_phys": [
+    22,
+    22
+   ],
+   "K4_reverse": [
+    0,
+    71
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    22,
+    22
+   ]
+  },
+  {
+   "model": "nist_ctc_03_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 35,
+   "K1_locate": [
+    71,
+    71
+   ],
+   "K2_read": [
+    22,
+    22
+   ],
+   "K3_phys": [
+    0,
+    22
+   ],
+   "K4_reverse": [
+    71,
+    71
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    0,
+    22
+   ]
+  },
+  {
+   "model": "nist_ctc_04_asme1_ap242-e1",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 32,
+   "K1_locate": [
+    135,
+    135
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    16,
+    16
+   ],
+   "K4_reverse": [
+    135,
+    135
+   ],
+   "K5_judged": [
+    3,
+    3
+   ],
+   "K5_clean": [
+    3,
+    3
+   ],
+   "K6_cyl": [
+    228,
+    228
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_04_asme1_ap242-e1",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 32,
+   "K1_locate": [
+    0,
+    135
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    16,
+    16
+   ],
+   "K4_reverse": [
+    0,
+    135
+   ],
+   "K5_judged": [
+    0,
+    3
+   ],
+   "K5_clean": [
+    0,
+    3
+   ],
+   "K6_cyl": [
+    0,
+    228
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_04_asme1_ap242-e1",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 32,
+   "K1_locate": [
+    135,
+    135
+   ],
+   "K2_read": [
+    0,
+    16
+   ],
+   "K3_phys": [
+    0,
+    16
+   ],
+   "K4_reverse": [
+    135,
+    135
+   ],
+   "K5_judged": [
+    0,
+    3
+   ],
+   "K5_clean": [
+    0,
+    3
+   ],
+   "K6_cyl": [
+    228,
+    228
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_04_asme1_ap242-e1",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 32,
+   "K1_locate": [
+    0,
+    135
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    16,
+    16
+   ],
+   "K4_reverse": [
+    0,
+    135
+   ],
+   "K5_judged": [
+    0,
+    3
+   ],
+   "K5_clean": [
+    0,
+    3
+   ],
+   "K6_cyl": [
+    228,
+    228
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_04_asme1_ap242-e1",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 32,
+   "K1_locate": [
+    135,
+    135
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    0,
+    16
+   ],
+   "K4_reverse": [
+    135,
+    135
+   ],
+   "K5_judged": [
+    3,
+    3
+   ],
+   "K5_clean": [
+    3,
+    3
+   ],
+   "K6_cyl": [
+    228,
+    228
+   ],
+   "K7_sourceUnit": [
+    0,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 22,
+   "K1_locate": [
+    12,
+    12
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    16,
+    16
+   ],
+   "K4_reverse": [
+    12,
+    12
+   ],
+   "K5_judged": [
+    1,
+    1
+   ],
+   "K5_clean": [
+    1,
+    1
+   ],
+   "K6_cyl": [
+    67,
+    67
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 22,
+   "K1_locate": [
+    0,
+    12
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    16,
+    16
+   ],
+   "K4_reverse": [
+    0,
+    12
+   ],
+   "K5_judged": [
+    0,
+    1
+   ],
+   "K5_clean": [
+    0,
+    1
+   ],
+   "K6_cyl": [
+    0,
+    67
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 22,
+   "K1_locate": [
+    12,
+    12
+   ],
+   "K2_read": [
+    0,
+    16
+   ],
+   "K3_phys": [
+    0,
+    16
+   ],
+   "K4_reverse": [
+    12,
+    12
+   ],
+   "K5_judged": [
+    0,
+    1
+   ],
+   "K5_clean": [
+    0,
+    1
+   ],
+   "K6_cyl": [
+    67,
+    67
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 22,
+   "K1_locate": [
+    0,
+    12
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    16,
+    16
+   ],
+   "K4_reverse": [
+    0,
+    12
+   ],
+   "K5_judged": [
+    0,
+    1
+   ],
+   "K5_clean": [
+    0,
+    1
+   ],
+   "K6_cyl": [
+    67,
+    67
+   ],
+   "K7_sourceUnit": [
+    16,
+    16
+   ]
+  },
+  {
+   "model": "nist_ctc_05_asme1_ap242-e1",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 22,
+   "K1_locate": [
+    12,
+    12
+   ],
+   "K2_read": [
+    16,
+    16
+   ],
+   "K3_phys": [
+    0,
+    16
+   ],
+   "K4_reverse": [
+    12,
+    12
+   ],
+   "K5_judged": [
+    1,
+    1
+   ],
+   "K5_clean": [
+    1,
+    1
+   ],
+   "K6_cyl": [
+    67,
+    67
+   ],
+   "K7_sourceUnit": [
+    0,
+    16
+   ]
+  },
+  {
+   "model": "nist_ftc_06_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 68,
+   "K1_locate": [
+    195,
+    195
+   ],
+   "K2_read": [
+    52,
+    52
+   ],
+   "K3_phys": [
+    52,
+    52
+   ],
+   "K4_reverse": [
+    195,
+    195
+   ],
+   "K5_judged": [
+    10,
+    10
+   ],
+   "K5_clean": [
+    10,
+    10
+   ],
+   "K6_cyl": [
+    88,
+    88
+   ],
+   "K7_sourceUnit": [
+    52,
+    52
+   ]
+  },
+  {
+   "model": "nist_ftc_06_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 68,
+   "K1_locate": [
+    0,
+    195
+   ],
+   "K2_read": [
+    52,
+    52
+   ],
+   "K3_phys": [
+    52,
+    52
+   ],
+   "K4_reverse": [
+    0,
+    195
+   ],
+   "K5_judged": [
+    0,
+    10
+   ],
+   "K5_clean": [
+    0,
+    10
+   ],
+   "K6_cyl": [
+    0,
+    88
+   ],
+   "K7_sourceUnit": [
+    52,
+    52
+   ]
+  },
+  {
+   "model": "nist_ftc_06_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 68,
+   "K1_locate": [
+    195,
+    195
+   ],
+   "K2_read": [
+    0,
+    52
+   ],
+   "K3_phys": [
+    0,
+    52
+   ],
+   "K4_reverse": [
+    195,
+    195
+   ],
+   "K5_judged": [
+    0,
+    10
+   ],
+   "K5_clean": [
+    0,
+    10
+   ],
+   "K6_cyl": [
+    88,
+    88
+   ],
+   "K7_sourceUnit": [
+    52,
+    52
+   ]
+  },
+  {
+   "model": "nist_ftc_06_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 68,
+   "K1_locate": [
+    0,
+    195
+   ],
+   "K2_read": [
+    52,
+    52
+   ],
+   "K3_phys": [
+    52,
+    52
+   ],
+   "K4_reverse": [
+    0,
+    195
+   ],
+   "K5_judged": [
+    0,
+    10
+   ],
+   "K5_clean": [
+    0,
+    10
+   ],
+   "K6_cyl": [
+    88,
+    88
+   ],
+   "K7_sourceUnit": [
+    52,
+    52
+   ]
+  },
+  {
+   "model": "nist_ftc_06_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 68,
+   "K1_locate": [
+    195,
+    195
+   ],
+   "K2_read": [
+    52,
+    52
+   ],
+   "K3_phys": [
+    0,
+    52
+   ],
+   "K4_reverse": [
+    195,
+    195
+   ],
+   "K5_judged": [
+    10,
+    10
+   ],
+   "K5_clean": [
+    10,
+    10
+   ],
+   "K6_cyl": [
+    88,
+    88
+   ],
+   "K7_sourceUnit": [
+    0,
+    52
+   ]
+  },
+  {
+   "model": "nist_ftc_07_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    277,
+    277
+   ],
+   "K2_read": [
+    44,
+    44
+   ],
+   "K3_phys": [
+    44,
+    44
+   ],
+   "K4_reverse": [
+    277,
+    277
+   ],
+   "K5_judged": [
+    11,
+    11
+   ],
+   "K5_clean": [
+    8,
+    8
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    44,
+    44
+   ]
+  },
+  {
+   "model": "nist_ftc_07_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    0,
+    277
+   ],
+   "K2_read": [
+    44,
+    44
+   ],
+   "K3_phys": [
+    44,
+    44
+   ],
+   "K4_reverse": [
+    0,
+    277
+   ],
+   "K5_judged": [
+    0,
+    11
+   ],
+   "K5_clean": [
+    0,
+    8
+   ],
+   "K6_cyl": [
+    0,
+    133
+   ],
+   "K7_sourceUnit": [
+    44,
+    44
+   ]
+  },
+  {
+   "model": "nist_ftc_07_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    277,
+    277
+   ],
+   "K2_read": [
+    0,
+    44
+   ],
+   "K3_phys": [
+    0,
+    44
+   ],
+   "K4_reverse": [
+    277,
+    277
+   ],
+   "K5_judged": [
+    0,
+    11
+   ],
+   "K5_clean": [
+    0,
+    8
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    44,
+    44
+   ]
+  },
+  {
+   "model": "nist_ftc_07_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    0,
+    277
+   ],
+   "K2_read": [
+    44,
+    44
+   ],
+   "K3_phys": [
+    44,
+    44
+   ],
+   "K4_reverse": [
+    0,
+    277
+   ],
+   "K5_judged": [
+    0,
+    11
+   ],
+   "K5_clean": [
+    0,
+    8
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    44,
+    44
+   ]
+  },
+  {
+   "model": "nist_ftc_07_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 54,
+   "K1_locate": [
+    277,
+    277
+   ],
+   "K2_read": [
+    44,
+    44
+   ],
+   "K3_phys": [
+    0,
+    44
+   ],
+   "K4_reverse": [
+    277,
+    277
+   ],
+   "K5_judged": [
+    11,
+    11
+   ],
+   "K5_clean": [
+    8,
+    8
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    0,
+    44
+   ]
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    159,
+    159
+   ],
+   "K2_read": [
+    43,
+    43
+   ],
+   "K3_phys": [
+    43,
+    43
+   ],
+   "K4_reverse": [
+    159,
+    159
+   ],
+   "K5_judged": [
+    9,
+    9
+   ],
+   "K5_clean": [
+    9,
+    9
+   ],
+   "K6_cyl": [
+    134,
+    134
+   ],
+   "K7_sourceUnit": [
+    43,
+    43
+   ]
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    0,
+    159
+   ],
+   "K2_read": [
+    43,
+    43
+   ],
+   "K3_phys": [
+    43,
+    43
+   ],
+   "K4_reverse": [
+    0,
+    159
+   ],
+   "K5_judged": [
+    0,
+    9
+   ],
+   "K5_clean": [
+    0,
+    9
+   ],
+   "K6_cyl": [
+    0,
+    134
+   ],
+   "K7_sourceUnit": [
+    43,
+    43
+   ]
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    159,
+    159
+   ],
+   "K2_read": [
+    0,
+    43
+   ],
+   "K3_phys": [
+    0,
+    43
+   ],
+   "K4_reverse": [
+    159,
+    159
+   ],
+   "K5_judged": [
+    0,
+    9
+   ],
+   "K5_clean": [
+    0,
+    9
+   ],
+   "K6_cyl": [
+    134,
+    134
+   ],
+   "K7_sourceUnit": [
+    43,
+    43
+   ]
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    0,
+    159
+   ],
+   "K2_read": [
+    43,
+    43
+   ],
+   "K3_phys": [
+    43,
+    43
+   ],
+   "K4_reverse": [
+    0,
+    159
+   ],
+   "K5_judged": [
+    0,
+    9
+   ],
+   "K5_clean": [
+    0,
+    9
+   ],
+   "K6_cyl": [
+    134,
+    134
+   ],
+   "K7_sourceUnit": [
+    43,
+    43
+   ]
+  },
+  {
+   "model": "nist_ftc_08_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 65,
+   "K1_locate": [
+    159,
+    159
+   ],
+   "K2_read": [
+    43,
+    43
+   ],
+   "K3_phys": [
+    0,
+    43
+   ],
+   "K4_reverse": [
+    159,
+    159
+   ],
+   "K5_judged": [
+    9,
+    9
+   ],
+   "K5_clean": [
+    9,
+    9
+   ],
+   "K6_cyl": [
+    134,
+    134
+   ],
+   "K7_sourceUnit": [
+    0,
+    43
+   ]
+  },
+  {
+   "model": "nist_ftc_09_asme1_ap242-e1",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    239,
+    239
+   ],
+   "K2_read": [
+    53,
+    53
+   ],
+   "K3_phys": [
+    53,
+    53
+   ],
+   "K4_reverse": [
+    239,
+    239
+   ],
+   "K5_judged": [
+    14,
+    14
+   ],
+   "K5_clean": [
+    13,
+    13
+   ],
+   "K6_cyl": [
+    92,
+    92
+   ],
+   "K7_sourceUnit": [
+    53,
+    53
+   ]
+  },
+  {
+   "model": "nist_ftc_09_asme1_ap242-e1",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    0,
+    239
+   ],
+   "K2_read": [
+    53,
+    53
+   ],
+   "K3_phys": [
+    53,
+    53
+   ],
+   "K4_reverse": [
+    0,
+    239
+   ],
+   "K5_judged": [
+    0,
+    14
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    0,
+    92
+   ],
+   "K7_sourceUnit": [
+    53,
+    53
+   ]
+  },
+  {
+   "model": "nist_ftc_09_asme1_ap242-e1",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    239,
+    239
+   ],
+   "K2_read": [
+    0,
+    53
+   ],
+   "K3_phys": [
+    0,
+    53
+   ],
+   "K4_reverse": [
+    239,
+    239
+   ],
+   "K5_judged": [
+    0,
+    14
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    92,
+    92
+   ],
+   "K7_sourceUnit": [
+    53,
+    53
+   ]
+  },
+  {
+   "model": "nist_ftc_09_asme1_ap242-e1",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    0,
+    239
+   ],
+   "K2_read": [
+    53,
+    53
+   ],
+   "K3_phys": [
+    53,
+    53
+   ],
+   "K4_reverse": [
+    0,
+    239
+   ],
+   "K5_judged": [
+    0,
+    14
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    92,
+    92
+   ],
+   "K7_sourceUnit": [
+    53,
+    53
+   ]
+  },
+  {
+   "model": "nist_ftc_09_asme1_ap242-e1",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 69,
+   "K1_locate": [
+    239,
+    239
+   ],
+   "K2_read": [
+    53,
+    53
+   ],
+   "K3_phys": [
+    0,
+    53
+   ],
+   "K4_reverse": [
+    239,
+    239
+   ],
+   "K5_judged": [
+    14,
+    14
+   ],
+   "K5_clean": [
+    13,
+    13
+   ],
+   "K6_cyl": [
+    92,
+    92
+   ],
+   "K7_sourceUnit": [
+    0,
+    53
+   ]
+  },
+  {
+   "model": "nist_ftc_10_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 88,
+   "K1_locate": [
+    285,
+    285
+   ],
+   "K2_read": [
+    66,
+    66
+   ],
+   "K3_phys": [
+    66,
+    66
+   ],
+   "K4_reverse": [
+    285,
+    285
+   ],
+   "K5_judged": [
+    13,
+    13
+   ],
+   "K5_clean": [
+    13,
+    13
+   ],
+   "K6_cyl": [
+    159,
+    159
+   ],
+   "K7_sourceUnit": [
+    66,
+    66
+   ]
+  },
+  {
+   "model": "nist_ftc_10_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 88,
+   "K1_locate": [
+    0,
+    285
+   ],
+   "K2_read": [
+    66,
+    66
+   ],
+   "K3_phys": [
+    66,
+    66
+   ],
+   "K4_reverse": [
+    0,
+    285
+   ],
+   "K5_judged": [
+    0,
+    13
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    0,
+    159
+   ],
+   "K7_sourceUnit": [
+    66,
+    66
+   ]
+  },
+  {
+   "model": "nist_ftc_10_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 88,
+   "K1_locate": [
+    285,
+    285
+   ],
+   "K2_read": [
+    0,
+    66
+   ],
+   "K3_phys": [
+    0,
+    66
+   ],
+   "K4_reverse": [
+    285,
+    285
+   ],
+   "K5_judged": [
+    0,
+    13
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    159,
+    159
+   ],
+   "K7_sourceUnit": [
+    66,
+    66
+   ]
+  },
+  {
+   "model": "nist_ftc_10_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 88,
+   "K1_locate": [
+    0,
+    285
+   ],
+   "K2_read": [
+    66,
+    66
+   ],
+   "K3_phys": [
+    66,
+    66
+   ],
+   "K4_reverse": [
+    0,
+    285
+   ],
+   "K5_judged": [
+    0,
+    13
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    159,
+    159
+   ],
+   "K7_sourceUnit": [
+    66,
+    66
+   ]
+  },
+  {
+   "model": "nist_ftc_10_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 88,
+   "K1_locate": [
+    285,
+    285
+   ],
+   "K2_read": [
+    66,
+    66
+   ],
+   "K3_phys": [
+    2,
+    66
+   ],
+   "K4_reverse": [
+    285,
+    285
+   ],
+   "K5_judged": [
+    13,
+    13
+   ],
+   "K5_clean": [
+    13,
+    13
+   ],
+   "K6_cyl": [
+    159,
+    159
+   ],
+   "K7_sourceUnit": [
+    0,
+    66
+   ]
+  },
+  {
+   "model": "nist_ftc_11_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 14,
+   "K1_locate": [
+    15,
+    15
+   ],
+   "K2_read": [
+    10,
+    10
+   ],
+   "K3_phys": [
+    10,
+    10
+   ],
+   "K4_reverse": [
+    15,
+    15
+   ],
+   "K5_judged": [
+    2,
+    2
+   ],
+   "K5_clean": [
+    2,
+    2
+   ],
+   "K6_cyl": [
+    12,
+    12
+   ],
+   "K7_sourceUnit": [
+    10,
+    10
+   ]
+  },
+  {
+   "model": "nist_ftc_11_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 14,
+   "K1_locate": [
+    0,
+    15
+   ],
+   "K2_read": [
+    10,
+    10
+   ],
+   "K3_phys": [
+    10,
+    10
+   ],
+   "K4_reverse": [
+    0,
+    15
+   ],
+   "K5_judged": [
+    0,
+    2
+   ],
+   "K5_clean": [
+    0,
+    2
+   ],
+   "K6_cyl": [
+    0,
+    12
+   ],
+   "K7_sourceUnit": [
+    10,
+    10
+   ]
+  },
+  {
+   "model": "nist_ftc_11_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 14,
+   "K1_locate": [
+    15,
+    15
+   ],
+   "K2_read": [
+    0,
+    10
+   ],
+   "K3_phys": [
+    0,
+    10
+   ],
+   "K4_reverse": [
+    15,
+    15
+   ],
+   "K5_judged": [
+    0,
+    2
+   ],
+   "K5_clean": [
+    0,
+    2
+   ],
+   "K6_cyl": [
+    12,
+    12
+   ],
+   "K7_sourceUnit": [
+    10,
+    10
+   ]
+  },
+  {
+   "model": "nist_ftc_11_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 14,
+   "K1_locate": [
+    0,
+    15
+   ],
+   "K2_read": [
+    10,
+    10
+   ],
+   "K3_phys": [
+    10,
+    10
+   ],
+   "K4_reverse": [
+    0,
+    15
+   ],
+   "K5_judged": [
+    0,
+    2
+   ],
+   "K5_clean": [
+    0,
+    2
+   ],
+   "K6_cyl": [
+    12,
+    12
+   ],
+   "K7_sourceUnit": [
+    10,
+    10
+   ]
+  },
+  {
+   "model": "nist_ftc_11_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 14,
+   "K1_locate": [
+    15,
+    15
+   ],
+   "K2_read": [
+    10,
+    10
+   ],
+   "K3_phys": [
+    0,
+    10
+   ],
+   "K4_reverse": [
+    15,
+    15
+   ],
+   "K5_judged": [
+    2,
+    2
+   ],
+   "K5_clean": [
+    2,
+    2
+   ],
+   "K6_cyl": [
+    12,
+    12
+   ],
+   "K7_sourceUnit": [
+    0,
+    10
+   ]
+  },
+  {
+   "model": "nist_stc_06_asme1_ap242-e3",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    130,
+    130
+   ],
+   "K2_read": [
+    42,
+    42
+   ],
+   "K3_phys": [
+    42,
+    42
+   ],
+   "K4_reverse": [
+    130,
+    130
+   ],
+   "K5_judged": [
+    8,
+    8
+   ],
+   "K5_clean": [
+    8,
+    8
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    42,
+    42
+   ]
+  },
+  {
+   "model": "nist_stc_06_asme1_ap242-e3",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    0,
+    130
+   ],
+   "K2_read": [
+    42,
+    42
+   ],
+   "K3_phys": [
+    42,
+    42
+   ],
+   "K4_reverse": [
+    0,
+    130
+   ],
+   "K5_judged": [
+    0,
+    8
+   ],
+   "K5_clean": [
+    0,
+    8
+   ],
+   "K6_cyl": [
+    0,
+    58
+   ],
+   "K7_sourceUnit": [
+    42,
+    42
+   ]
+  },
+  {
+   "model": "nist_stc_06_asme1_ap242-e3",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    130,
+    130
+   ],
+   "K2_read": [
+    0,
+    42
+   ],
+   "K3_phys": [
+    0,
+    42
+   ],
+   "K4_reverse": [
+    130,
+    130
+   ],
+   "K5_judged": [
+    0,
+    8
+   ],
+   "K5_clean": [
+    0,
+    8
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    42,
+    42
+   ]
+  },
+  {
+   "model": "nist_stc_06_asme1_ap242-e3",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 54,
+   "K1_locate": [
+    0,
+    130
+   ],
+   "K2_read": [
+    42,
+    42
+   ],
+   "K3_phys": [
+    42,
+    42
+   ],
+   "K4_reverse": [
+    0,
+    130
+   ],
+   "K5_judged": [
+    0,
+    8
+   ],
+   "K5_clean": [
+    0,
+    8
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    42,
+    42
+   ]
+  },
+  {
+   "model": "nist_stc_06_asme1_ap242-e3",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 54,
+   "K1_locate": [
+    130,
+    130
+   ],
+   "K2_read": [
+    42,
+    42
+   ],
+   "K3_phys": [
+    0,
+    42
+   ],
+   "K4_reverse": [
+    130,
+    130
+   ],
+   "K5_judged": [
+    8,
+    8
+   ],
+   "K5_clean": [
+    8,
+    8
+   ],
+   "K6_cyl": [
+    58,
+    58
+   ],
+   "K7_sourceUnit": [
+    0,
+    42
+   ]
+  },
+  {
+   "model": "nist_stc_07_asme1_ap242-e3",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    305,
+    305
+   ],
+   "K2_read": [
+    61,
+    61
+   ],
+   "K3_phys": [
+    61,
+    61
+   ],
+   "K4_reverse": [
+    305,
+    305
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    61,
+    61
+   ]
+  },
+  {
+   "model": "nist_stc_07_asme1_ap242-e3",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    0,
+    305
+   ],
+   "K2_read": [
+    61,
+    61
+   ],
+   "K3_phys": [
+    61,
+    61
+   ],
+   "K4_reverse": [
+    0,
+    305
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    0,
+    133
+   ],
+   "K7_sourceUnit": [
+    61,
+    61
+   ]
+  },
+  {
+   "model": "nist_stc_07_asme1_ap242-e3",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    305,
+    305
+   ],
+   "K2_read": [
+    0,
+    61
+   ],
+   "K3_phys": [
+    0,
+    61
+   ],
+   "K4_reverse": [
+    305,
+    305
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    61,
+    61
+   ]
+  },
+  {
+   "model": "nist_stc_07_asme1_ap242-e3",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 69,
+   "K1_locate": [
+    0,
+    305
+   ],
+   "K2_read": [
+    61,
+    61
+   ],
+   "K3_phys": [
+    61,
+    61
+   ],
+   "K4_reverse": [
+    0,
+    305
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    61,
+    61
+   ]
+  },
+  {
+   "model": "nist_stc_07_asme1_ap242-e3",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 69,
+   "K1_locate": [
+    305,
+    305
+   ],
+   "K2_read": [
+    61,
+    61
+   ],
+   "K3_phys": [
+    0,
+    61
+   ],
+   "K4_reverse": [
+    305,
+    305
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    133,
+    133
+   ],
+   "K7_sourceUnit": [
+    0,
+    61
+   ]
+  },
+  {
+   "model": "nist_stc_08_asme1_ap242-e3",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 53,
+   "K1_locate": [
+    243,
+    243
+   ],
+   "K2_read": [
+    37,
+    37
+   ],
+   "K3_phys": [
+    37,
+    37
+   ],
+   "K4_reverse": [
+    243,
+    243
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    157,
+    157
+   ],
+   "K7_sourceUnit": [
+    37,
+    37
+   ]
+  },
+  {
+   "model": "nist_stc_08_asme1_ap242-e3",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 53,
+   "K1_locate": [
+    0,
+    243
+   ],
+   "K2_read": [
+    37,
+    37
+   ],
+   "K3_phys": [
+    37,
+    37
+   ],
+   "K4_reverse": [
+    0,
+    243
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    0,
+    157
+   ],
+   "K7_sourceUnit": [
+    37,
+    37
+   ]
+  },
+  {
+   "model": "nist_stc_08_asme1_ap242-e3",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 53,
+   "K1_locate": [
+    243,
+    243
+   ],
+   "K2_read": [
+    0,
+    37
+   ],
+   "K3_phys": [
+    0,
+    37
+   ],
+   "K4_reverse": [
+    243,
+    243
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    157,
+    157
+   ],
+   "K7_sourceUnit": [
+    37,
+    37
+   ]
+  },
+  {
+   "model": "nist_stc_08_asme1_ap242-e3",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 53,
+   "K1_locate": [
+    0,
+    243
+   ],
+   "K2_read": [
+    37,
+    37
+   ],
+   "K3_phys": [
+    37,
+    37
+   ],
+   "K4_reverse": [
+    0,
+    243
+   ],
+   "K5_judged": [
+    0,
+    7
+   ],
+   "K5_clean": [
+    0,
+    7
+   ],
+   "K6_cyl": [
+    157,
+    157
+   ],
+   "K7_sourceUnit": [
+    37,
+    37
+   ]
+  },
+  {
+   "model": "nist_stc_08_asme1_ap242-e3",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 53,
+   "K1_locate": [
+    243,
+    243
+   ],
+   "K2_read": [
+    37,
+    37
+   ],
+   "K3_phys": [
+    0,
+    37
+   ],
+   "K4_reverse": [
+    243,
+    243
+   ],
+   "K5_judged": [
+    7,
+    7
+   ],
+   "K5_clean": [
+    7,
+    7
+   ],
+   "K6_cyl": [
+    157,
+    157
+   ],
+   "K7_sourceUnit": [
+    0,
+    37
+   ]
+  },
+  {
+   "model": "nist_stc_09_asme1_ap242-e3",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    167,
+    167
+   ],
+   "K2_read": [
+    49,
+    49
+   ],
+   "K3_phys": [
+    49,
+    49
+   ],
+   "K4_reverse": [
+    167,
+    167
+   ],
+   "K5_judged": [
+    13,
+    13
+   ],
+   "K5_clean": [
+    13,
+    13
+   ],
+   "K6_cyl": [
+    59,
+    59
+   ],
+   "K7_sourceUnit": [
+    49,
+    49
+   ]
+  },
+  {
+   "model": "nist_stc_09_asme1_ap242-e3",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    0,
+    167
+   ],
+   "K2_read": [
+    49,
+    49
+   ],
+   "K3_phys": [
+    49,
+    49
+   ],
+   "K4_reverse": [
+    0,
+    167
+   ],
+   "K5_judged": [
+    0,
+    13
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    0,
+    59
+   ],
+   "K7_sourceUnit": [
+    49,
+    49
+   ]
+  },
+  {
+   "model": "nist_stc_09_asme1_ap242-e3",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    167,
+    167
+   ],
+   "K2_read": [
+    0,
+    49
+   ],
+   "K3_phys": [
+    0,
+    49
+   ],
+   "K4_reverse": [
+    167,
+    167
+   ],
+   "K5_judged": [
+    0,
+    13
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    59,
+    59
+   ],
+   "K7_sourceUnit": [
+    49,
+    49
+   ]
+  },
+  {
+   "model": "nist_stc_09_asme1_ap242-e3",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 65,
+   "K1_locate": [
+    0,
+    167
+   ],
+   "K2_read": [
+    49,
+    49
+   ],
+   "K3_phys": [
+    49,
+    49
+   ],
+   "K4_reverse": [
+    0,
+    167
+   ],
+   "K5_judged": [
+    0,
+    13
+   ],
+   "K5_clean": [
+    0,
+    13
+   ],
+   "K6_cyl": [
+    59,
+    59
+   ],
+   "K7_sourceUnit": [
+    49,
+    49
+   ]
+  },
+  {
+   "model": "nist_stc_09_asme1_ap242-e3",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 65,
+   "K1_locate": [
+    167,
+    167
+   ],
+   "K2_read": [
+    49,
+    49
+   ],
+   "K3_phys": [
+    0,
+    49
+   ],
+   "K4_reverse": [
+    167,
+    167
+   ],
+   "K5_judged": [
+    13,
+    13
+   ],
+   "K5_clean": [
+    13,
+    13
+   ],
+   "K6_cyl": [
+    59,
+    59
+   ],
+   "K7_sourceUnit": [
+    0,
+    49
+   ]
+  },
+  {
+   "model": "nist_stc_10_asme1_ap242-e2",
+   "ablation": "full",
+   "mpu": 0.001,
+   "annos": 82,
+   "K1_locate": [
+    186,
+    186
+   ],
+   "K2_read": [
+    64,
+    64
+   ],
+   "K3_phys": [
+    64,
+    64
+   ],
+   "K4_reverse": [
+    186,
+    186
+   ],
+   "K5_judged": [
+    11,
+    11
+   ],
+   "K5_clean": [
+    9,
+    9
+   ],
+   "K6_cyl": [
+    117,
+    117
+   ],
+   "K7_sourceUnit": [
+    64,
+    64
+   ]
+  },
+  {
+   "model": "nist_stc_10_asme1_ap242-e2",
+   "ablation": "no_face_identity",
+   "mpu": 0.001,
+   "annos": 82,
+   "K1_locate": [
+    0,
+    186
+   ],
+   "K2_read": [
+    64,
+    64
+   ],
+   "K3_phys": [
+    64,
+    64
+   ],
+   "K4_reverse": [
+    0,
+    186
+   ],
+   "K5_judged": [
+    0,
+    11
+   ],
+   "K5_clean": [
+    0,
+    9
+   ],
+   "K6_cyl": [
+    0,
+    117
+   ],
+   "K7_sourceUnit": [
+    64,
+    64
+   ]
+  },
+  {
+   "model": "nist_stc_10_asme1_ap242-e2",
+   "ablation": "no_typed",
+   "mpu": 0.001,
+   "annos": 82,
+   "K1_locate": [
+    186,
+    186
+   ],
+   "K2_read": [
+    0,
+    64
+   ],
+   "K3_phys": [
+    0,
+    64
+   ],
+   "K4_reverse": [
+    186,
+    186
+   ],
+   "K5_judged": [
+    0,
+    11
+   ],
+   "K5_clean": [
+    0,
+    9
+   ],
+   "K6_cyl": [
+    117,
+    117
+   ],
+   "K7_sourceUnit": [
+    64,
+    64
+   ]
+  },
+  {
+   "model": "nist_stc_10_asme1_ap242-e2",
+   "ablation": "no_association",
+   "mpu": 0.001,
+   "annos": 82,
+   "K1_locate": [
+    0,
+    186
+   ],
+   "K2_read": [
+    64,
+    64
+   ],
+   "K3_phys": [
+    64,
+    64
+   ],
+   "K4_reverse": [
+    0,
+    186
+   ],
+   "K5_judged": [
+    0,
+    11
+   ],
+   "K5_clean": [
+    0,
+    9
+   ],
+   "K6_cyl": [
+    117,
+    117
+   ],
+   "K7_sourceUnit": [
+    64,
+    64
+   ]
+  },
+  {
+   "model": "nist_stc_10_asme1_ap242-e2",
+   "ablation": "no_units",
+   "mpu": 0.01,
+   "annos": 82,
+   "K1_locate": [
+    186,
+    186
+   ],
+   "K2_read": [
+    64,
+    64
+   ],
+   "K3_phys": [
+    2,
+    64
+   ],
+   "K4_reverse": [
+    186,
+    186
+   ],
+   "K5_judged": [
+    11,
+    11
+   ],
+   "K5_clean": [
+    9,
+    9
+   ],
+   "K6_cyl": [
+    117,
+    117
+   ],
+   "K7_sourceUnit": [
+    0,
+    64
+   ]
+  }
+ ]
+}

@@ -1,10 +1,19 @@
 # E1 步骤一：STEP 实体引用图解析器 → typed PMI 抽取 + STEP 层 associativity（anno → ADVANCED_FACE ids）
 # 设计 → notes/20260828-e1-design.md §1。姿态：collect-what-parses + 全量覆盖率报告，不 silent drop。
 # 用法: python 13_step_graph.py <input.stp> <out.json>
+# 2026-10-05 R1 修回（I-1）：SHAPE_ASPECT_RELATIONSHIP 原为双向展开（relating⇄related），经被两个复合体共享的
+#   成员 SA 上爬到兄弟复合体再下行，造成多关联（stc_07 #15037 关联 64 面，NIST affected area 只合 ~154 mm²）。
+#   改为只沿 relating→related 下行展开；环境变量 STEP_SAR_EXPAND=both 复现 v4 行为（供 42 三方对照）。
+# 2026-10-05 R1 修回（I-7）：SA_LIKE 加 DATUM——DATUM_FEATURE 的 GISU 常挂在经 SAR(DF→DATUM) 连到的 DATUM 上，
+#   不跟随则 9 条 DF 被误记为源侧无关联（NIST affected area 9/9 吻合，numbers §T5）。
 import json
+import os
 import re
 import sys
 from collections import Counter
+
+SAR_EXPAND = os.environ.get("STEP_SAR_EXPAND", "down")
+assert SAR_EXPAND in ("down", "both"), SAR_EXPAND
 
 stp, out = sys.argv[1], sys.argv[2]
 txt = open(stp, encoding="utf-8", errors="replace").read()
@@ -175,7 +184,7 @@ SUPPORT = {"PLUS_MINUS_TOLERANCE", "TOLERANCE_VALUE", "TOLERANCE_ZONE", "TOLERAN
 SA_LIKE = {"SHAPE_ASPECT", "COMPOSITE_SHAPE_ASPECT", "ALL_AROUND_SHAPE_ASPECT", "DATUM_FEATURE",
            "COMPOSITE_GROUP_SHAPE_ASPECT", "CONTINUOS_SHAPE_ASPECT", "CENTRE_OF_SYMMETRY",
            "APEX", "GEOMETRIC_ALIGNMENT", "PERPENDICULAR_TO", "PARALLEL_OFFSET", "TANGENT",
-           "SYMMETRIC_SHAPE_ASPECT", "DERIVED_SHAPE_ASPECT"}
+           "SYMMETRIC_SHAPE_ASPECT", "DERIVED_SHAPE_ASPECT", "DATUM"}
 
 def shape_aspect_faces(sa_id, seen=None):
     """shape_aspect → GISU/IIRU/关系展开 → (ADVANCED_FACE ids, EDGE/其他几何 ids)"""
@@ -208,14 +217,19 @@ def shape_aspect_faces(sa_id, seen=None):
                 for other in refs_in(a[3]):
                     f2, e2 = shape_aspect_faces(other, seen)
                     faces |= f2; edges |= e2
-        # SHAPE_ASPECT_RELATIONSHIP: related/relating 展开（composite → 成员）
+        # SHAPE_ASPECT_RELATIONSHIP: 只做 relating(composite) → related(成员) 下行展开（SAR_EXPAND=both 为 v4 双向）
         if "SHAPE_ASPECT_RELATIONSHIP" in utypes or "COMPONENT_PATH_SHAPE_ASPECT" in utypes:
             for t, a in graph[user]:
                 if "SHAPE_ASPECT_RELATIONSHIP" in t:
                     args = split_args(a)
                     if len(args) >= 4:
-                        rel = refs_in(args[2]) + refs_in(args[3])
-                        if sa_id in rel:
+                        if SAR_EXPAND == "both":
+                            rel = refs_in(args[2]) + refs_in(args[3])
+                            hit = sa_id in rel
+                        else:
+                            rel = refs_in(args[3])
+                            hit = sa_id in refs_in(args[2])
+                        if hit:
                             for other in rel:
                                 if other != sa_id and (types_of(other) & SA_LIKE):
                                     f2, e2 = shape_aspect_faces(other, seen)
@@ -346,7 +360,8 @@ for sid, kind in sorted(annos):
     result.append(rec)
 
 summary = {"file": stp, "n_entities": len(graph), "n_annos": len(annos),
-           "by_type": dict(Counter(k for _, k in annos)), "coverage": dict(cov)}
+           "by_type": dict(Counter(k for _, k in annos)), "coverage": dict(cov),
+           "sar_expand": SAR_EXPAND}
 # 🔴 单位解析失败必须可见，不得静默按 1.0 处理：凡有 typed 长度却解不出单位者，
 # 标记 unitName="UNRESOLVED"（unitToMm 留空）。writer 会照此写 pmi:sourceUnit，
 # 审计器的 CF4 据此判失败——把「解析失败」从静默默认变成一次红。

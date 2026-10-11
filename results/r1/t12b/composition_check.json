@@ -1,0 +1,36 @@
+{
+ "instances": 18,
+ "composed": {
+  "mismatch_vs_single": [],
+  "foreign_targets": 0,
+  "cf_bad": 0,
+  "validate_family_fail": 0,
+  "annos": 929,
+  "subsets": 4147,
+  "rel_targets": 2763,
+  "metersPerUnit": 0.001,
+  "mpu_authored": true
+ },
+ "flattened": {
+  "mismatch_vs_single": [],
+  "foreign_targets": 0,
+  "cf_bad": 0,
+  "validate_family_fail": 0,
+  "annos": 929,
+  "subsets": 4147,
+  "rel_targets": 2763,
+  "metersPerUnit": 0.001,
+  "mpu_authored": true
+ },
+ "compliance": {
+  "single_nist_ctc_01_asme1_ap242-e1.usdc": "ComplianceChecker unavailable in this usd-core build",
+  "assembly_flat": "ComplianceChecker unavailable in this usd-core build"
+ },
+ "expected_totals": {
+  "subsets": 4147,
+  "annos": 929,
+  "rel_targets": 2763
+ },
+ "expected_cf_bad": 0,
+ "pass": true
+}
