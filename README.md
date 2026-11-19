@@ -2,7 +2,8 @@
 
 Specification, reference writer, and full-set audit for the paper *Tolerance-resolvable
 OpenUSD: a minimal standards-only carrier profile for semantic PMI, its open implementation,
-and validation on the NIST MBE test models* (submitted, 2026).
+and validation on the NIST MBE test models*, accepted for publication in the International Journal on
+Interactive Design and Manufacturing (IJIDeM), 2026.
 
 - **SPEC.md** — the one-page profile convention (face subsets, typed PMI, associations, units).
 - **scripts/** — the complete pipeline: STEP entity-graph parser (13), STEP-face-to-mesh
